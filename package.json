@@ -1,0 +1,33 @@
+{
+  "name": "technologic.as",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "babel-node ./src/api/server.js",
+    "test": "jest",
+    "lint": "eslint . --ext .js,.jsx"
+  },
+  "dependencies": {
+    "babel-cli": "6.26.x",
+    "cookie-parser": "~1.4.3",
+    "debug": "3.1.x",
+    "dotenv": "6.0.x",
+    "express": "4.16.x",
+    "http-errors": "1.7.x",
+    "morgan": "1.9.x",
+    "pug": "2.0.x",
+    "request": "2.88.x",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-preset-env": "1.7.x",
+    "babel-preset-react": "6.24.x",
+    "eslint": "5.5.x",
+    "eslint-config-airbnb": "17.1.x",
+    "eslint-plugin-import": "2.14.x",
+    "eslint-plugin-jest": "21.22.x",
+    "eslint-plugin-jsx-a11y": "6.1.x",
+    "eslint-plugin-react": "7.11.x",
+    "jest": "23.5.x"
+  }
+}

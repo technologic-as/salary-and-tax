@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getUsers should get users 1`] = `
+Array [
+  Object {
+    "cvId": "cvId",
+    "name": "CV Partner",
+    "userId": "userId",
+  },
+  Object {
+    "cvId": "idCv",
+    "name": "Partner CV",
+    "userId": "idUser",
+  },
+]
+`;

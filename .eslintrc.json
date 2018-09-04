@@ -1,0 +1,28 @@
+{
+  "plugins": [
+    "react",
+    "jest"
+  ],
+  "extends": [
+    "airbnb",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:jest/recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "jest/globals": true
+  },
+  "settings": {
+    "react": {
+      "version": "16.4"
+    }
+  }
+}

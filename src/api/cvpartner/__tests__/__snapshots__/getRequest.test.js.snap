@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getRequest should reject to matching snapshot 1`] = `
+Object {
+  "error": "error message",
+}
+`;
+
+exports[`getRequest should resolve to matching snapshot 1`] = `
+Array [
+  Object {
+    "default_cv_id": "cvId",
+    "id": "userId",
+    "name": "CV Partner",
+  },
+]
+`;
