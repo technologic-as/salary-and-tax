@@ -1,0 +1,513 @@
+{
+  "_id": "5b7d3f4772813c2dc88bac9b",
+  "blogs": [
+    {
+      "_id": "blogId", "created_at": "2018-09-03T08:58:11.051Z", "disabled": false,
+      "diverged_from_master": false,
+      "long_description": {"no": "norwegian description", "int": "english description"},
+      "modifier_id": null, "month": "09", "name": {"no": "norwegian name", "int": "english name"}, "order": 0,
+      "origin_id": null, "recently_added": false, "starred": false, "updated_at": "2018-09-03T08:58:53.014Z",
+      "url": "http://technologic.as", "version": 6, "year": "2011"
+    }
+  ], "born_day": 1, "born_month": 1, "born_year": 1985, "bruker_id": "userId", "certifications": [
+  {
+    "_id": "certificationId", "created_at": "2018-08-29T18:37:44.087Z", "disabled": false,
+    "diverged_from_master": false, "long_description": {}, "modifier_id": null, "month": "02", "name": {
+    "no": "norwegian certification name",
+    "int": "english certification name"
+  }, "order": 0, "organiser": {"no": "norwegian certification organiser", "int": "english certification organiser"},
+    "origin_id": null, "recently_added": false, "starred": false, "updated_at": "2018-08-29T18:39:46.143Z",
+    "version": 12, "year": "2012"
+  }
+],
+  "courses": [
+    {
+      "_id": "courseId", "created_at": "2018-09-03T09:02:30.632Z", "disabled": false,
+      "diverged_from_master": false, "long_description": {}, "modifier_id": null, "month": "02",
+      "name": {"no": "norwegian course name", "int": "english course name"}, "order": 6, "origin_id": null,
+      "program": {"no": "norwegian course organiser", "int": "english course organiser"}, "recently_added": false,
+      "starred": false,
+      "updated_at": "2018-09-03T09:02:39.689Z", "version": 5, "year": "2012"
+    }
+  ],
+  "created_at": "2018-08-22T10:47:35.925Z", "custom_tag_ids": [], "default": true,
+  "educations": [
+    {
+      "_id": "educationId", "created_at": "2018-08-29T16:22:14.091Z",
+      "degree": {"no": "norwegian education degree", "int": "english education degree"},
+      "description": {}, "disabled": false,
+      "diverged_from_master": false, "modifier_id": null, "month_from": "01", "month_to": "08", "order": 0,
+      "origin_id": null, "recently_added": false,
+      "school": {"no": "norwegian school", "int": "english school"},
+      "starred": false, "updated_at": "2018-08-29T16:31:07.855Z", "version": 17, "year_from": "2009", "year_to": "2011"
+    }
+  ],
+  "highlighted_roles": [
+    {
+      "_id": "highlightRoleId", "created_at": "2018-09-02T20:47:05.644Z", "disabled": false,
+      "diverged_from_master": false, "modifier_id": null,
+      "name": {"no": "norwegian highlighted role", "int": "english highlighted role"},
+      "order": 1, "origin_id": null,
+      "recently_added": false, "starred": true, "updated_at": "2018-09-02T20:47:05.644Z", "version": 1
+    }
+  ],
+  "key_qualifications": [
+    {
+      "_id": "qualificationId", "created_at": "2018-08-29T16:19:32.256Z", "disabled": false,
+      "diverged_from_master": false,
+      "key_points": [
+        {
+          "_id": "keyPoint1Id", "created_at": null, "disabled": false, "diverged_from_master": false,
+          "long_description": {}, "modifier_id": null,
+          "name": {"no": "norwegian key point 1", "int": "english key point 1"},
+          "order": 0,
+          "origin_id": null, "recently_added": false, "starred": false, "updated_at": null, "version": 3
+        }, {
+          "_id": "keyPoint2Id", "created_at": null, "disabled": false, "diverged_from_master": false,
+          "long_description": {}, "modifier_id": null,
+          "name": {"no": "norwegian key point 1", "int": "english key point 1"},
+          "order": 1, "origin_id": null, "recently_added": false, "starred": false, "updated_at": null, "version": 2
+        }
+      ],
+      "label": {},
+      "long_description": {
+        "no": "norwegian key qualification long description",
+        "int": "english key qualification long description"
+      },
+      "modifier_id": null, "order": 0, "origin_id": null, "recently_added": false, "starred": false,
+      "tag_line": {"no": "nowegian tag line", "int": "english tagline"},
+      "updated_at": "2018-09-03T09:18:39.966Z", "version": 13
+    }
+  ],
+  "languages": [
+    {
+      "_id": "5b86cb1f39fb691053816d2d", "created_at": "2018-08-29T16:34:39.807Z", "disabled": false,
+      "diverged_from_master": false,
+      "level": {"no": "Morsmål", "int": "Native"}, "modifier_id": null,
+      "name": {"no": "Norsk", "int": "Norwegian"}, "order": 0, "origin_id": null, "recently_added": false,
+      "starred": false, "updated_at": "2018-08-29T16:34:58.145Z", "version": 5
+    }, {
+      "_id": "5b86cb3839fb691056816d4c", "created_at": "2018-08-29T16:35:04.768Z", "disabled": false,
+      "diverged_from_master": false,
+      "level": {"no": "Flytende muntlig og skriftlig", "int": "Fluent"},
+      "modifier_id": null, "name": {"no": "Engesk", "int": "English"}, "order": 1, "origin_id": null,
+      "recently_added": false, "starred": false, "updated_at": "2018-08-29T16:35:43.397Z", "version": 11
+    }
+  ],
+  "level": null, "locked_at": null, "locked_until": null, "modifier_id": null,
+  "nationality": {"no": "Norsk"},
+  "navn": "Fredrik Oterholt",
+  "order": null,
+  "place_of_residence": {"no": "Oslo"},
+  "positions": [
+    {
+      "_id": "positionId", "created_at": "2018-09-03T08:43:10.234Z",
+      "description": {
+        "no": "norwegian position description",
+        "int": "english position description"
+      }, "disabled": false, "diverged_from_master": false, "modifier_id": null,
+      "name": {"no": "norwegian position name", "int": "english position name"}, "order": 0, "origin_id": null,
+      "recently_added": false, "starred": false, "updated_at": "2018-09-03T08:49:31.808Z", "version": 44,
+      "year_from": "2017", "year_to": "2017"
+    }
+  ],
+  "presentations": [
+    {
+      "_id": "presentationId", "created_at": "2018-09-03T09:03:21.848Z",
+      "description": {"no": "norwegian presentation description", "int": "english presentation description"},
+      "disabled": false,
+      "diverged_from_master": false,
+      "long_description": {
+        "no": "norwegian long presentation description",
+        "int": "english long presentation description"
+      },
+      "modifier_id": null, "month": "06", "order": 0, "origin_id": null, "recently_added": false, "starred": false,
+      "updated_at": "2018-09-03T09:04:08.801Z", "version": 8, "year": "2015"
+    }
+  ],
+  "project_experiences": [
+    {
+      "_id": "projectExperienceId1", "created_at": "2018-08-29T19:05:56.915Z",
+      "customer": {"no": "norwegian customer name", "int": "english customer name"},
+      "customer_description": {},
+      "customer_value_proposition": {},
+      "description": {
+        "no": "norwegian project experience description",
+        "int": "english project experience description"
+      },
+      "disabled": false,
+      "diverged_from_master": false,
+      "exclude_tags": null, "expected_roll_off_date": null, "extent_hours": "",
+      "industry": {"no": "norwegian industry", "int": "english industry"},
+      "long_description": {
+        "no": "norwegian project experience long description",
+        "int": "english project experience long description"
+      },
+      "modifier_id": null, "month_from": "08", "month_to": "12", "order": 13, "origin_id": null,
+      "percent_allocated": "100",
+      "project_experience_skills": [
+        {
+          "_id": "skill1Id", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 0, "proficiency": 0,
+          "tags": {"no": "norwegian skill 1", "int": "english skill 1"},
+          "total_duration_in_years": 0,
+          "version": 1
+        }, {
+          "_id": "skill2Id", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 8, "proficiency": 0,
+          "tags": {"no": "norwegian skill 2", "int": "english skill 2"},
+          "total_duration_in_years": 0,
+          "version": 1
+        }
+      ],
+      "recently_added": false,
+      "related_work_experience_id": "webDevExperienceId",
+      "roles": [
+        {
+          "_id": "roleId1", "created_at": null, "disabled": false, "diverged_from_master": false,
+          "long_description": {
+            "no": "norwegian role long description",
+            "int": "english role long description"
+          },
+          "modifier_id": null,
+          "name": {"no": "norwegian role title", "int": "english role title"},
+          "order": 0, "origin_id": null,
+          "recently_added": false, "starred": false, "summary": {}, "updated_at": null, "version": 19
+        }
+      ],
+      "starred": false, "updated_at": "2018-09-03T09:21:23.041Z", "version": 27, "year_from": "2009",
+      "year_to": "2009",
+      "images": []
+    },
+    {
+      "_id": "projectExperienceId2", "created_at": "2018-08-29T19:28:25.614Z",
+      "customer": {"no": "norwegian customer name", "int": "english customer name"},
+      "customer_description": {},
+      "customer_value_proposition": {},
+      "description": {
+        "no": "norwegian project experience description",
+        "int": "english project experience description"
+      },
+      "disabled": false,
+      "diverged_from_master": false, "exclude_tags": null, "expected_roll_off_date": null, "extent_hours": "",
+      "industry": {"no": "", "int": ""},
+      "long_description": {
+        "no": "norwegian project experience long description",
+        "int": "english project experience long description"
+      },
+      "modifier_id": null, "month_from": "01", "month_to": "04", "order": 12, "origin_id": null,
+      "percent_allocated": "100", "project_experience_skills": [
+      {
+        "_id": "5b86f6963330eb0ff29f5baa", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 0, "proficiency": 0, "tags": {"no": "PHP"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86f6a13330eb10099f5bb6", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 1, "proficiency": 0, "tags": {"no": "MySQL"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86f77f21a3461070d3e06b", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 4, "proficiency": 0, "tags": {"no": "CMS"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86f7890a237d11561710b6", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 5, "proficiency": 0, "tags": {"no": "XHTML"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86f79621a3461070d3e06e", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 2, "proficiency": 0, "tags": {"no": "JavaScript"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86f79921a34610e1d3e0e3", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 7, "proficiency": 0, "tags": {"no": "jQuery"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86f7b10a237d111d1710bc", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 8, "proficiency": 0, "tags": {"no": "TinyMCE"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86f9c021a3461186d3e0ca", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 3, "proficiency": 0, "tags": {"no": "CSS"},
+        "total_duration_in_years": 0, "version": 1
+      }, {
+        "_id": "5b86fce60a237d10ff1710c6", "base_duration_in_years": 0, "modifier_id": null,
+        "offset_duration_in_years": 0, "order": 9, "proficiency": 0, "tags": {"no": "HTML"},
+        "total_duration_in_years": 0, "version": 1
+      }
+    ],
+      "recently_added": false, "related_work_experience_id": "webDevExperienceId",
+      "roles": [
+        {
+          "_id": "roleId2", "created_at": null, "disabled": false, "diverged_from_master": false,
+          "long_description": {
+            "no": "norwegian long description",
+            "int": "english long description"
+          },
+          "modifier_id": null,
+          "name": {"no": "Webutvikler", "int": "Web developer"},
+          "order": 0, "origin_id": null,
+          "recently_added": false, "starred": false, "summary": {}, "updated_at": null, "version": 14
+        }
+      ], "starred": false, "updated_at": "2018-09-03T09:21:16.955Z", "version": 15, "year_from": "2010",
+      "year_to": "2010", "images": []
+    },
+    {
+      "_id": "projectExperienceId3", "created_at": "2018-08-29T20:07:16.661Z",
+      "customer": {"no": "norwegian customer name", "int": "english customer name"},
+      "customer_description": {}, "customer_value_proposition": {},
+      "description": {
+        "no": "norwegian project description",
+        "int": "english project description"
+      },
+      "disabled": false, "diverged_from_master": false,
+      "exclude_tags": null,
+      "expected_roll_off_date": null, "extent_hours": "",
+      "industry": {"no": "norwegian industry", "int": "english industry"},
+      "long_description": {
+        "no": "norwegian long description",
+        "int": "english long description"
+      },
+      "modifier_id": null, "month_from": "09", "month_to": "01", "order": 10, "origin_id": null,
+      "percent_allocated": "100",
+      "project_experience_skills": [
+        {
+          "_id": "5b86fd8e39fb691090816d59", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 1, "proficiency": 0, "tags": {"no": "Java"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fd910a237d11171710c3", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 2, "proficiency": 0, "tags": {"no": "Maven"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fd943330eb102b9f5cfe", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 3, "proficiency": 0, "tags": {"no": "Selenium"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fd9b21a346110dd3e0f6", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 4, "proficiency": 0, "tags": {"no": "CSS"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fd9c3330eb0ff59f5be8", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 5, "proficiency": 0, "tags": {"no": "HTML"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fda639fb691087816d82", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 6, "proficiency": 0, "tags": {"no": "Jetty"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fdaa3330eb10379f5bfd", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 7, "proficiency": 0, "tags": {"no": "Subversion"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fdb03330eb10099f5bd0", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 8, "proficiency": 0, "tags": {"no": "JIRA"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b86fdb439fb69113e816d80", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 9, "proficiency": 0, "tags": {"no": "LaTeX"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b8c3203aebafd10e972ac03", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 10, "proficiency": 0, "tags": {"no": "AMS"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b8c3906aebafd10f272a9fc", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 11, "proficiency": 0, "tags": {"no": "Scrum"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b8c39b60408a610778773d8", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 12, "proficiency": 0, "tags": {"no": "Hudson"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b8c44dd533e53120eadecc2", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 13, "proficiency": 0, "tags": {"no": "IntelliJ"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b8ce8b3aebafd124c72a6ec", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 14, "proficiency": 0, "tags": {"no": "Artifactory"},
+          "total_duration_in_years": 0, "version": 1
+        }
+      ],
+      "recently_added": false,
+      "related_work_experience_id": "developerExperienceId",
+      "roles": [
+        {
+          "_id": "roleId1", "created_at": null, "disabled": false, "diverged_from_master": false,
+          "long_description": {
+            "no": "norwegian long description of role",
+            "int": "english long description of role"
+          },
+          "modifier_id": null,
+          "name": {
+            "no": "norwegian role 1",
+            "int": "english role 1"
+          },
+          "order": 0, "origin_id": null,
+          "recently_added": false, "starred": false, "summary": {}, "updated_at": null, "version": 17
+        }, {
+          "_id": "roleId2", "created_at": null, "disabled": false, "diverged_from_master": false,
+          "long_description": {
+            "no": "norwegian long description of role 2",
+            "int": "english long description of role 2"
+          },
+          "modifier_id": null,
+          "name": {"no": "norwegian role 2", "int": "english role 2"},
+          "order": 1, "origin_id": null, "recently_added": false, "starred": false, "summary": {}, "updated_at": null,
+          "version": 20
+        }
+      ], "starred": false, "updated_at": "2018-09-03T09:21:03.453Z", "version": 15, "year_from": "2011",
+      "year_to": "2012", "images": []
+    }
+  ],
+  "technologies": [
+    {
+      "_id": "5b7d3f4772813c2dc88bac9d", "category": {}, "created_at": "2018-08-22T10:47:35.932Z", "disabled": true,
+      "diverged_from_master": false, "exclude_tags": [], "modifier_id": null, "order": 0, "origin_id": null,
+      "recently_added": false, "starred": false, "technology_skills": [], "uncategorized": true,
+      "updated_at": "2018-08-22T10:47:35.932Z", "version": 1
+    },
+    {
+      "_id": "5b86fb170c63bc461b09b541", "category": {"no": "Programmeringsspråk", "int": null},
+      "created_at": "2018-08-29T19:59:19.340Z", "disabled": false, "diverged_from_master": false, "exclude_tags": null,
+      "modifier_id": null, "order": 1, "origin_id": null, "recently_added": false, "starred": true,
+      "technology_skills": [
+        {
+          "_id": "5b86fb170c63bc461b09b543", "base_duration_in_years": 2, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 8, "proficiency": 0, "tags": {"no": "PHP"},
+          "total_duration_in_years": 2, "version": 2
+        }, {
+          "_id": "5b86fe6c0c63bc790109b541", "base_duration_in_years": 5, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 0, "proficiency": 0, "tags": {"no": "Java"},
+          "total_duration_in_years": 5, "version": 5
+        }, {
+          "_id": "5b8c45b7aebafd117d72a8bc", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 1, "proficiency": 0, "tags": {"no": "Scala"},
+          "total_duration_in_years": 1, "version": 2
+        }, {
+          "_id": "5b8c4e7291f3d86be02da268", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 3, "proficiency": 0, "tags": {"no": "EcmaScript"},
+          "total_duration_in_years": 1, "version": 2
+        }, {
+          "_id": "5b8c505ab505240e6913779b", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 5, "proficiency": 0, "tags": {"no": "Groovy"},
+          "total_duration_in_years": 1, "version": 2
+        }, {
+          "_id": "5b8cea77b50524134113779b", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 4, "proficiency": 0, "tags": {"no": "TypeScript"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b8cecf9533e5311ebadea6f", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 6, "proficiency": 0, "tags": {"no": "Python"},
+          "total_duration_in_years": 1, "version": 2
+        }, {
+          "_id": "5b8cee1a0408a610e387705e", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 7, "proficiency": 0, "tags": {"no": "C"},
+          "total_duration_in_years": 0,
+          "version": 1
+        }, {
+          "_id": "5b8cefee0c63bc58dc09b541", "base_duration_in_years": 7, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 2, "proficiency": 0, "tags": {"no": "JavaScript"},
+          "total_duration_in_years": 7, "version": 2
+        }
+      ], "uncategorized": false, "updated_at": "2018-09-03T08:34:29.255Z", "version": 2
+    },
+    {
+      "_id": "5b86fb9fb5052426503f1096", "category": {"no": "Webteknologi", "int": null},
+      "created_at": "2018-08-29T20:01:35.839Z", "disabled": false, "diverged_from_master": false, "exclude_tags": [],
+      "modifier_id": null, "order": 6, "origin_id": null, "recently_added": false, "starred": false,
+      "technology_skills": [
+        {
+          "_id": "5b86fba0b5052426503f1098", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 2, "proficiency": 0, "tags": {"no": "CMS"},
+          "total_duration_in_years": 1, "version": 2
+        }, {
+          "_id": "5b86fba50c63bc7d8309b541", "base_duration_in_years": 7, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 3, "proficiency": 0, "tags": {"no": "CSS"},
+          "total_duration_in_years": 7, "version": 8
+        }, {
+          "_id": "5b86fc3b0c63bc2d2078e1f7", "base_duration_in_years": 7, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 5, "proficiency": 0, "tags": {"no": "HTML"},
+          "total_duration_in_years": 7, "version": 9
+        }, {
+          "_id": "5b86fc5f91f3d82bbd2da268", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 6, "proficiency": 0, "tags": {"no": "XHTML"},
+          "total_duration_in_years": 1, "version": 2
+        }, {
+          "_id": "5b8ce9c891f3d804152da268", "base_duration_in_years": 3, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 7, "proficiency": 0, "tags": {"no": "SASS"},
+          "total_duration_in_years": 3, "version": 2
+        }, {
+          "_id": "5b8cf1060408a610478773a5", "base_duration_in_years": 0, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 8, "proficiency": 0, "tags": {"no": "LESS"},
+          "total_duration_in_years": 0, "version": 1
+        }, {
+          "_id": "5b8cf120533e5311b1ade945", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 9, "proficiency": 0, "tags": {"no": "Play Framework"},
+          "total_duration_in_years": 1, "version": 2
+        }, {
+          "_id": "5b8cf1270408a610ad877298", "base_duration_in_years": 1, "modifier_id": null,
+          "offset_duration_in_years": 0, "order": 10, "proficiency": 0, "tags": {"no": "eZ Publish"},
+          "total_duration_in_years": 1, "version": 2
+        }
+      ], "uncategorized": false, "updated_at": "2018-08-29T20:01:35.839Z", "version": 1
+    }
+  ],
+  "telefon": "48043932",
+  "tilbud_id": null,
+  "title": {"no": "Junior POTUS"},
+  "twitter": null,
+  "updated_at": "2018-09-03T09:21:23.246Z", "version": 12,
+  "work_experiences": [
+    {
+      "_id": "experienceId", "created_at": "2018-08-29T17:35:43.398Z",
+      "description": {"no": "norwegian description", "int": "english description"},
+      "disabled": false,
+      "diverged_from_master": false,
+      "employer": {"no": "norwegian employer", "int": "english employer"},
+      "long_description": {
+        "no": "norwegian long description",
+        "int": "english long description"
+      },
+      "modifier_id": null, "month_from": "07", "month_to": "06", "order": 8, "origin_id": null,
+      "recently_added": false,
+      "starred": false, "updated_at": "2018-08-29T18:36:28.709Z", "version": 42,
+      "year_from": "2004",
+      "year_to": "2005"
+    }, {
+      "_id": "webDevExperienceId", "created_at": "2018-08-29T18:12:38.362Z",
+      "description": {"no": "Webutvikler", "int": "Web developer"}, "disabled": false, "diverged_from_master": false,
+      "employer": {"no": "Byte", "int": "Byte"}, "long_description": {
+        "no": "Deltidsjobb ved siden av studier som system/web-utvikler med programmering av front- og backend-løsninger, samt vedlikehold av kunders nettsider.",
+        "int": ""
+      }, "modifier_id": null, "month_from": "08", "month_to": "02", "order": 4, "origin_id": null,
+      "recently_added": false, "starred": false, "updated_at": "2018-08-29T18:19:43.162Z", "version": 17,
+      "year_from": "2009", "year_to": "2011"
+    }, {
+      "_id": "developerExperienceId", "created_at": "2018-08-29T18:19:54.173Z",
+      "description": {"no": "Konsulent", "int": "Consultant"}, "disabled": false, "diverged_from_master": false,
+      "employer": {"no": "Embriq", "int": "Embriq"}, "long_description": {}, "modifier_id": null, "month_from": "09",
+      "month_to": "07", "order": 3, "origin_id": null, "recently_added": false, "starred": false,
+      "updated_at": "2018-08-29T18:32:46.505Z", "version": 14, "year_from": "2011", "year_to": "2015"
+    }
+  ],
+  "name": "My Name",
+  "user_id": "userId",
+  "company_id": "companyId",
+  "external_unique_id": null,
+  "email": "fredrik.oterholt@technologic.as",
+  "country_code": "no",
+  "language_code": "no",
+  "language_codes": ["no", "int"],
+  "proposal": null,
+  "custom_tags": [],
+  "updated_ago": "N/A",
+  "template_document_type": "doc",
+  "image": {
+    "url": null,
+    "thumb": {"url": null},
+    "fit_thumb": {"url": null},
+    "large": {"url": null},
+    "small_thumb": {"url": null}
+  },
+  "can_write": false
+}
