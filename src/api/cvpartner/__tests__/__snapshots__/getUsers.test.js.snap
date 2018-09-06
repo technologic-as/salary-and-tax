@@ -14,3 +14,9 @@ Array [
   },
 ]
 `;
+
+exports[`getUsers should reject errors 1`] = `
+Object {
+  "error": "error",
+}
+`;

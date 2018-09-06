@@ -19,6 +19,11 @@ describe('getUsers', () => {
         await getUsers();
         expect(getRequest).toHaveBeenCalledWith('/api/v1/users?offset=0');
     });
+    it('should reject errors', async () => {
+        getRequest.mockImplementationOnce(() => Promise.reject({ error: 'error' }));
+        await expect(getUsers()).rejects.toMatchSnapshot();
+    });
+
     it('should map default_cv_id to cv_id and id to userId', async () => {
         await expect(getUsers()).resolves.toEqual(expect.arrayContaining([
             expect.objectContaining({ cvId: mockFirstUser.default_cv_id, userId: 'userId' }),

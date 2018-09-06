@@ -6,7 +6,9 @@ config();
 export const BASE_URL = `https://technologic.cvpartner.com`;
 
 const getRequest = async url => await rp({
-    url: BASE_URL + url, json: true, headers: { 'Authorization': `Token token="${process.env.CV_PARTNER_API_KEY}"` },
+    url: BASE_URL + url,
+    json: true,
+    headers: { 'Authorization': `Token token="${process.env.CV_PARTNER_API_KEY}"` },
 });
 
 export default getRequest;
