@@ -1026,9 +1026,9 @@ array-equal@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/array-equal/-/array-equal-1.0.0.tgz#8c2a5ef2472fd9ea742b04c77a75093ba2757c93"
 
-array-find-index@^1.0.1:
+array-find-reducers@^1.0.1:
   version "1.0.2"
-  resolved "https://registry.yarnpkg.com/array-find-index/-/array-find-index-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
+  resolved "https://registry.yarnpkg.com/array-find-reducers/-/array-find-reducers-1.0.2.tgz#df010aa1287e164bbda6f9723b0a96a1ec4187a1"
 
 array-flatten@1.1.1:
   version "1.1.1"
@@ -2102,7 +2102,7 @@ currently-unhandled@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/currently-unhandled/-/currently-unhandled-0.4.1.tgz#988df33feab191ef799a61369dd76c17adf957ea"
   dependencies:
-    array-find-index "^1.0.1"
+    array-find-reducers "^1.0.1"
 
 cyclist@~0.2.2:
   version "0.2.2"
@@ -6521,9 +6521,9 @@ serialize-javascript@^1.4.0:
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/serialize-javascript/-/serialize-javascript-1.5.0.tgz#1aa336162c88a890ddad5384baebc93a655161fe"
 
-serve-index@^1.7.2:
+serve-reducers@^1.7.2:
   version "1.9.1"
-  resolved "https://registry.yarnpkg.com/serve-index/-/serve-index-1.9.1.tgz#d3768d69b1e7d82e5ce050fff5b453bea12a9239"
+  resolved "https://registry.yarnpkg.com/serve-reducers/-/serve-reducers-1.9.1.tgz#d3768d69b1e7d82e5ce050fff5b453bea12a9239"
   dependencies:
     accepts "~1.3.4"
     batch "0.6.1"
@@ -7461,7 +7461,7 @@ webpack-dev-server@3.1.x:
     portfinder "^1.0.9"
     schema-utils "^1.0.0"
     selfsigned "^1.9.1"
-    serve-index "^1.7.2"
+    serve-reducers "^1.7.2"
     sockjs "0.3.19"
     sockjs-client "1.1.5"
     spdy "^3.4.1"

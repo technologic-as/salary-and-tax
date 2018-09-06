@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`reducers should have default values that match snapshot 1`] = `
+Object {
+  "cv": Object {
+    "cvId": "",
+    "isFetching": false,
+    "name": "Partner",
+    "userId": "",
+  },
+  "users": Object {
+    "isFetching": false,
+    "list": Array [],
+  },
+}
+`;

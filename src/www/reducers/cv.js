@@ -3,9 +3,10 @@ import { REQUEST_CV } from '../actions';
 const initialCvState = {
     isFetching: false,
     name: 'Partner',
-    id: ''
+    cvId: '',
+    userId: '',
 };
-const cv = (state = initialCvState, action) => {
+const cv = (state = initialCvState, action = {}) => {
     switch (action.type) {
         case REQUEST_CV:
             return Object.assign({}, state, {

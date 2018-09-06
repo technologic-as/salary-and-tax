@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`users reducer action RECEIVE_USERS should add list of users 1`] = `
+Object {
+  "isFetching": false,
+  "list": Array [
+    Object {
+      "user": "1",
+    },
+    Object {
+      "user": "2",
+    },
+  ],
+}
+`;
+
+exports[`users reducer should have default values that match snapshot 1`] = `
+Object {
+  "isFetching": false,
+  "list": Array [],
+}
+`;
