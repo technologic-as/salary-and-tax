@@ -3,6 +3,7 @@ import express from 'express';
 import createError from 'http-errors';
 import logger from 'morgan';
 import path from 'path';
+import cors from 'cors';
 import apiRouter from './routes/api';
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors());
 
 app.use('/api', apiRouter);
 

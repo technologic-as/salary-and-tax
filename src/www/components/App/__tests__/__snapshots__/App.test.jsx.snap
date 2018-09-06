@@ -3,5 +3,6 @@
 exports[`AppComponent should render 1`] = `
 <div>
   Hello world
+  <Users />
 </div>
 `;

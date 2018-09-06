@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersComponent should render 1`] = `
+<div>
+  <div
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    CV
+  </div>
+  <div
+    style={
+      Object {
+        "opacity": 1,
+      }
+    }
+  >
+    Partner
+  </div>
+</div>
+`;
+
+exports[`UsersComponent should render empty 1`] = `
+<div>
+  <h2>
+    No users found.
+  </h2>
+</div>
+`;
+
+exports[`UsersComponent should render loading 1`] = `
+<div>
+  <h2>
+    Loading...
+  </h2>
+</div>
+`;

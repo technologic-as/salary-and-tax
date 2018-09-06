@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "cookie-parser": "1.4.x",
+    "cors": "2.8.x",
+    "cross-fetch": "^2.2.2",
     "debug": "3.1.x",
     "dotenv": "6.0.x",
     "express": "4.16.x",
@@ -30,6 +32,7 @@
   "devDependencies": {
     "@babel/cli": "7.0.x",
     "@babel/core": "7.0.x",
+    "@babel/node": "7.0.x",
     "@babel/preset-env": "7.0.x",
     "@babel/preset-react": "7.0.x",
     "@babel/register": "7.0.x",

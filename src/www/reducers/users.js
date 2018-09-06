@@ -1,9 +1,8 @@
-import { REQUEST_USERS } from '../actions';
+import { RECEIVE_USERS, REQUEST_USERS } from '../actions';
 
 const initialUsersState = {
     isFetching: false,
-    name: 'Partner',
-    users: [],
+    list: [],
 };
 const users = (state = initialUsersState, action) => {
     switch (action.type) {
@@ -11,6 +10,12 @@ const users = (state = initialUsersState, action) => {
             return Object.assign({}, state, {
                 isFetching: true,
             });
+        case RECEIVE_USERS:
+            return Object.assign({}, state, {
+                isFetching: false,
+                list: action.list,
+            });
+
         default:
             return state;
     }
