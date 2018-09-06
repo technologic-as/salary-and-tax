@@ -1,10 +1,11 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import App from '../index';
+import { AppComponent } from '../index';
 
-describe('App', () => {
+
+describe('AppComponent', () => {
     it('should render', () => {
-        const tree = renderer.create(<App name="world" />)
+        const tree = renderer.create(<AppComponent name="world" />)
             .toJSON();
         expect(tree)
             .toMatchSnapshot();

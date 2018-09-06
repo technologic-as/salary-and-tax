@@ -1,16 +1,19 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import { connect } from 'react-redux';
 
-const App = ({ name }) => (
+export const AppComponent = ({ name }) => (
   <div>
-        Hello
-    { ' ' }
-    { name }
+    { `Hello ${name}` }
   </div>
 );
 
-App.propTypes = {
+AppComponent.propTypes = {
     name: PropTypes.string.isRequired,
 };
 
-export default App;
+const mapStateToProps = ({ users: { name } }) => ({
+    name,
+});
+
+export default connect(mapStateToProps)(AppComponent);
