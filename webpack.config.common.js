@@ -3,10 +3,9 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlPlugin from 'html-webpack-plugin';
 import path from 'path';
 
+export const outputPath = path.resolve(__dirname, 'public');
 
-const outputPath = path.resolve(__dirname, 'public');
-
-const config = {
+export default {
     entry: {
         www: './src/www/entry.jsx',
     },
@@ -53,9 +52,4 @@ const config = {
             chunks: 'all',
         },
     },
-    devServer: {
-        contentBase: outputPath,
-    },
 };
-
-module.exports = config;
