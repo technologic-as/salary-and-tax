@@ -1,8 +1,8 @@
+import { Dropdown } from 'primereact/dropdown';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { fetchUsers } from '../../actions';
-
+import { fetchUsers, selectUser } from '../../actions';
 
 export class UsersComponent extends Component {
     constructor(props) {
@@ -10,44 +10,54 @@ export class UsersComponent extends Component {
     }
 
     componentDidMount() {
-        const { getUsers } = this.props;
+        const {getUsers} = this.props;
         getUsers();
     }
 
     render() {
-        const { isFetching, list } = this.props;
+        const {isFetching, list, selectUser, selectedUser} = this.props;
+
         return (
           <div>
             { isFetching && list.length === 0 && <h2>Loading...</h2> }
             { !isFetching && list.length === 0 && <h2>No users found.</h2> }
-            { list.length > 0 && list.map(user => (
-              <div key={user.userId} style={{ opacity: isFetching ? 0.5 : 1 }}>
-                { user.name }
-              </div>
-)) }
-          </div>
-)
-    }
+            { list.length > 0 && (
+            <Dropdown
+              options={list}
+              onChange={selectUser}
+              style={{width: '100%'}}
+              optionLabel="name"
+              filter
+              value={selectedUser}
+            />)}
+          </div>)}
 }
 
 UsersComponent.propTypes = {
     list: PropTypes.arrayOf(PropTypes.shape({
-        userId: PropTypes.string.isRequired,
-        cvId: PropTypes.string.isRequired,
-        name: PropTypes.string.isRequired,
+        userId: PropTypes.string,
+        cvId: PropTypes.string,
+        name: PropTypes.string,
     })).isRequired,
     isFetching: PropTypes.bool.isRequired,
     getUsers: PropTypes.func.isRequired,
+    selectUser: PropTypes.func.isRequired,
+    selectedUser: PropTypes.shape({
+        userId: PropTypes.string,
+        cvId: PropTypes.string,
+    }).isRequired,
 };
 
-
-const mapStateToProps = ({ users: { list, isFetching } }) => ({
+const mapStateToProps = ({users: {list, isFetching, selectedUser}}) => ({
     list,
     isFetching,
+    selectedUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    getUsers: () => dispatch(fetchUsers())
+    getUsers: () => dispatch(fetchUsers()),
+    selectUser: ({value}) => dispatch(selectUser(value)),
 });
 
-export default connect(mapStateToProps, mapDispatchToProps)(UsersComponent);
+export const Users = connect(mapStateToProps, mapDispatchToProps)(UsersComponent);
+export default Users;

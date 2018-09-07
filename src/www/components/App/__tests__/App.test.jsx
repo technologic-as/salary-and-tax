@@ -1,14 +1,13 @@
+import mockComponent from 'identity-obj-proxy'
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { AppComponent } from '../index';
+import App from '../index';
 
-jest.mock('../../Users', () => 'Users');
+jest.mock('../../Users', () => mockComponent);
 
-describe('AppComponent', () => {
+describe('App', () => {
     it('should render', () => {
-        const tree = renderer.create(<AppComponent name="world" />)
-            .toJSON();
-        expect(tree)
-            .toMatchSnapshot();
+        const tree = renderer.create(<App />).toJSON();
+        expect(tree).toMatchSnapshot();
     });
 });

@@ -2,24 +2,31 @@
 
 exports[`UsersComponent should render 1`] = `
 <div>
-  <div
+  <Dropdown
+    filter={true}
+    onChange={[MockFunction]}
+    optionLabel="name"
+    options={
+      Array [
+        Object {
+          "cvId": "idCv",
+          "name": "CV",
+          "userId": "partnerCv",
+        },
+        Object {
+          "cvId": "cvId",
+          "name": "Partner",
+          "userId": "cvPartner",
+        },
+      ]
+    }
     style={
       Object {
-        "opacity": 1,
+        "width": "100%",
       }
     }
-  >
-    CV
-  </div>
-  <div
-    style={
-      Object {
-        "opacity": 1,
-      }
-    }
-  >
-    Partner
-  </div>
+    value={Object {}}
+  />
 </div>
 `;
 

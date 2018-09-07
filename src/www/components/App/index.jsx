@@ -1,21 +1,13 @@
-import PropTypes from 'prop-types';
+import 'primeicons/primeicons.css';
+import 'primereact/resources/primereact.min.css';
+import 'primereact/resources/themes/nova-light/theme.css';
 import React from 'react';
-import { connect } from 'react-redux';
-import Users from '../Users';
+import { Users } from '../Users';
 
-export const AppComponent = ({ name }) => (
+export const AppComponent = () => (
   <div>
-    { `Hello ${name}` }
     <Users />
   </div>
 );
 
-AppComponent.propTypes = {
-    name: PropTypes.string.isRequired,
-};
-
-const mapStateToProps = ({ cv: { name } }) => ({
-    name,
-});
-
-export default connect(mapStateToProps)(AppComponent);
+export default AppComponent;

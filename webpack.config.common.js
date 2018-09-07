@@ -45,7 +45,7 @@ export default {
             template: __dirname + '/src/www/index.html',
             filename: 'index.html',
         }),
-        new ExtractTextPlugin('styles-[contenthash].css'),
+        new ExtractTextPlugin('styles-[hash].css'),
     ],
     optimization: {
         splitChunks: {

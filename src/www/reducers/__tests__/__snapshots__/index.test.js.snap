@@ -3,14 +3,15 @@
 exports[`reducers should have default values that match snapshot 1`] = `
 Object {
   "cv": Object {
-    "cvId": "",
+    "data": Object {
+      "name": "",
+    },
     "isFetching": false,
-    "name": "Partner",
-    "userId": "",
   },
   "users": Object {
     "isFetching": false,
     "list": Array [],
+    "selectedUser": Object {},
   },
 }
 `;

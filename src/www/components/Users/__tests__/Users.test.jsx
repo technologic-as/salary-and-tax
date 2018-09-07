@@ -16,22 +16,44 @@ const list = [
 ];
 
 const mockGetUsers = jest.fn();
+const mockSelectUser = jest.fn();
 
 describe('UsersComponent', () => {
     it('should render', () => {
-        expect(renderer.create(<UsersComponent list={list} getUsers={mockGetUsers} isFetching={false} />)
-            .toJSON()).toMatchSnapshot();
+        expect(renderer.create(<UsersComponent
+          list={list}
+          getUsers={mockGetUsers}
+          isFetching={false}
+          selectUser={mockSelectUser}
+          selectedUser={{}}
+        />).toJSON()).toMatchSnapshot();
     });
     it('should render loading', () => {
-        expect(renderer.create(<UsersComponent list={[]} getUsers={mockGetUsers} isFetching />).toJSON())
-            .toMatchSnapshot();
+        expect(renderer.create(<UsersComponent
+          list={[]}
+          getUsers={mockGetUsers}
+          isFetching
+          selectUser={mockSelectUser}
+          selectedUser={{}}
+        />).toJSON()).toMatchSnapshot();
     });
     it('should render empty', () => {
-        expect(renderer.create(<UsersComponent list={[]} getUsers={mockGetUsers} isFetching={false} />).toJSON())
-            .toMatchSnapshot();
+        expect(renderer.create(<UsersComponent
+          list={[]}
+          getUsers={mockGetUsers}
+          isFetching={false}
+          selectUser={mockSelectUser}
+          selectedUser={{}}
+        />).toJSON()).toMatchSnapshot();
     });
     it('should dispatch when mounted', () => {
-        renderer.create(<UsersComponent list={list} getUsers={mockGetUsers} isFetching={false} />);
+        renderer.create(<UsersComponent
+          list={list}
+          getUsers={mockGetUsers}
+          isFetching={false}
+          selectUser={mockSelectUser}
+          selectedUser={{}}
+        />);
         expect(mockGetUsers).toHaveBeenCalled();
     });
 });

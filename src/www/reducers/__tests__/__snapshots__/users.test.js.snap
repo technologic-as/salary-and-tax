@@ -11,6 +11,7 @@ Object {
       "user": "2",
     },
   ],
+  "selectedUser": Object {},
 }
 `;
 
@@ -18,5 +19,6 @@ exports[`users reducer should have default values that match snapshot 1`] = `
 Object {
   "isFetching": false,
   "list": Array [],
+  "selectedUser": Object {},
 }
 `;

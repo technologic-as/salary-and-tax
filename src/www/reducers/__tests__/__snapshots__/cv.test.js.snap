@@ -2,9 +2,9 @@
 
 exports[`cv reducer should have default values that match snapshot 1`] = `
 Object {
-  "cvId": "",
+  "data": Object {
+    "name": "",
+  },
   "isFetching": false,
-  "name": "Partner",
-  "userId": "",
 }
 `;
