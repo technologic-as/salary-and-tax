@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import testData from '../../../../api/cvpartner/__tests__/__data__/cv.json'
+import testData from '../../../../__data__/cv.json'
 import { CvComponent } from '../index';
 
 describe('CvComponent', () => {

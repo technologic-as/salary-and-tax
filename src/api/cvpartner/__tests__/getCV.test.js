@@ -1,6 +1,6 @@
+import testData from '../../../__data__/cv.json'
 import getCV from '../getCV';
 import getRequest from '../getRequest';
-import testData from './__data__/cv.json'
 
 const userId = 'idUser';
 const cvId = 'idCv';
