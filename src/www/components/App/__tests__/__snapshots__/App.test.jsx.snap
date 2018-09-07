@@ -3,5 +3,6 @@
 exports[`App should render 1`] = `
 <div>
   <Users />
+  <Cv />
 </div>
 `;

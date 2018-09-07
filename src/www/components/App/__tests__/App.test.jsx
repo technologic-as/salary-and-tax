@@ -4,6 +4,7 @@ import renderer from 'react-test-renderer';
 import App from '../index';
 
 jest.mock('../../Users', () => mockComponent);
+jest.mock('../../Cv', () => mockComponent);
 
 describe('App', () => {
     it('should render', () => {
