@@ -1,12 +1,18 @@
+import CleanWebpackPlugin from 'clean-webpack-plugin';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlPlugin from 'html-webpack-plugin';
 import path from 'path';
 
+
+const outputPath = path.resolve(__dirname, 'public');
+
 const config = {
-    entry: './src/www/entry.jsx',
+    entry: {
+        www: './src/www/entry.jsx',
+    },
     output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: 'bundle.js',
+        path: outputPath,
+        filename: '[name].js',
     },
     module: {
         rules: [
@@ -35,19 +41,20 @@ const config = {
         ],
     },
     plugins: [
+        new CleanWebpackPlugin([outputPath]),
         new HtmlPlugin({
             template: __dirname + '/src/www/index.html',
             filename: 'index.html',
         }),
         new ExtractTextPlugin('styles-[contenthash].css'),
     ],
+    optimization: {
+        splitChunks: {
+            chunks: 'all',
+        },
+    },
     devServer: {
-        contentBase: './public',
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-            "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-        }
+        contentBase: outputPath,
     },
 };
 
