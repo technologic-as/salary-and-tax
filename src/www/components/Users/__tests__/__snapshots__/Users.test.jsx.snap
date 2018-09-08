@@ -40,8 +40,8 @@ exports[`UsersComponent should render empty 1`] = `
 
 exports[`UsersComponent should render loading 1`] = `
 <div>
-  <h2>
-    Loading...
-  </h2>
+  <ProgressBar
+    mode="indeterminate"
+  />
 </div>
 `;

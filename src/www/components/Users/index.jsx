@@ -1,8 +1,9 @@
-import { Dropdown } from 'primereact/dropdown';
 import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchUsers, selectUser } from '../../actions';
+import { Dropdown, Loading } from '../Ui';
+
 
 export class UsersComponent extends Component {
     constructor(props) {
@@ -19,16 +20,13 @@ export class UsersComponent extends Component {
 
         return (
           <div>
-            { isFetching && list.length === 0 && <h2>Loading...</h2> }
+            { isFetching && list.length === 0 && <Loading /> }
             { !isFetching && list.length === 0 && <h2>No users found.</h2> }
             { list.length > 0 && (
             <Dropdown
               options={list}
               onChange={selectUser}
-              style={{width: '100%'}}
-              optionLabel="name"
-              filter
-              value={selectedUser}
+              selectedOption={selectedUser}
             />)}
           </div>)}
 }
@@ -45,6 +43,7 @@ UsersComponent.propTypes = {
     selectedUser: PropTypes.shape({
         userId: PropTypes.string,
         cvId: PropTypes.string,
+        name: PropTypes.string,
     }).isRequired,
 };
 

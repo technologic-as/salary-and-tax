@@ -6,5 +6,6 @@ Object {
     "name": "",
   },
   "isFetching": false,
+  "isLoaded": false,
 }
 `;

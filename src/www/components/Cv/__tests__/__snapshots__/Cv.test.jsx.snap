@@ -2,6 +2,9 @@
 
 exports[`CvComponent should render 1`] = `
 <div>
+  <div>
+    <PersonalDetails />
+  </div>
   <pre>
     _id
     blogs

@@ -2,7 +2,8 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { UsersComponent } from '../index';
 
-const list = [
+
+const userList = [
     {
         name: 'CV',
         userId: 'partnerCv',
@@ -21,7 +22,7 @@ const mockSelectUser = jest.fn();
 describe('UsersComponent', () => {
     it('should render', () => {
         expect(renderer.create(<UsersComponent
-          list={list}
+          list={userList}
           getUsers={mockGetUsers}
           isFetching={false}
           selectUser={mockSelectUser}
@@ -48,7 +49,7 @@ describe('UsersComponent', () => {
     });
     it('should dispatch when mounted', () => {
         renderer.create(<UsersComponent
-          list={list}
+          list={userList}
           getUsers={mockGetUsers}
           isFetching={false}
           selectUser={mockSelectUser}
@@ -57,3 +58,5 @@ describe('UsersComponent', () => {
         expect(mockGetUsers).toHaveBeenCalled();
     });
 });
+
+export default userList;
