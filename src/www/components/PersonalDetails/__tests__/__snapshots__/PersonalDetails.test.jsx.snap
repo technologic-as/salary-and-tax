@@ -1,38 +1,38 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`PersonalDetailsComponent should not display when loading 1`] = `<Loading />`;
+
 exports[`PersonalDetailsComponent should render 1`] = `
-<div>
-  <Section
-    header="My Name - Junior POTUS"
+<Section
+  header="My Name - Junior POTUS"
+>
+  <div
+    className="p-g"
   >
     <div
-      className="p-g"
+      className="p-g-2"
     >
-      <div
-        className="p-g-2"
-      >
-        <Gravatar
-          email="fredrik.oterholt@technologic.as"
-          size={250}
-        />
-      </div>
-      <div
-        className="p-g-10"
-      >
-        <Phone
-          value="48043932"
-        />
-        <Nationality
-          value="Norsk"
-        />
-        <Residency
-          value="Oslo"
-        />
-        <Email
-          value="fredrik.oterholt@technologic.as"
-        />
-      </div>
+      <Gravatar
+        email="fredrik.oterholt@technologic.as"
+        size={250}
+      />
     </div>
-  </Section>
-</div>
+    <div
+      className="p-g-10"
+    >
+      <Phone
+        value="48043932"
+      />
+      <Nationality
+        value="Norsk"
+      />
+      <Residency
+        value="Oslo"
+      />
+      <Email
+        value="fredrik.oterholt@technologic.as"
+      />
+    </div>
+  </div>
+</Section>
 `;

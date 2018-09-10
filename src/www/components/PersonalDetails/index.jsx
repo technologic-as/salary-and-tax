@@ -9,11 +9,11 @@ export const PersonalDetailsComponent = ({
   isFetching, isLoaded, data: {
     name, title, language_code, telefon, nationality, place_of_residence, email,
   },
-}) => ( 
-  <div>
-    { isFetching && ( <Loading /> ) }
-    { isLoaded && ( 
-    <Section header={`${name} - ${title[language_code]}`}>
+}) => {
+  return ( [
+    isFetching && <Loading key="personalDetailsLoading" />,
+    isLoaded && ( 
+    <Section header={`${name} - ${title[language_code]}`} key="personalDetails">
       <div className="p-g">
         <div className="p-g-2">
           <Gravatar email={email} size={250} />
@@ -26,18 +26,27 @@ export const PersonalDetailsComponent = ({
         </div>
       </div>
     </Section>
- ) }
-  </div>
- );
+ ),
+  ] );
+};
 
 PersonalDetailsComponent.propTypes = {
   data: PropTypes.shape({
     name: PropTypes.string.isRequired,
-    title: PropTypes.shape({ no: PropTypes.string.isRequired, int: PropTypes.string }).isRequired,
+    title: PropTypes.shape({
+      no: PropTypes.string.isRequired,
+      int: PropTypes.string,
+    }).isRequired,
     language_code: PropTypes.string.isRequired,
     telefon: PropTypes.string.isRequired,
-    nationality: PropTypes.shape({ no: PropTypes.string.isRequired, int: PropTypes.string }).isRequired,
-    place_of_residence: PropTypes.shape({ no: PropTypes.string.isRequired, int: PropTypes.string }).isRequired,
+    nationality: PropTypes.shape({
+      no: PropTypes.string.isRequired,
+      int: PropTypes.string,
+    }).isRequired,
+    place_of_residence: PropTypes.shape({
+      no: PropTypes.string.isRequired,
+      int: PropTypes.string,
+    }).isRequired,
     email: PropTypes.string.isRequired,
   }).isRequired,
   isFetching: PropTypes.bool.isRequired,

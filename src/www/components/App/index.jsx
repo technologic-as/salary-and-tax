@@ -3,11 +3,9 @@ import { Cv } from '../Cv';
 import { Users } from '../Users';
 
 
-export const AppComponent = () => (
-  <div>
-    <Users />
-    <Cv />
-  </div>
-);
+export const AppComponent = () => ([
+  <Users key="users" />,
+  <Cv key="cv" />,
+]);
 
 export default AppComponent;
