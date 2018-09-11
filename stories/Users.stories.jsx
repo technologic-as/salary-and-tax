@@ -9,47 +9,53 @@ const noop = () => {
 };
 
 storiesOf('UsersComponent', module)
-    .add('user list with selected user', () => (
-      <UsersComponent
-        selectedUser={userList[0]}
-        list={userList}
-        selectUser={noop}
-        getUsers={noop}
-        isFetching={false}
-      />
+  .add('user list with selected user', () => (
+    <UsersComponent
+      selectedUser={userList[0]}
+      list={userList}
+      selectUser={noop}
+      getUsers={noop}
+      isLoaded
+      isFetching={false}
+    />
 ))
-    .add('user list without selected user', () => (
-      <UsersComponent
-        selectedUser={{}}
-        list={userList}
-        selectUser={noop}
-        getUsers={noop}
-        isFetching={false}
-      />
+  .add('user list without selected user', () => (
+    <UsersComponent
+      selectedUser={{}}
+      list={userList}
+      selectUser={noop}
+      getUsers={noop}
+      isLoaded
+      isFetching={false}
+    />
 ))
-    .add('without users', () => (
-      <UsersComponent
-        selectedUser={{}}
-        list={[]}
-        selectUser={noop}
-        getUsers={noop}
-        isFetching={false}
-      />
+  .add('without users', () => (
+    <UsersComponent
+      selectedUser={{}}
+      list={[]}
+      selectUser={noop}
+      getUsers={noop}
+      isLoaded
+      isFetching={false}
+    />
 ))
-    .add('fetching users', () => (
-      <UsersComponent
-        selectedUser={{}}
-        list={[]}
-        selectUser={noop}
-        getUsers={noop}
-        isFetching
-      />
-)) .add('with click', () => (
-  <UsersComponent
-    selectedUser={{}}
-    list={userList}
-    selectUser={action('clicked')}
-    getUsers={noop}
-    isFetching
-  />
+  .add('fetching users', () => (
+    <UsersComponent
+      selectedUser={{}}
+      list={[]}
+      selectUser={noop}
+      getUsers={noop}
+      isLoaded={false}
+      isFetching
+    />
+))
+  .add('with click', () => (
+    <UsersComponent
+      selectedUser={{}}
+      list={userList}
+      selectUser={action('clicked')}
+      getUsers={noop}
+      isFetching={false}
+      isLoaded
+    />
 ));

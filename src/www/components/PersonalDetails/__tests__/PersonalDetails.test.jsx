@@ -14,7 +14,7 @@ describe('PersonalDetailsComponent', () => {
     expect(tree).toMatchSnapshot();
   });
   it('should not display when loading', () => {
-    const tree = renderer.create(<PersonalDetailsComponent data={{}} isFetching isLoaded={false} />).toJSON();
+    const tree = renderer.create(<PersonalDetailsComponent data={testData} isFetching isLoaded={false} />).toJSON();
     expect(tree).toMatchSnapshot();
   });
 

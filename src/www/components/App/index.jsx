@@ -1,11 +1,11 @@
 import React from 'react';
-import { Cv } from '../Cv';
-import { Users } from '../Users';
+import { SalaryCalculations } from '../SalaryCalculations';
+import { SalaryParameters } from '../SalaryParameters';
 
 
 export const AppComponent = () => ([
-  <Users key="users" />,
-  <Cv key="cv" />,
+  <SalaryCalculations key="calculations" />,
+  <SalaryParameters key="parameters" />,
 ]);
 
 export default AppComponent;

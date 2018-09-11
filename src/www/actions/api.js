@@ -1,11 +1,14 @@
 import fetch from 'cross-fetch';
 
+
 export const RECEIVE_USERS = 'RECEIVE_USERS';
 export const REQUEST_USERS = 'REQUEST_USERS';
 export const USER_IS_SELECTED = 'USER_IS_SELECTED';
 
 export const REQUEST_CV = 'REQUEST_CV';
 export const RECEIVE_CV = 'RECEIVE_CV';
+
+export const FORM_CHANGE = 'FORM_CHANGE';
 
 export const requestUsers = () => ({
     type: REQUEST_USERS,
@@ -28,6 +31,11 @@ export const receiveCv = (cv) => ({
     cv,
 });
 
+export const formChange = (values) => ({
+  type: FORM_CHANGE,
+  ...values,
+});
+
 export const fetchUsers = () => {
     return dispatch => {
         dispatch(requestUsers());
@@ -48,4 +56,10 @@ export const selectUser = ({userId, cvId, name}) => {
             .then(response => response.json())
             .then(json => dispatch(receiveCv(json)))
     }
+};
+
+export const inputHasChanged = (values) => {
+  return dispatch => {
+    dispatch(formChange(values));
+  }
 };

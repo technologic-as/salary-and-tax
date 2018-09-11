@@ -1,4 +1,6 @@
+export { Grid } from './Grid';
 export { Section } from './Section';
 export { Dropdown } from './Dropdown';
 export { Loading } from './Loading';
-export { Email, Born, Nationality, Residency, Phone } from './TextWithLabel';
+export { InputWithLabel } from './InputWithLabel';
+export { Email, Born, Nationality, Residency, Phone, TextWithLabel } from './TextWithLabel';

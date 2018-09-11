@@ -5,10 +5,12 @@ import { PersonalDetails } from '../PersonalDetails';
 import { Loading } from '../Ui';
 
 
-export const CvComponent = ({isLoaded, isFetching}) => ([
-     isFetching && <Loading key="cvLoading" />,
-     isLoaded && [<PersonalDetails key="personalDetails" />],
-]);
+export const CvComponent = ({isLoaded, isFetching}) => (
+  <div>
+    {isFetching && <Loading />}
+    {isLoaded && <PersonalDetails />}
+  </div>
+);
 
 CvComponent.propTypes = {
     data: PropTypes.shape({}).isRequired,

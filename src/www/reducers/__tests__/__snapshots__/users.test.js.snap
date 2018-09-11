@@ -3,6 +3,7 @@
 exports[`users reducer action RECEIVE_USERS should add list of users 1`] = `
 Object {
   "isFetching": false,
+  "isLoaded": true,
   "list": Array [
     Object {
       "user": "1",
@@ -18,6 +19,7 @@ Object {
 exports[`users reducer should have default values that match snapshot 1`] = `
 Object {
   "isFetching": false,
+  "isLoaded": false,
   "list": Array [],
   "selectedUser": Object {},
 }

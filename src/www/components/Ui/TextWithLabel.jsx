@@ -2,50 +2,57 @@ import { faAt, faBirthdayCake, faGlobe, faHome, faPhone } from '@fortawesome/fre
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { Grid } from './Grid';
 
 
-export const TextWithLabel = ({labelText, text, icon}) => (
-  <div className="p-g-3 p-g-nopad">
-    <div className="p-g-12 p-g-nopad">
-      <div className="p-g-1 p-g-nopad">
-        <FontAwesomeIcon icon={icon} size='1x' fixedWidth />
-        {' '}
-      </div>
-      <div className="p-g-11 p-g-nopad">{ `${labelText}:` }</div>
-    </div>
-    <div className="p-g-12 p-g-nopad">
-      { `${text}` }
-    </div>
-  </div>
+export const TextWithLabel = ({labelText, children, icon, gridValue, singleLine}) => {
+
+  return (
+    <Grid value={gridValue} nopad>
+      <Grid value={singleLine ? 6: 12} nopad>
+        <Grid value={1} nopad>
+          { icon && <FontAwesomeIcon icon={icon} size='1x' fixedWidth /> }
+        </Grid>
+        <Grid value={11} nopad>{ `${labelText}:` }</Grid>
+      </Grid>
+      <Grid value={singleLine ? 6: 12} nopad>
+        { children }
+      </Grid>
+    </Grid>
 );
+};
 
 TextWithLabel.propTypes = {
   icon: PropTypes.oneOfType([PropTypes.object]),
-  text: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
+  children: PropTypes.oneOfType([PropTypes.string, PropTypes.number, PropTypes.element]).isRequired,
   labelText: PropTypes.string.isRequired,
+  gridValue: PropTypes.number,
+  singleLine: PropTypes.bool,
 };
 
 TextWithLabel.defaultProps = {
   icon: undefined,
+  gridValue: 3,
+  singleLine: false,
 };
 
 const propTypes = {
   value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]).isRequired,
 };
 
-export const Phone = ({value}) => <TextWithLabel labelText="Telephone" text={value} icon={faPhone} />;
+export const Phone = ({value}) => <TextWithLabel labelText="Telephone" icon={faPhone}>{value}</TextWithLabel>;
 Phone.propTypes = propTypes;
 
-export const Email = ({value}) => <TextWithLabel labelText="Email" text={value} icon={faAt} />;
+export const Email = ({value}) => <TextWithLabel labelText="Email" icon={faAt}>{value}</TextWithLabel>;
 Email.propTypes = propTypes;
 
-export const Born = ({value}) => <TextWithLabel labelText="Born" text={value} icon={faBirthdayCake} />;
+export const Born = ({value}) => <TextWithLabel labelText="Born" icon={faBirthdayCake}>{value}</TextWithLabel>;
 Born.propTypes = propTypes;
 
-export const Nationality = ({value}) => <TextWithLabel labelText="Nationality" text={value} icon={faGlobe} />;
+export const Nationality = ({value}) => <TextWithLabel labelText="Nationality" icon={faGlobe}>{value}</TextWithLabel>;
 Nationality.propTypes = propTypes;
 
-export const Residency = ({value}) => <TextWithLabel labelText="Residency" text={value} icon={faHome} />;
+export const Residency = ({value}) => <TextWithLabel labelText="Residency" icon={faHome}>{value}</TextWithLabel>;
 Residency.propTypes = propTypes;
 
 export default TextWithLabel;

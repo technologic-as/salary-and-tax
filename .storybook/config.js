@@ -13,6 +13,7 @@ function loadStories() {
     require('../stories/PersonalDetails.stories.jsx');
     require('../stories/Users.stories.jsx');
     require('../stories/Ui.stories.jsx');
+    require('../stories/SalaryParameters.stories');
 }
 
 configure(loadStories, module);

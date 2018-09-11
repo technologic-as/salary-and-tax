@@ -5,7 +5,7 @@
   "scripts": {
     "build:www": "webpack --config webpack.config.production.babel.js",
     "start:www": "webpack-dev-server --config webpack.config.dev.babel.js",
-    "start:server": "babel-node ./src/api/server.js",
+    "start:api": "babel-node ./src/api/server.js",
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx",
     "storybook": "start-storybook -p 9001 -c .storybook"
@@ -18,6 +18,7 @@
     "@storybook/addon-actions": "3.4.x",
     "@storybook/addons": "3.4.x",
     "@storybook/react": "3.4.x",
+    "classnames": "2.2.x",
     "cookie-parser": "1.4.x",
     "cors": "2.8.x",
     "cross-fetch": "^2.2.2",
@@ -34,6 +35,7 @@
     "react-hot-loader": "4.3.x",
     "react-redux": "5.0.x",
     "redux": "4.0.x",
+    "redux-form": "^7.4.2",
     "redux-logger": "3.0.x",
     "redux-thunk": "2.3.x",
     "request": "2.88.x",

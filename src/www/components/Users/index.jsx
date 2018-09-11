@@ -2,60 +2,67 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { fetchUsers, selectUser } from '../../actions';
-import { Dropdown, Loading } from '../Ui';
+import { Dropdown, Loading, Section } from '../Ui';
 
 
 export class UsersComponent extends Component {
-    constructor(props) {
-        super(props);
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    componentDidMount() {
-        const {getUsers} = this.props;
-        getUsers();
-    }
+  componentDidMount() {
+    const {getUsers} = this.props;
+    getUsers();
+  }
 
-    render() {
-        const {isFetching, list, selectUser, selectedUser} = this.props;
+  render() {
+    const {isFetching, list, selectUser, selectedUser, isLoaded} = this.props;
 
-        return (
-          <div>
-            { isFetching && list.length === 0 && <Loading /> }
-            { !isFetching && list.length === 0 && <h2>No users found.</h2> }
-            { list.length > 0 && (
-            <Dropdown
-              options={list}
-              onChange={selectUser}
-              selectedOption={selectedUser}
-            />)}
-          </div>)}
+    const hasUsers = list.length > 0;
+    const header = isLoaded && hasUsers ? 'Users' : 'No users found';
+
+    return (
+      <Section header={header}>
+        { isFetching && <Loading /> }
+        { isLoaded && hasUsers && (
+        <Dropdown
+          options={list}
+          onChange={selectUser}
+          selectedOption={selectedUser}
+        />
+) }
+      </Section>
+)
+  }
 }
 
 UsersComponent.propTypes = {
-    list: PropTypes.arrayOf(PropTypes.shape({
-        userId: PropTypes.string,
-        cvId: PropTypes.string,
-        name: PropTypes.string,
-    })).isRequired,
-    isFetching: PropTypes.bool.isRequired,
-    getUsers: PropTypes.func.isRequired,
-    selectUser: PropTypes.func.isRequired,
-    selectedUser: PropTypes.shape({
-        userId: PropTypes.string,
-        cvId: PropTypes.string,
-        name: PropTypes.string,
-    }).isRequired,
+  list: PropTypes.arrayOf(PropTypes.shape({
+    userId: PropTypes.string,
+    cvId: PropTypes.string,
+    name: PropTypes.string,
+  })).isRequired,
+  isFetching: PropTypes.bool.isRequired,
+  isLoaded: PropTypes.bool.isRequired,
+  getUsers: PropTypes.func.isRequired,
+  selectUser: PropTypes.func.isRequired,
+  selectedUser: PropTypes.shape({
+    userId: PropTypes.string,
+    cvId: PropTypes.string,
+    name: PropTypes.string,
+  }).isRequired,
 };
 
-const mapStateToProps = ({users: {list, isFetching, selectedUser}}) => ({
-    list,
-    isFetching,
-    selectedUser,
+const mapStateToProps = ({users: {list, isFetching, isLoaded, selectedUser}}) => ({
+  list,
+  isFetching,
+  isLoaded,
+  selectedUser,
 });
 
 const mapDispatchToProps = (dispatch) => ({
-    getUsers: () => dispatch(fetchUsers()),
-    selectUser: ({value}) => dispatch(selectUser(value)),
+  getUsers: () => dispatch(fetchUsers()),
+  selectUser: ({value}) => dispatch(selectUser(value)),
 });
 
 export const Users = connect(mapStateToProps, mapDispatchToProps)(UsersComponent);

@@ -1,7 +1,9 @@
 import { action } from '@storybook/addon-actions';
 import { storiesOf } from '@storybook/react';
 import React from 'react';
-import { Born, Dropdown, Email, Loading, Nationality, Phone, Residency, Section } from '../src/www/components/Ui';
+import {
+  Born, Dropdown, Email, InputWithLabel, Loading, Nationality, Phone, Residency, Section,
+} from '../src/www/components/Ui';
 
 
 storiesOf('Ui', module)
@@ -21,4 +23,5 @@ storiesOf('Ui', module)
       selectedOption={{name: 'Selected option'}}
     />
  ))
-  .add('Section', () => <Section header="The title">child</Section>);
+  .add('Section', () => <Section header="The title">child</Section>)
+  .add('InputWithLabel', () => <InputWithLabel value={123} fieldName="in" labelText="Value" changedValue={action} />);

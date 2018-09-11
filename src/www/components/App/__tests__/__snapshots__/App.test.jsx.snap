@@ -2,7 +2,7 @@
 
 exports[`App should render 1`] = `
 Array [
-  <Users />,
-  <Cv />,
+  <SalaryCalculations />,
+  <SalaryParameters />,
 ]
 `;

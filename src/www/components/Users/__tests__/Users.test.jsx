@@ -1,3 +1,4 @@
+import mockComponent from 'identity-obj-proxy';
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { UsersComponent } from '../index';
@@ -16,6 +17,8 @@ const userList = [
     },
 ];
 
+jest.mock('../../Ui', () => mockComponent);
+
 const mockGetUsers = jest.fn();
 const mockSelectUser = jest.fn();
 
@@ -25,6 +28,7 @@ describe('UsersComponent', () => {
           list={userList}
           getUsers={mockGetUsers}
           isFetching={false}
+          isLoaded
           selectUser={mockSelectUser}
           selectedUser={{}}
         />).toJSON()).toMatchSnapshot();
@@ -34,6 +38,7 @@ describe('UsersComponent', () => {
           list={[]}
           getUsers={mockGetUsers}
           isFetching
+          isLoaded={false}
           selectUser={mockSelectUser}
           selectedUser={{}}
         />).toJSON()).toMatchSnapshot();
@@ -43,6 +48,7 @@ describe('UsersComponent', () => {
           list={[]}
           getUsers={mockGetUsers}
           isFetching={false}
+          isLoaded
           selectUser={mockSelectUser}
           selectedUser={{}}
         />).toJSON()).toMatchSnapshot();
@@ -52,6 +58,7 @@ describe('UsersComponent', () => {
           list={userList}
           getUsers={mockGetUsers}
           isFetching={false}
+          isLoaded
           selectUser={mockSelectUser}
           selectedUser={{}}
         />);
