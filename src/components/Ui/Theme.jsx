@@ -1,7 +1,6 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import 'primereact/resources/primereact.min.css';
-import 'primereact/resources/themes/nova-light/theme.css';
+import { createMuiTheme } from '@material-ui/core/styles';
 
 
-library.add(fab);
+const theme = createMuiTheme({});
+
+export default theme;

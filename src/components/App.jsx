@@ -3,9 +3,11 @@ import { SalaryCalculations } from './SalaryCalculations';
 import { SalaryParameters } from './SalaryParameters';
 
 
-export const AppComponent = () => ([
-  <SalaryCalculations key="calculations" />,
-  <SalaryParameters key="parameters" />,
-]);
+export const AppComponent = () => (
+  <div>
+    <SalaryCalculations />
+    <SalaryParameters />
+  </div>
+);
 
 export default AppComponent;

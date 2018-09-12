@@ -1,25 +1,31 @@
+import TextField from '@material-ui/core/TextField';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Field } from 'redux-form';
-import { TextWithLabel } from './TextWithLabel';
 
 
-export const InputWithLabel = ({fieldName, labelText, gridValue, component, type}) => (
-  <TextWithLabel labelText={labelText} gridValue={gridValue}>
-    <Field id={fieldName} name={fieldName} component={component} type={type} placeholder={labelText} />
-  </TextWithLabel>
-);
+const renderTextField = ({name, label, input}) => {
+  return (<TextField name={name} label={label} value={input.value} onChange={input.onChange} />);
+};
+
+renderTextField.propTypes = {
+  input: PropTypes.shape({
+    value: PropTypes.oneOf(PropTypes.string, PropTypes.number).isRequired,
+    onChange: PropTypes.func.isRequired,
+  }).isRequired,
+  label: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
+
+export const InputWithLabel = ({name, label}) => (
+  <Field name={name} component={renderTextField} label={label} />);
 
 InputWithLabel.propTypes = {
-  fieldName: PropTypes.string.isRequired,
-  labelText: PropTypes.string.isRequired,
-  gridValue: PropTypes.number,
-  type: PropTypes.string,
-  component: PropTypes.oneOfType([PropTypes.func, PropTypes.string, PropTypes.node]),
+  name: PropTypes.string.isRequired,
+  label: PropTypes.string.isRequired,
 };
 
 InputWithLabel.defaultProps = {
-  gridValue: 6,
   component: 'input',
   type: 'text',
 };

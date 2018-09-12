@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App should render 1`] = `
-Array [
-  <SalaryCalculations />,
-  <SalaryParameters />,
-]
+<div>
+  <SalaryCalculations />
+  <SalaryParameters />
+</div>
 `;

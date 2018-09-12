@@ -3,51 +3,44 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import { inputHasChanged } from '../actions';
-import { Grid, InputWithLabel, Section } from './Ui';
+import { Button, Checkbox, FormGroup, Grid, InputWithLabel, Section } from './Ui';
 
 
 export const SalaryParametersComponent = ({handleSubmit, submitForm, submitting}) => (
-  <Grid value={6}>
+  <Section header="Input">
     <form onSubmit={handleSubmit(submitForm)} onChange={submitForm}>
-      <Section header="Income" gridValue={6}>
-        <InputWithLabel fieldName="hoursPerYear" labelText="Hours per year" />
-        <InputWithLabel fieldName="hourRate" labelText="Hour rate" />
-      </Section>
+      <FormGroup header="Income">
+        <InputWithLabel name="hoursPerYear" label="Hours per year" />
+        <InputWithLabel name="hourRate" label="Hour rate" />
+      </FormGroup>
 
-      <Section header="Vacation savings" gridValue={6}>
-        <InputWithLabel fieldName="vacationSavingsRate" labelText="(%)" />
-        <InputWithLabel
-          fieldName="includeVacationSavings"
-          labelText="Include in calculation"
-          type="checkbox"
-          component="input"
+      <FormGroup header="Subcontractor">
+        <InputWithLabel name="cut" label="Cut (%)" />
+      </FormGroup>
+
+      <FormGroup header="Employer Fee">
+        <Checkbox
+          name="includeEmployerFee"
+          label="Include in calculation"
         />
-      </Section>
+        <InputWithLabel name="employerFeeRate" label="(%)" />
+      </FormGroup>
 
-      <Section header="Subcontractor" gridValue={6}>
-        <InputWithLabel fieldName="cut" labelText="Cut (%)" />
-      </Section>
+      <FormGroup header="Vacation savings">
+        <Checkbox name="includeVacationSavings" label="Include in calculation" />
+        <InputWithLabel name="vacationSavingsRate" label="(%)" />
+      </FormGroup>
 
-      <Section header="Employer Fee" gridValue={6}>
-        <InputWithLabel fieldName="employerFeeRate" labelText="(%)" />
-        <InputWithLabel
-          fieldName="includeEmployerFee"
-          labelText="Include in calculation"
-          type="checkbox"
-          component="input"
-        />
-      </Section>
-
-      <Section header="Pension" gridValue={6}>
-        <InputWithLabel fieldName="pensionOneToSixRate" labelText="Percentage (1G-6G)" />
-        <InputWithLabel fieldName="includePension" labelText="Include in calculation" type="checkbox" component="input" />
-        <InputWithLabel fieldName="pensionSixToTwelveRate" labelText="Percentage (6G-12G)" />
-      </Section>
+      <FormGroup header="Pension">
+        <Checkbox name="includePension" label="Include in calculation" />
+        <InputWithLabel name="pensionOneToSixRate" label="Percentage (1G-6G)" />
+        <InputWithLabel name="pensionSixToTwelveRate" label="Percentage (6G-12G)" />
+      </FormGroup>
       <Grid value={6}>
-        <button type="submit" disabled={submitting}>Calculate earnings</button>
+        <Button type="submit" disabled={submitting}>Calculate earnings</Button>
       </Grid>
     </form>
-  </Grid>);
+  </Section>);
 
 SalaryParametersComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,

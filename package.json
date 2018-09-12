@@ -10,16 +10,11 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "1.2.x",
-    "@fortawesome/free-brands-svg-icons": "5.3.x",
-    "@fortawesome/free-solid-svg-icons": "5.3.x",
-    "@fortawesome/react-fontawesome": "0.1.x",
+    "@material-ui/core": "^3.0.3",
     "@storybook/addon-actions": "3.4.x",
     "@storybook/addons": "3.4.x",
     "@storybook/react": "3.4.x",
-    "classnames": "2.2.x",
     "dotenv": "6.0.x",
-    "primereact": "^2.0.0-beta.3",
     "prop-types": "15.6.x",
     "react": "16.5.x",
     "react-dom": "16.5.x",
@@ -74,7 +69,7 @@
   "jest": {
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-      "prime.*": "identity-obj-proxy"
+      "@material-ui/.*": "identity-obj-proxy"
     }
   }
 }

@@ -9,7 +9,7 @@ export const SalaryCalculationsComponent = ({
   turnover, companyIncome, theCut, employerFee, withoutEmployerFee, vacationSavings, withoutVacationSavings, pension, withoutPension,
 }) => {
   return (
-    <Section header="Salary calculations" gridValue={4}>
+    <Section header="Salary calculations">
       <TextWithLabel labelText="Turnover" singleLine gridValue={12}>{ formatCurrency(turnover) }</TextWithLabel>
       <TextWithLabel labelText={`- Cut (${formatCurrency(theCut)})`} singleLine gridValue={12}>
         { formatCurrency(companyIncome) }

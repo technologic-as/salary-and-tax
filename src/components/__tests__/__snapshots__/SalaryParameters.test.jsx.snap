@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`SalaryParametersComponent should render 1`] = `
-<Grid
-  value={6}
+<Section
+  header="Input"
 >
   <form
     onChange={
@@ -19,87 +19,76 @@ exports[`SalaryParametersComponent should render 1`] = `
       }
     }
   >
-    <Section
-      gridValue={6}
+    <FormGroup
       header="Income"
     >
       <InputWithLabel
-        fieldName="hoursPerYear"
-        labelText="Hours per year"
+        label="Hours per year"
+        name="hoursPerYear"
       />
       <InputWithLabel
-        fieldName="hourRate"
-        labelText="Hour rate"
+        label="Hour rate"
+        name="hourRate"
       />
-    </Section>
-    <Section
-      gridValue={6}
-      header="Vacation savings"
-    >
-      <InputWithLabel
-        fieldName="vacationSavingsRate"
-        labelText="(%)"
-      />
-      <InputWithLabel
-        component="input"
-        fieldName="includeVacationSavings"
-        labelText="Include in calculation"
-        type="checkbox"
-      />
-    </Section>
-    <Section
-      gridValue={6}
+    </FormGroup>
+    <FormGroup
       header="Subcontractor"
     >
       <InputWithLabel
-        fieldName="cut"
-        labelText="Cut (%)"
+        label="Cut (%)"
+        name="cut"
       />
-    </Section>
-    <Section
-      gridValue={6}
+    </FormGroup>
+    <FormGroup
       header="Employer Fee"
     >
-      <InputWithLabel
-        fieldName="employerFeeRate"
-        labelText="(%)"
+      <Checkbox
+        label="Include in calculation"
+        name="includeEmployerFee"
       />
       <InputWithLabel
-        component="input"
-        fieldName="includeEmployerFee"
-        labelText="Include in calculation"
-        type="checkbox"
+        label="(%)"
+        name="employerFeeRate"
       />
-    </Section>
-    <Section
-      gridValue={6}
+    </FormGroup>
+    <FormGroup
+      header="Vacation savings"
+    >
+      <Checkbox
+        label="Include in calculation"
+        name="includeVacationSavings"
+      />
+      <InputWithLabel
+        label="(%)"
+        name="vacationSavingsRate"
+      />
+    </FormGroup>
+    <FormGroup
       header="Pension"
     >
-      <InputWithLabel
-        fieldName="pensionOneToSixRate"
-        labelText="Percentage (1G-6G)"
+      <Checkbox
+        label="Include in calculation"
+        name="includePension"
       />
       <InputWithLabel
-        component="input"
-        fieldName="includePension"
-        labelText="Include in calculation"
-        type="checkbox"
+        label="Percentage (1G-6G)"
+        name="pensionOneToSixRate"
       />
       <InputWithLabel
-        fieldName="pensionSixToTwelveRate"
-        labelText="Percentage (6G-12G)"
+        label="Percentage (6G-12G)"
+        name="pensionSixToTwelveRate"
       />
-    </Section>
+    </FormGroup>
     <Grid
       value={6}
     >
-      <button
+      <Button
         disabled={false}
         type="submit"
       >
         Calculate earnings
-      </button>
+      </Button>
     </Grid>
   </form>
-</Grid>
+</Section>
 `;

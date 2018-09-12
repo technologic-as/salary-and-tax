@@ -2,7 +2,6 @@
 
 exports[`SalaryCalculations should render 1`] = `
 <Section
-  gridValue={4}
   header="Salary calculations"
 >
   <TextWithLabel
