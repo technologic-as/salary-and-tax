@@ -3,7 +3,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import { inputHasChanged } from '../actions';
-import { Button, Checkbox, FormGroup, Grid, InputWithLabel, Section } from './Ui';
+import { Button, Checkbox, FormGroup, InputWithLabel, Section } from './Ui';
 
 
 export const SalaryParametersComponent = ({handleSubmit, submitForm, submitting}) => (
@@ -19,10 +19,7 @@ export const SalaryParametersComponent = ({handleSubmit, submitForm, submitting}
       </FormGroup>
 
       <FormGroup header="Employer Fee">
-        <Checkbox
-          name="includeEmployerFee"
-          label="Include in calculation"
-        />
+        <Checkbox name="includeEmployerFee" label="Include in calculation" />
         <InputWithLabel name="employerFeeRate" label="(%)" />
       </FormGroup>
 
@@ -36,9 +33,8 @@ export const SalaryParametersComponent = ({handleSubmit, submitForm, submitting}
         <InputWithLabel name="pensionOneToSixRate" label="Percentage (1G-6G)" />
         <InputWithLabel name="pensionSixToTwelveRate" label="Percentage (6G-12G)" />
       </FormGroup>
-      <Grid value={6}>
-        <Button type="submit" disabled={submitting}>Calculate earnings</Button>
-      </Grid>
+
+      <Button type="submit" disabled={submitting}>Calculate earnings</Button>
     </form>
   </Section>);
 

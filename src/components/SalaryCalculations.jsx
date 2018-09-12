@@ -1,8 +1,10 @@
+import Table from '@material-ui/core/Table';
+import TableBody from '@material-ui/core/TableBody';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { connect } from 'react-redux';
 import { formatCurrency, getSalaryCalculations } from '../calculations';
-import { Section, TextWithLabel } from './Ui';
+import { SalaryRow, Section } from './Ui';
 
 
 export const SalaryCalculationsComponent = ({
@@ -10,23 +12,15 @@ export const SalaryCalculationsComponent = ({
 }) => {
   return (
     <Section header="Salary calculations">
-      <TextWithLabel labelText="Turnover" singleLine gridValue={12}>{ formatCurrency(turnover) }</TextWithLabel>
-      <TextWithLabel labelText={`- Cut (${formatCurrency(theCut)})`} singleLine gridValue={12}>
-        { formatCurrency(companyIncome) }
-      </TextWithLabel>
-      <TextWithLabel labelText={`- Employer fee (${formatCurrency(employerFee)})`} singleLine gridValue={12}>
-        { formatCurrency(withoutEmployerFee) }
-      </TextWithLabel>
-      <TextWithLabel
-        labelText={`- Vacation savings (${formatCurrency(vacationSavings)})`}
-        singleLine
-        gridValue={12}
-      >
-        { formatCurrency(withoutVacationSavings) }
-      </TextWithLabel>
-      <TextWithLabel labelText={`- Pension (${formatCurrency(pension)})`} singleLine gridValue={12}>
-        { formatCurrency(withoutPension) }
-      </TextWithLabel>
+      <Table>
+        <TableBody>
+          <SalaryRow description="Turnover" sum={formatCurrency(turnover)} />
+          <SalaryRow description="- Cut" amount={formatCurrency(theCut)} sum={formatCurrency(companyIncome)} />
+          <SalaryRow description="- Employer fee" amount={formatCurrency(employerFee)} sum={formatCurrency(withoutEmployerFee)} />
+          <SalaryRow description="- Vacation savings " amount={formatCurrency(vacationSavings)} sum={formatCurrency(withoutVacationSavings)} />
+          <SalaryRow description="- Pension" amount={formatCurrency(pension)} sum={formatCurrency(withoutPension)} />
+        </TableBody>
+      </Table>
     </Section>
 );
 };

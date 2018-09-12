@@ -4,40 +4,33 @@ exports[`SalaryCalculations should render 1`] = `
 <Section
   header="Salary calculations"
 >
-  <TextWithLabel
-    gridValue={12}
-    labelText="Turnover"
-    singleLine={true}
-  >
-    kr 141 414,00
-  </TextWithLabel>
-  <TextWithLabel
-    gridValue={12}
-    labelText="- Cut (kr 131 313,00)"
-    singleLine={true}
-  >
-    kr 101 010,00
-  </TextWithLabel>
-  <TextWithLabel
-    gridValue={12}
-    labelText="- Employer fee (kr 111 111,00)"
-    singleLine={true}
-  >
-    kr 161 616,00
-  </TextWithLabel>
-  <TextWithLabel
-    gridValue={12}
-    labelText="- Vacation savings (kr 151 515,00)"
-    singleLine={true}
-  >
-    kr 181 818,00
-  </TextWithLabel>
-  <TextWithLabel
-    gridValue={12}
-    labelText="- Pension (kr 121 212,00)"
-    singleLine={true}
-  >
-    kr 171 717,00
-  </TextWithLabel>
+  <Table>
+    <TableBody>
+      <SalaryRow
+        description="Turnover"
+        sum="kr 141 414,00"
+      />
+      <SalaryRow
+        amount="kr 131 313,00"
+        description="- Cut"
+        sum="kr 101 010,00"
+      />
+      <SalaryRow
+        amount="kr 111 111,00"
+        description="- Employer fee"
+        sum="kr 161 616,00"
+      />
+      <SalaryRow
+        amount="kr 151 515,00"
+        description="- Vacation savings "
+        sum="kr 181 818,00"
+      />
+      <SalaryRow
+        amount="kr 121 212,00"
+        description="- Pension"
+        sum="kr 171 717,00"
+      />
+    </TableBody>
+  </Table>
 </Section>
 `;

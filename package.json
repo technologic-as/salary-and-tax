@@ -10,7 +10,7 @@
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "dependencies": {
-    "@material-ui/core": "^3.0.3",
+    "@material-ui/core": "3.0.x",
     "@storybook/addon-actions": "3.4.x",
     "@storybook/addons": "3.4.x",
     "@storybook/react": "3.4.x",
@@ -20,9 +20,10 @@
     "react-dom": "16.5.x",
     "react-gravatar": "2.6.x",
     "react-hot-loader": "4.3.x",
+    "react-number-format": "3.5.x",
     "react-redux": "5.0.x",
     "redux": "4.0.x",
-    "redux-form": "^7.4.2",
+    "redux-form": "7.4.x",
     "redux-logger": "3.0.x",
     "redux-thunk": "2.3.x",
     "request": "2.88.x",
@@ -41,8 +42,8 @@
     "babel-loader": "8.0.x",
     "clean-webpack-plugin": "0.1.x",
     "css-loader": "1.0.x",
-    "enzyme": "^3.6.0",
-    "enzyme-adapter-react-16": "^1.5.0",
+    "enzyme": "3.6.x",
+    "enzyme-adapter-react-16": "1.5.x",
     "enzyme-to-json": "3.3.x",
     "eslint": "5.5.x",
     "eslint-config-airbnb": "17.1.x",
@@ -64,12 +65,11 @@
     "webpack": "4.18.x",
     "webpack-cli": "3.1.x",
     "webpack-dev-server": "3.1.x",
-    "webpack-merge": "^4.1.4"
+    "webpack-merge": "4.1.x"
   },
   "jest": {
     "moduleNameMapper": {
-      "\\.(css|less|sass|scss)$": "identity-obj-proxy",
-      "@material-ui/.*": "identity-obj-proxy"
+      "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     }
   }
 }

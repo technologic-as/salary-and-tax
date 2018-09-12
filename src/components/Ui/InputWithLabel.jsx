@@ -10,11 +10,15 @@ const renderTextField = ({name, label, input}) => {
 
 renderTextField.propTypes = {
   input: PropTypes.shape({
-    value: PropTypes.oneOf(PropTypes.string, PropTypes.number).isRequired,
+    value: PropTypes.any,
     onChange: PropTypes.func.isRequired,
   }).isRequired,
   label: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
+  name: PropTypes.string,
+};
+
+renderTextField.defaultProps = {
+  name: '',
 };
 
 export const InputWithLabel = ({name, label}) => (
@@ -23,11 +27,6 @@ export const InputWithLabel = ({name, label}) => (
 InputWithLabel.propTypes = {
   name: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-};
-
-InputWithLabel.defaultProps = {
-  component: 'input',
-  type: 'text',
 };
 
 export default InputWithLabel;

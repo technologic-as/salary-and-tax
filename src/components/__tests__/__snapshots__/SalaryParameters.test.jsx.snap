@@ -79,16 +79,12 @@ exports[`SalaryParametersComponent should render 1`] = `
         name="pensionSixToTwelveRate"
       />
     </FormGroup>
-    <Grid
-      value={6}
+    <Button
+      disabled={false}
+      type="submit"
     >
-      <Button
-        disabled={false}
-        type="submit"
-      >
-        Calculate earnings
-      </Button>
-    </Grid>
+      Calculate earnings
+    </Button>
   </form>
 </Section>
 `;

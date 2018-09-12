@@ -5,6 +5,9 @@ import { SalaryCalculationsComponent } from '../SalaryCalculations';
 
 
 jest.mock('../Ui', () => mockComponent);
+jest.mock('@material-ui/core/Table', () => "Table");
+jest.mock('@material-ui/core/TableBody', () => "TableBody");
+
 
 describe('SalaryCalculations', () => {
   it('should render', () => {
