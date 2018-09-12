@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SalaryCalculations should render 1`] = `
+<Section
+  gridValue={4}
+  header="Salary calculations"
+>
+  <TextWithLabel
+    gridValue={12}
+    labelText="Turnover"
+    singleLine={true}
+  >
+    kr 141 414,00
+  </TextWithLabel>
+  <TextWithLabel
+    gridValue={12}
+    labelText="- Cut (kr 131 313,00)"
+    singleLine={true}
+  >
+    kr 101 010,00
+  </TextWithLabel>
+  <TextWithLabel
+    gridValue={12}
+    labelText="- Employer fee (kr 111 111,00)"
+    singleLine={true}
+  >
+    kr 161 616,00
+  </TextWithLabel>
+  <TextWithLabel
+    gridValue={12}
+    labelText="- Vacation savings (kr 151 515,00)"
+    singleLine={true}
+  >
+    kr 181 818,00
+  </TextWithLabel>
+  <TextWithLabel
+    gridValue={12}
+    labelText="- Pension (kr 121 212,00)"
+    singleLine={true}
+  >
+    kr 171 717,00
+  </TextWithLabel>
+</Section>
+`;

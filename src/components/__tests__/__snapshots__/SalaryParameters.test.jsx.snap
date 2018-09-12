@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SalaryParametersComponent should render 1`] = `
+<Grid
+  value={6}
+>
+  <form
+    onChange={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  >
+    <Section
+      gridValue={6}
+      header="Income"
+    >
+      <InputWithLabel
+        fieldName="hoursPerYear"
+        labelText="Hours per year"
+      />
+      <InputWithLabel
+        fieldName="hourRate"
+        labelText="Hour rate"
+      />
+    </Section>
+    <Section
+      gridValue={6}
+      header="Vacation savings"
+    >
+      <InputWithLabel
+        fieldName="vacationSavingsRate"
+        labelText="(%)"
+      />
+      <InputWithLabel
+        component="input"
+        fieldName="includeVacationSavings"
+        labelText="Include in calculation"
+        type="checkbox"
+      />
+    </Section>
+    <Section
+      gridValue={6}
+      header="Subcontractor"
+    >
+      <InputWithLabel
+        fieldName="cut"
+        labelText="Cut (%)"
+      />
+    </Section>
+    <Section
+      gridValue={6}
+      header="Employer Fee"
+    >
+      <InputWithLabel
+        fieldName="employerFeeRate"
+        labelText="(%)"
+      />
+      <InputWithLabel
+        component="input"
+        fieldName="includeEmployerFee"
+        labelText="Include in calculation"
+        type="checkbox"
+      />
+    </Section>
+    <Section
+      gridValue={6}
+      header="Pension"
+    >
+      <InputWithLabel
+        fieldName="pensionOneToSixRate"
+        labelText="Percentage (1G-6G)"
+      />
+      <InputWithLabel
+        component="input"
+        fieldName="includePension"
+        labelText="Include in calculation"
+        type="checkbox"
+      />
+      <InputWithLabel
+        fieldName="pensionSixToTwelveRate"
+        labelText="Percentage (6G-12G)"
+      />
+    </Section>
+    <Grid
+      value={6}
+    >
+      <button
+        disabled={false}
+        type="submit"
+      >
+        Calculate earnings
+      </button>
+    </Grid>
+  </form>
+</Grid>
+`;

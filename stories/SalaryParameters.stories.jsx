@@ -1,9 +1,9 @@
 import { storiesOf } from '@storybook/react';
 import React from 'react';
 import Provider from 'react-redux/es/components/Provider';
-import { SalaryCalculations } from '../src/www/components/SalaryCalculations';
-import { SalaryParameters } from '../src/www/components/SalaryParameters';
-import configureStore from '../src/www/configureStore';
+import { SalaryCalculations } from '../src/components/SalaryCalculations';
+import { SalaryParameters } from '../src/components/SalaryParameters';
+import configureStore from '../src/configureStore';
 
 
 const store = configureStore();

@@ -3,11 +3,12 @@ import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import HtmlPlugin from 'html-webpack-plugin';
 import path from 'path';
 
+
 export const outputPath = path.resolve(__dirname, 'public');
 
 export default {
     entry: {
-        www: './src/www/entry.jsx',
+        www: './src/entry.jsx',
     },
     output: {
         path: outputPath,
@@ -42,7 +43,7 @@ export default {
     plugins: [
         new CleanWebpackPlugin([outputPath]),
         new HtmlPlugin({
-            template: __dirname + '/src/www/index.html',
+            template: __dirname + '/src/index.html',
             filename: 'index.html',
         }),
         new ExtractTextPlugin('styles-[hash].css'),
