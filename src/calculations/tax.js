@@ -75,8 +75,11 @@ export const getTaxCalculations = (income) => {
   const step3 = calculateStep3(income);
   const step4 = calculateStep4(income);
 
+  const totalTax = incomeTax + socialSecurityDeduction + step1 + step2 + step3 + step4;
+  const afterTax = income - totalTax;
+
   return ({
-    income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4,
+    income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax, afterTax,
   });
 };
 
