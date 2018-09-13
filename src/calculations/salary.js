@@ -59,12 +59,6 @@ export const getSalaryCalculations = (data) => {
   const {vacationSavings, after: withoutVacationSavings} = getVacationSavings(withoutEmployerFee, data);
   const {pension, after: withoutPension} = getPension(withoutVacationSavings, data);
 
-  /*
-  const maxPensionSavingsThreshold = oneG * 12 * 6 / 100;
-
-  const pension = Math.min(companyIncome * pensionRate / 100, maxPensionSavingsThreshold);
-  const withoutPension = withoutVacationSavings - pension;
-*/
   return ({
     turnover,
     theCut,
