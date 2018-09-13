@@ -2,25 +2,13 @@
 
 exports[`SalaryParametersComponent should render 1`] = `
 <Section
-  header="Input"
+  header="Salary input"
 >
   <form
-    onChange={
-      [MockFunction] {
-        "calls": Array [
-          Array [],
-        ],
-        "results": Array [
-          Object {
-            "isThrow": false,
-            "value": undefined,
-          },
-        ],
-      }
-    }
+    onSubmit={[Function]}
   >
     <FormGroup
-      header="Income"
+      header="Turnover"
     >
       <InputWithLabel
         label="Hours per year"

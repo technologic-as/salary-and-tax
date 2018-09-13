@@ -6,10 +6,10 @@ import { inputHasChanged } from '../actions';
 import { Button, Checkbox, FormGroup, InputWithLabel, Section } from './Ui';
 
 
-export const SalaryParametersComponent = ({handleSubmit, submitForm, submitting}) => (
-  <Section header="Input">
-    <form onSubmit={handleSubmit(submitForm)} onChange={submitForm}>
-      <FormGroup header="Income">
+export const SalaryParametersComponent = ({handleSubmit, submitting}) => (
+  <Section header="Salary input">
+    <form onSubmit={handleSubmit}>
+      <FormGroup header="Turnover">
         <InputWithLabel name="hoursPerYear" label="Hours per year" />
         <InputWithLabel name="hourRate" label="Hour rate" />
       </FormGroup>
@@ -40,7 +40,6 @@ export const SalaryParametersComponent = ({handleSubmit, submitForm, submitting}
 
 SalaryParametersComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
-  submitForm: PropTypes.func.isRequired,
   submitting: PropTypes.bool.isRequired,
 };
 
@@ -48,13 +47,11 @@ export const SalaryParametersForm = reduxForm({form: 'calculations'})(SalaryPara
 
 const mapStateToProps = ({calculations: {data}}) => ({
   initialValues: data,
-
 });
 
 const mapDispatchToProps = (dispatch) => ({
-  submitForm: (values) => dispatch(inputHasChanged(values)),
+  onSubmit: (values) => dispatch(inputHasChanged(values)),
 });
-
 
 export const SalaryParameters = connect(mapStateToProps, mapDispatchToProps)(SalaryParametersForm);
 export default SalaryParameters;

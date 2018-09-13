@@ -12,7 +12,7 @@ exports[`SalaryCalculations should render 1`] = `
       />
       <SalaryRow
         amount="kr 131 313,00"
-        description="- Cut"
+        description="- Subcontractor cut"
         sum="kr 101 010,00"
       />
       <SalaryRow

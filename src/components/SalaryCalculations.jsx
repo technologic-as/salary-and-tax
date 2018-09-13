@@ -15,7 +15,7 @@ export const SalaryCalculationsComponent = ({
       <Table>
         <TableBody>
           <SalaryRow description="Turnover" sum={formatCurrency(turnover)} />
-          <SalaryRow description="- Cut" amount={formatCurrency(theCut)} sum={formatCurrency(companyIncome)} />
+          <SalaryRow description="- Subcontractor cut" amount={formatCurrency(theCut)} sum={formatCurrency(companyIncome)} />
           <SalaryRow description="- Employer fee" amount={formatCurrency(employerFee)} sum={formatCurrency(withoutEmployerFee)} />
           <SalaryRow description="- Vacation savings " amount={formatCurrency(vacationSavings)} sum={formatCurrency(withoutVacationSavings)} />
           <SalaryRow description="- Pension" amount={formatCurrency(pension)} sum={formatCurrency(withoutPension)} />
