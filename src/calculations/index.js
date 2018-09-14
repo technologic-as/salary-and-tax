@@ -1,4 +1,4 @@
-export { getSalaryCalculations, defaultSalaryCalculationValues } from './salary';
+export { getSalaryCalculations, defaultSalaryParameters } from './salary';
 export { getTaxCalculations } from './tax';
 export { formatCurrency } from './format';
 

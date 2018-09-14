@@ -62,7 +62,7 @@ TaxCalculationsComponent.propTypes = {
 };
 
 const mapStateToProps = ({parameters: {data}}) => {
-  return getTaxCalculations(getSalaryCalculations(data).withoutPension);
+  return getTaxCalculations(getSalaryCalculations(data).income);
 };
 
 const mapDispatchToProps = () => ({});

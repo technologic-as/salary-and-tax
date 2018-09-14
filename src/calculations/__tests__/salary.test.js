@@ -1,5 +1,5 @@
 import {
-  defaultSalaryCalculationValues,
+  defaultSalaryParameters,
   getCompanyIncome,
   getEmployerFee,
   getPension,
@@ -9,7 +9,7 @@ import {
 } from '../salary';
 
 
-const data = defaultSalaryCalculationValues;
+const data = defaultSalaryParameters;
 const expectedTurnover = 1903000;
 const expectedAfterCut = expectedTurnover * 0.9;
 const expectedAfterEmployerFee = 1501052;

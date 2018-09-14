@@ -1,6 +1,6 @@
 const oneG = 96883;
 
-export const defaultSalaryCalculationValues = {
+export const defaultSalaryParameters = {
   cut: 10,
   hoursPerYear: 1730,
   hourRate: 1100,
@@ -69,5 +69,6 @@ export const getSalaryCalculations = (data) => {
     withoutVacationSavings,
     pension,
     withoutPension,
+    income: withoutPension,
   });
 };

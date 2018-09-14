@@ -1,9 +1,9 @@
 import { FORM_CHANGE } from '../actions';
-import { defaultSalaryCalculationValues } from '../calculations';
+import { defaultSalaryParameters } from '../calculations';
 
 
 const initialState = {
-  data: defaultSalaryCalculationValues,
+  data: defaultSalaryParameters,
 };
 
 const parameters = (state = initialState, action = {}) => {
