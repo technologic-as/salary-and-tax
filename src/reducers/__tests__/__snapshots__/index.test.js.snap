@@ -4,20 +4,18 @@ exports[`reducers should have default values that match snapshot 1`] = `
 Object {
   "form": Object {},
   "parameters": Object {
-    "data": Object {
-      "cut": 10,
-      "employerFeeRate": 14.1,
-      "ensuringFee": 15000,
-      "hourRate": 1100,
-      "hoursPerYear": 1730,
-      "includeEmployerFee": true,
-      "includePension": true,
-      "includeVacationSavings": true,
-      "oneG": 96883,
-      "pensionOneToSixRate": 6,
-      "pensionSixToTwelveRate": 6,
-      "vacationSavingsRate": 12.5,
-    },
+    "cut": 10,
+    "employerFeeRate": 14.1,
+    "ensuringFee": 15000,
+    "hourRate": 1100,
+    "hoursPerYear": 1730,
+    "includeEmployerFee": true,
+    "includePension": true,
+    "includeVacationSavings": true,
+    "oneG": 96883,
+    "pensionOneToSixRate": 6,
+    "pensionSixToTwelveRate": 6,
+    "vacationSavingsRate": 12.5,
   },
 }
 `;

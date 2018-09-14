@@ -38,7 +38,7 @@ SalaryCalculationsComponent.propTypes = {
   withoutPension: PropTypes.number.isRequired,
 };
 
-const mapStateToProps = ({parameters: {data}}) => getSalaryCalculations(data);
+const mapStateToProps = ({parameters}) => getSalaryCalculations(parameters);
 
 const mapDispatchToProps = () => ({});
 

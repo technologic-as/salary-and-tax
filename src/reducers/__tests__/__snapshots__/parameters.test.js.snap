@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`parameters should have initial state 1`] = `
+Object {
+  "cut": 10,
+  "employerFeeRate": 14.1,
+  "ensuringFee": 15000,
+  "hourRate": 1100,
+  "hoursPerYear": 1730,
+  "includeEmployerFee": true,
+  "includePension": true,
+  "includeVacationSavings": true,
+  "oneG": 96883,
+  "pensionOneToSixRate": 6,
+  "pensionSixToTwelveRate": 6,
+  "vacationSavingsRate": 12.5,
+}
+`;

@@ -45,8 +45,8 @@ SalaryParametersComponent.propTypes = {
 
 export const SalaryParametersForm = reduxForm({form: 'parameters'})(SalaryParametersComponent);
 
-const mapStateToProps = ({parameters: {data}}) => ({
-  initialValues: data,
+const mapStateToProps = ({parameters}) => ({
+  initialValues: parameters,
 });
 
 const mapDispatchToProps = (dispatch) => ({

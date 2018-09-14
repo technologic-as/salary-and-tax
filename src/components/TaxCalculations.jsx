@@ -61,8 +61,8 @@ TaxCalculationsComponent.propTypes = {
   afterTax: PropTypes.number.isRequired,
 };
 
-const mapStateToProps = ({parameters: {data}}) => {
-  return getTaxCalculations(getSalaryCalculations(data).income);
+const mapStateToProps = ({parameters}) => {
+  return getTaxCalculations(getSalaryCalculations(parameters).income);
 };
 
 const mapDispatchToProps = () => ({});

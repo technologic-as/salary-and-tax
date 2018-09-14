@@ -3,14 +3,14 @@ import { defaultSalaryParameters } from '../calculations';
 
 
 const initialState = {
-  data: defaultSalaryParameters,
+    ...defaultSalaryParameters,
 };
 
 const parameters = (state = initialState, action = {}) => {
   switch (action.type) {
     case FORM_CHANGE:
       return Object.assign({}, state, {
-        data: action,
+        ...action,
       });
     default:
       return state;
