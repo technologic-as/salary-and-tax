@@ -6,7 +6,7 @@ const initialState = {
   data: defaultSalaryCalculationValues,
 };
 
-const calculations = (state = initialState, action = {}) => {
+const parameters = (state = initialState, action = {}) => {
   switch (action.type) {
     case FORM_CHANGE:
       return Object.assign({}, state, {
@@ -17,4 +17,4 @@ const calculations = (state = initialState, action = {}) => {
   }
 };
 
-export default calculations;
+export default parameters;

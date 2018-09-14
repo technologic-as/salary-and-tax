@@ -15,7 +15,7 @@ const expectedAfterCut = expectedTurnover * 0.9;
 const expectedAfterEmployerFee = 1501052;
 const expectedAfterVacationSavings = 1334269;
 
-describe('calculations', () => {
+describe('salary', () => {
   describe('getSalaryCalculations', () => {
     it('should match snapshot', () => {
       expect(getSalaryCalculations(data)).toMatchSnapshot()

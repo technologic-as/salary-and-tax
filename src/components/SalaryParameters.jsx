@@ -43,9 +43,9 @@ SalaryParametersComponent.propTypes = {
   submitting: PropTypes.bool.isRequired,
 };
 
-export const SalaryParametersForm = reduxForm({form: 'calculations'})(SalaryParametersComponent);
+export const SalaryParametersForm = reduxForm({form: 'parameters'})(SalaryParametersComponent);
 
-const mapStateToProps = ({calculations: {data}}) => ({
+const mapStateToProps = ({parameters: {data}}) => ({
   initialValues: data,
 });
 

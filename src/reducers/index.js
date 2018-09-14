@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
 import { reducer as formReducer } from 'redux-form';
-import calculations from './calculations';
+import parameters from './parameters';
 
 
 const rootReducer = combineReducers({
   form: formReducer,
-  calculations,
+  parameters,
 });
 
 export default rootReducer;
