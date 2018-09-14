@@ -19,6 +19,7 @@ export const SalaryCalculationsComponent = ({
           <SalaryRow description="- Employer fee" amount={formatCurrency(employerFee)} sum={formatCurrency(withoutEmployerFee)} />
           <SalaryRow description="- Vacation savings " amount={formatCurrency(vacationSavings)} sum={formatCurrency(withoutVacationSavings)} />
           <SalaryRow description="- Pension" amount={formatCurrency(pension)} sum={formatCurrency(withoutPension)} />
+          <SalaryRow description="Income" sum={formatCurrency(withoutPension)} />
         </TableBody>
       </Table>
     </Section>

@@ -2,7 +2,8 @@
 
 exports[`SalaryParametersComponent should render 1`] = `
 <Section
-  header="Salary input"
+  expanded={true}
+  header="Parameters"
 >
   <form
     onSubmit={[Function]}

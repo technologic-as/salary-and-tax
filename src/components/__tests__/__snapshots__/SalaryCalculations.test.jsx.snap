@@ -30,6 +30,10 @@ exports[`SalaryCalculations should render 1`] = `
         description="- Pension"
         sum="kr 171 717,00"
       />
+      <SalaryRow
+        description="Income"
+        sum="kr 171 717,00"
+      />
     </TableBody>
   </Table>
 </Section>

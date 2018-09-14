@@ -7,7 +7,7 @@ import { Button, Checkbox, FormGroup, InputWithLabel, Section } from './Ui';
 
 
 export const SalaryParametersComponent = ({handleSubmit, submitting}) => (
-  <Section header="Salary input">
+  <Section header="Parameters" expanded>
     <form onSubmit={handleSubmit}>
       <FormGroup header="Turnover">
         <InputWithLabel name="hoursPerYear" label="Hours per year" />

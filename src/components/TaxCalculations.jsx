@@ -12,30 +12,30 @@ export const TaxCalculationsComponent = ({
 }) => {
   return (
     <Fragment>
-      <Section header="Minimum deduction">
+      <Section header="Tax calculations">
         <Table>
           <TableBody>
             <TaxRow description="Income" amount={formatCurrency(income)} start />
             <TaxRow description="- Minimum deduction" amount={formatCurrency(minimumDeduction)} minus />
-            <TaxRow description="= Common income" amount={formatCurrency(commonIncome)} total />
+            <TaxRow description="Common income" amount={formatCurrency(commonIncome)} total />
           </TableBody>
         </Table>
-      </Section>
 
-      <Section header="Tax summary">
         <Table>
           <TableBody>
+            <TaxRow description="Common income" amount={formatCurrency(commonIncome)} start />
             <TaxRow description="- Income tax" amount={formatCurrency(incomeTax)} minus />
             <TaxRow description="- Social security deduction" amount={formatCurrency(socialSecurityDeduction)} minus />
             <TaxRow description="- Tax step 1" amount={formatCurrency(step1)} minus />
             <TaxRow description="- Tax step 2" amount={formatCurrency(step2)} minus />
             <TaxRow description="- Tax step 3" amount={formatCurrency(step3)} minus />
             <TaxRow description="- Tax step 4" amount={formatCurrency(step4)} minus />
+            <TaxRow description="Total tax" amount={formatCurrency(totalTax)} total />
           </TableBody>
         </Table>
       </Section>
 
-      <Section header="Summary">
+      <Section header="Summary" expanded>
         <Table>
           <TableBody>
             <TaxRow description="Total tax" amount={formatCurrency(totalTax)} minus />
