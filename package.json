@@ -23,6 +23,7 @@
     "react-hot-loader": "4.3.x",
     "react-number-format": "3.5.x",
     "react-redux": "5.0.x",
+    "reduce-reducers": "0.4.x",
     "redux": "4.0.x",
     "redux-form": "7.4.x",
     "redux-logger": "3.0.x",

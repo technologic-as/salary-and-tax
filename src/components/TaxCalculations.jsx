@@ -3,7 +3,7 @@ import TableBody from '@material-ui/core/TableBody';
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import { connect } from 'react-redux';
-import { formatCurrency, getSalaryCalculations, getTaxCalculations } from '../calculations';
+import { formatCurrency } from '../calculations';
 import { Section, TaxRow } from './Ui';
 
 
@@ -61,9 +61,7 @@ TaxCalculationsComponent.propTypes = {
   afterTax: PropTypes.number.isRequired,
 };
 
-const mapStateToProps = ({parameters}) => {
-  return getTaxCalculations(getSalaryCalculations(parameters).income);
-};
+const mapStateToProps = ({calculations: {tax}}) => ({...tax});
 
 const mapDispatchToProps = () => ({});
 

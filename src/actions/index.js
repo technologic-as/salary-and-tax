@@ -5,7 +5,5 @@ export const formChange = (values) => ({
 });
 
 export const inputHasChanged = (values) => {
-  return dispatch => {
-    dispatch(formChange(values));
-  }
+  return dispatch => dispatch(formChange(values));
 };

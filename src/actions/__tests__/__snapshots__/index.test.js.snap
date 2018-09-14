@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`actions formChange should create action matching snapshot 1`] = `
+Object {
+  "newValue": "this is new",
+  "otherValue": "also new",
+  "type": "FORM_CHANGE",
+}
+`;

@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`calculations should have default values 1`] = `
+Object {
+  "salary": Object {
+    "companyIncome": 1712700,
+    "employerFee": 211648,
+    "income": 1264514,
+    "pension": 69755,
+    "theCut": 190300,
+    "turnover": 1903000,
+    "vacationSavings": 166783,
+    "withoutEmployerFee": 1501052,
+    "withoutPension": 1264514,
+    "withoutVacationSavings": 1334269,
+  },
+  "tax": Object {
+    "afterTax": 787871,
+    "commonIncome": 1166904,
+    "income": 1264514,
+    "incomeTax": 268388,
+    "minimumDeduction": 97610,
+    "socialSecurityDeduction": 103690,
+    "step1": 965,
+    "step2": 11885,
+    "step3": 45136,
+    "step4": 46579,
+    "totalTax": 476643,
+  },
+}
+`;
