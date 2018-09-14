@@ -8,7 +8,7 @@ import { Section, TaxRow } from './Ui';
 
 
 export const TaxCalculationsComponent = ({
-  income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax, afterTax,
+  income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax,
 }) => {
   return (
     <Fragment>
@@ -34,15 +34,6 @@ export const TaxCalculationsComponent = ({
           </TableBody>
         </Table>
       </Section>
-
-      <Section header="Summary" expanded>
-        <Table>
-          <TableBody>
-            <TaxRow description="Total tax" amount={formatCurrency(totalTax)} minus />
-            <TaxRow description="After tax" amount={formatCurrency(afterTax)} total />
-          </TableBody>
-        </Table>
-      </Section>
     </Fragment>
 );
 };
@@ -58,7 +49,6 @@ TaxCalculationsComponent.propTypes = {
   step3: PropTypes.number.isRequired,
   step4: PropTypes.number.isRequired,
   totalTax: PropTypes.number.isRequired,
-  afterTax: PropTypes.number.isRequired,
 };
 
 const mapStateToProps = ({calculations: {tax}}) => ({...tax});

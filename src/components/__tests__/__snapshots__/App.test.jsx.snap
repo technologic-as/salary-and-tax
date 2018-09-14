@@ -4,6 +4,7 @@ exports[`App should render 1`] = `
 <div>
   <SalaryCalculations />
   <TaxCalculations />
+  <Summary />
   <SalaryParameters />
 </div>
 `;

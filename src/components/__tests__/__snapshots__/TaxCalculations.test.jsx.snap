@@ -1,92 +1,71 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`TaxCalculations should render 1`] = `
-Array [
-  <Section
-    header="Tax calculations"
-  >
-    <Table>
-      <TableBody>
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="Income"
-          start={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="- Minimum deduction"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="Common income"
-          total={true}
-        />
-      </TableBody>
-    </Table>
-    <Table>
-      <TableBody>
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="Common income"
-          start={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="- Income tax"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="- Social security deduction"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="- Tax step 1"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="- Tax step 2"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="- Tax step 3"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="- Tax step 4"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="Total tax"
-          total={true}
-        />
-      </TableBody>
-    </Table>
-  </Section>,
-  <Section
-    expanded={true}
-    header="Summary"
-  >
-    <Table>
-      <TableBody>
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="Total tax"
-          minus={true}
-        />
-        <TaxRow
-          amount="kr 12 345 678,00"
-          description="After tax"
-          total={true}
-        />
-      </TableBody>
-    </Table>
-  </Section>,
-]
+<Section
+  header="Tax calculations"
+>
+  <Table>
+    <TableBody>
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="Income"
+        start={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="- Minimum deduction"
+        minus={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="Common income"
+        total={true}
+      />
+    </TableBody>
+  </Table>
+  <Table>
+    <TableBody>
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="Common income"
+        start={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="- Income tax"
+        minus={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="- Social security deduction"
+        minus={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="- Tax step 1"
+        minus={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="- Tax step 2"
+        minus={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="- Tax step 3"
+        minus={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="- Tax step 4"
+        minus={true}
+      />
+      <TaxRow
+        amount="kr 12 345 678,00"
+        description="Total tax"
+        total={true}
+      />
+    </TableBody>
+  </Table>
+</Section>
 `;

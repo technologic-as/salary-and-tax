@@ -7,6 +7,7 @@ import App from '../App';
 jest.mock('../SalaryParameters', () => mockComponent);
 jest.mock('../SalaryCalculations', () => mockComponent);
 jest.mock('../TaxCalculations', () => mockComponent);
+jest.mock('../Summary', () => mockComponent);
 
 describe('App', () => {
     it('should render', () => {
