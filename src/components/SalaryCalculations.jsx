@@ -2,24 +2,35 @@ import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { defineMessages, injectIntl, intlShape } from 'react-intl';
 import { connect } from 'react-redux';
 import { formatCurrency } from '../calculations';
-import { SalaryRow, Section } from './Ui';
+import { Section, TaxRow } from './Ui';
 
+
+const messages = defineMessages({
+  header: {id: 'salary.calculations.header', defaultMessage: 'Salary calculations'},
+  turnover: {id: 'salary.calculations.turnover', defaultMessage: 'Turnover'},
+  theCut: {id: 'salary.calculations.subcontractor.cut', defaultMessage: 'Subcontractor cut'},
+  employerFee: {id: 'salary.calculations.employer.fee', defaultMessage: 'Employer fee'},
+  vacationSavings: {id: 'salary.calculations.vacation.savings', defaultMessage: 'Vacation savings'},
+  pension: {id: 'salary.calculations.pension', defaultMessage: 'Pension'},
+  income: {id: 'salary.calculations.income', defaultMessage: 'Income'},
+});
 
 export const SalaryCalculationsComponent = ({
-  turnover, companyIncome, theCut, employerFee, withoutEmployerFee, vacationSavings, withoutVacationSavings, pension, withoutPension,
+  turnover, companyIncome, theCut, employerFee, withoutEmployerFee, vacationSavings, withoutVacationSavings, pension, withoutPension, intl: {formatMessage},
 }) => {
   return (
-    <Section header="Salary calculations">
+    <Section header={formatMessage(messages.header)}>
       <Table>
         <TableBody>
-          <SalaryRow description="Turnover" sum={formatCurrency(turnover)} />
-          <SalaryRow description="- Subcontractor cut" amount={formatCurrency(theCut)} sum={formatCurrency(companyIncome)} />
-          <SalaryRow description="- Employer fee" amount={formatCurrency(employerFee)} sum={formatCurrency(withoutEmployerFee)} />
-          <SalaryRow description="- Vacation savings " amount={formatCurrency(vacationSavings)} sum={formatCurrency(withoutVacationSavings)} />
-          <SalaryRow description="- Pension" amount={formatCurrency(pension)} sum={formatCurrency(withoutPension)} />
-          <SalaryRow description="Income" sum={formatCurrency(withoutPension)} />
+          <TaxRow description={formatMessage(messages.turnover)} sum={formatCurrency(turnover)} />
+          <TaxRow description={formatMessage(messages.theCut)} amount={formatCurrency(theCut)} sum={formatCurrency(companyIncome)} minus />
+          <TaxRow description={formatMessage(messages.employerFee)} amount={formatCurrency(employerFee)} sum={formatCurrency(withoutEmployerFee)} minus />
+          <TaxRow description={formatMessage(messages.vacationSavings)} amount={formatCurrency(vacationSavings)} sum={formatCurrency(withoutVacationSavings)} minus />
+          <TaxRow description={formatMessage(messages.pension)} amount={formatCurrency(pension)} sum={formatCurrency(withoutPension)} minus />
+          <TaxRow description={formatMessage(messages.income)} sum={formatCurrency(withoutPension)} />
         </TableBody>
       </Table>
     </Section>
@@ -36,11 +47,12 @@ SalaryCalculationsComponent.propTypes = {
   withoutVacationSavings: PropTypes.number.isRequired,
   pension: PropTypes.number.isRequired,
   withoutPension: PropTypes.number.isRequired,
+  intl: intlShape.isRequired,
 };
 
 const mapStateToProps = ({calculations: {salary}}) => ({...salary});
 
 const mapDispatchToProps = () => ({});
 
-export const SalaryCalculations = connect(mapStateToProps, mapDispatchToProps)(SalaryCalculationsComponent);
+export const SalaryCalculations = connect(mapStateToProps, mapDispatchToProps)(injectIntl(SalaryCalculationsComponent));
 export default SalaryCalculations;

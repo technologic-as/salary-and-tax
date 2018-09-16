@@ -2,6 +2,7 @@ import mockComponent from 'identity-obj-proxy'
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { TaxCalculationsComponent } from '../TaxCalculations';
+import { mockIntl } from './__mock__/intl';
 
 
 jest.mock('../Ui', () => mockComponent);
@@ -23,6 +24,7 @@ describe('TaxCalculations', () => {
       step4={12345678}
       totalTax={12345678}
       afterTax={12345678}
+      intl={mockIntl}
     />).toJSON();
     expect(tree).toMatchSnapshot();
   });

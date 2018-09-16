@@ -60,11 +60,11 @@ exports[`SalaryParametersComponent should render 1`] = `
         name="includePension"
       />
       <InputWithLabel
-        label="Percentage (1G-6G)"
+        label="(%) (1G-6G)"
         name="pensionOneToSixRate"
       />
       <InputWithLabel
-        label="Percentage (6G-12G)"
+        label="(%) (6G-12G)"
         name="pensionSixToTwelveRate"
       />
     </FormGroup>
@@ -72,7 +72,7 @@ exports[`SalaryParametersComponent should render 1`] = `
       disabled={false}
       type="submit"
     >
-      Calculate earnings
+      Calculate salary
     </Button>
   </form>
 </Section>

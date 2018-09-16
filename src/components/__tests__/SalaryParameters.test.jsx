@@ -2,6 +2,7 @@ import mockComponent from 'identity-obj-proxy'
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { SalaryParametersComponent } from '../SalaryParameters';
+import { mockIntl } from './__mock__/intl';
 
 
 const handleSubmit = fn => fn();
@@ -15,6 +16,7 @@ describe('SalaryParametersComponent', () => {
       handleSubmit={handleSubmit}
       submitForm={submitForm}
       submitting={false}
+      intl={mockIntl}
     />).toJSON();
     expect(tree).toMatchSnapshot();
   });
