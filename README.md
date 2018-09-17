@@ -2,6 +2,7 @@
 
 [![Build Status][travis-badge]][travis-badge-url]
 [![Coverage Status][coverage-badge]][coverage-url]
+[![Dependency][dm-badge]][dm-url]
 
 ## Build for production
     yarn build:www
@@ -22,3 +23,5 @@
 [travis-badge-url]: https://travis-ci.org/technologic-as/salary-and-tax
 [coverage-badge]: https://coveralls.io/repos/github/technologic-as/salary-and-tax/badge.svg?branch=master
 [coverage-url]: https://coveralls.io/github/technologic-as/salary-and-tax?branch=master
+[dm-badge]: https://david-dm.org/technologic-as/salary-and-tax.svg
+[dm-url]: https://david-dm.org/technologic-as/salary-and-tax
