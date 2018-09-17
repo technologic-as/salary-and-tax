@@ -1,7 +1,8 @@
 {
-  "name": "salary-calculations",
-  "version": "0.0.0",
+  "name": "@technologic-as/salary-and-tax",
+  "version": "1.0.0",
   "private": true,
+  "author": "Fredrik Oterholt",
   "scripts": {
     "build:www": "webpack --config webpack.config.production.babel.js",
     "start:www": "webpack-dev-server --config webpack.config.dev.babel.js",
@@ -10,6 +11,15 @@
     "lint": "eslint . --ext .js,.jsx",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/technologic-as/salary-and-tax.git"
+  },
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/technologic-as/salary-and-tax/issues"
+  },
+  "homepage": "https://salary.technologic.as/",
   "dependencies": {
     "@material-ui/core": "3.1.x",
     "@material-ui/icons": "3.0.x",
