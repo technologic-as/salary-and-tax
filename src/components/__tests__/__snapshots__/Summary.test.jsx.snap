@@ -8,24 +8,24 @@ exports[`Summary should render 1`] = `
   <Table>
     <TableBody>
       <TaxRow
-        amount="kr 111 111,00"
+        amount="$111,111.00"
         description="Turnover"
       />
       <TaxRow
-        amount="kr 222 222,00"
+        amount="$222,222.00"
         description="Income"
       />
       <TaxRow
-        amount="kr 333 333,00"
+        amount="$333,333.00"
         description="Common income"
       />
       <TaxRow
-        amount="kr 444 444,00"
+        amount="$444,444.00"
         description="Total tax"
         minus={true}
       />
       <TaxRow
-        amount="kr 555 555,00"
+        amount="$555,555.00"
         description="After tax"
         total={true}
       />

@@ -8,35 +8,35 @@ exports[`SalaryCalculations should render 1`] = `
     <TableBody>
       <TaxRow
         description="Turnover"
-        sum="kr 141 414,00"
+        sum="$141,414.00"
       />
       <TaxRow
-        amount="kr 131 313,00"
+        amount="$131,313.00"
         description="Subcontractor cut"
         minus={true}
-        sum="kr 101 010,00"
+        sum="$101,010.00"
       />
       <TaxRow
-        amount="kr 111 111,00"
+        amount="$111,111.00"
         description="Employer fee"
         minus={true}
-        sum="kr 161 616,00"
+        sum="$161,616.00"
       />
       <TaxRow
-        amount="kr 151 515,00"
+        amount="$151,515.00"
         description="Vacation savings"
         minus={true}
-        sum="kr 181 818,00"
+        sum="$181,818.00"
       />
       <TaxRow
-        amount="kr 121 212,00"
+        amount="$121,212.00"
         description="Pension"
         minus={true}
-        sum="kr 171 717,00"
+        sum="$171,717.00"
       />
       <TaxRow
         description="Income"
-        sum="kr 171 717,00"
+        sum="$171,717.00"
       />
     </TableBody>
   </Table>

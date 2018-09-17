@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
 import { connect } from 'react-redux';
-import { formatCurrency } from '../calculations';
 import { Section, TaxRow } from './Ui';
 
 
@@ -23,8 +22,9 @@ const messages = defineMessages({
 });
 
 export const TaxCalculationsComponent = ({
-  income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax, intl: {formatMessage},
+  income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax, intl: {formatMessage, formatNumber},
 }) => {
+  const formatCurrency = (amount) => formatNumber(amount, {style: 'currency', currency: 'NOK'});
   return (
     <Fragment>
       <Section header={formatMessage(messages.header)}>

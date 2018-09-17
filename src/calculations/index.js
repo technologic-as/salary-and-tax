@@ -3,7 +3,6 @@ import { getTaxCalculations } from './tax';
 
 
 export { defaultSalaryParameters } from './salary';
-export { formatCurrency } from './format';
 
 export const calculate = (parameters = defaultSalaryParameters) => {
   const salary = getSalaryCalculations(parameters);
