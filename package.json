@@ -6,6 +6,7 @@
     "build:www": "webpack --config webpack.config.production.babel.js",
     "start:www": "webpack-dev-server --config webpack.config.dev.babel.js",
     "test": "jest",
+    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint . --ext .js,.jsx",
     "storybook": "start-storybook -p 9001 -c .storybook"
   },
@@ -46,6 +47,7 @@
     "babel-jest": "23.6.x",
     "babel-loader": "8.0.x",
     "clean-webpack-plugin": "0.1.x",
+    "coveralls": "3.0.x",
     "css-loader": "1.0.x",
     "enzyme": "3.6.x",
     "enzyme-adapter-react-16": "1.5.x",
