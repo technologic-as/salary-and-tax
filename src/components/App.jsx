@@ -1,17 +1,19 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { SalaryCalculations } from './SalaryCalculations';
 import { SalaryParameters } from './SalaryParameters';
 import { Summary } from './Summary';
 import { TaxCalculations } from './TaxCalculations';
+import { LanguageButton } from './Ui';
 
 
 export const AppComponent = () => (
-  <div>
+  <Fragment>
     <SalaryCalculations />
     <TaxCalculations />
     <Summary />
     <SalaryParameters />
-  </div>
+    <LanguageButton />
+  </Fragment>
 );
 
 export default AppComponent;

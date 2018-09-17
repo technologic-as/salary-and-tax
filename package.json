@@ -24,6 +24,7 @@
     "react-gravatar": "2.6.x",
     "react-hot-loader": "4.3.x",
     "react-intl": "2.5.x",
+    "react-intl-redux": "2.0.x",
     "react-number-format": "3.5.x",
     "react-redux": "5.0.x",
     "reduce-reducers": "0.4.x",

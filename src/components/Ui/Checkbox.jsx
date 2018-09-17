@@ -18,13 +18,13 @@ const renderCheckbox = ({input, label}) => (
 );
 renderCheckbox.propTypes = {
   input: PropTypes.shape({
-    value: PropTypes.bool.isRequired,
+    value: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]).isRequired,
     onChange: PropTypes.func.isRequired,
   }).isRequired,
   label: PropTypes.string.isRequired,
 };
 
-export const Checkbox = ({name, label}) => (<Field name={name} component={renderCheckbox} label={label} />);
+export const Checkbox = ({name, label}) => (<Field name={name} component={renderCheckbox} label={label} type="input" />);
 
 Checkbox.propTypes = {
   name: PropTypes.string.isRequired,

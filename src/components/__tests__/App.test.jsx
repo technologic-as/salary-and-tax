@@ -8,6 +8,7 @@ jest.mock('../SalaryParameters', () => mockComponent);
 jest.mock('../SalaryCalculations', () => mockComponent);
 jest.mock('../TaxCalculations', () => mockComponent);
 jest.mock('../Summary', () => mockComponent);
+jest.mock('../Ui', () => mockComponent);
 
 describe('App', () => {
     it('should render', () => {

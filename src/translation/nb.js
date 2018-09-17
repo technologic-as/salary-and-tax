@@ -47,4 +47,5 @@ export default {
     'tax.calculations.step.3': 'Trinnskatt trinn 3',
     'tax.calculations.step.4': 'Trinnskatt trinn 4',
     'tax.calculations.total.tax': 'Samlet skatt',
+    'translation.change.language': 'Switch language',
 }
