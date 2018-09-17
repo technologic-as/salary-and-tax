@@ -10,6 +10,7 @@ Object {
   "includeEmployerFee": true,
   "includePension": true,
   "includeVacationSavings": true,
+  "locale": "nb",
   "oneG": 96883,
   "pensionOneToSixRate": 6,
   "pensionSixToTwelveRate": 6,

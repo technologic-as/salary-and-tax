@@ -12,18 +12,18 @@ addLocaleData([
 ]);
 
 const messages = {
-  'nb': messagesNb, 'en': messagesEn,
+  'nb': {name: 'Norsk', messages: messagesNb}, 'en': {name: 'English', messages: messagesEn},
 };
 
 const defaultLocale = Cookie.get('locale') || Object.keys(messages)[0];
 
-export const getMessages = (locale = defaultLocale) => messages[locale];
+export const getMessages = (locale = defaultLocale) => messages[locale].messages;
 
-export const initialState = {
-  locale: defaultLocale, messages: getMessages(defaultLocale),
+export const getLocales = () => {
+  return Object.keys(messages)
+    .map(locale => ({value: locale, label: messages[locale].name, active: locale === defaultLocale}));
 };
 
-export const toggleLocale = (state = {}) => {
-  const locales = Object.keys(messages);
-  return locales[(locales.indexOf(state.locale) + 1) % locales.length];
+export const translationConfig = {
+  locale: defaultLocale, messages: getMessages(defaultLocale), locales: getLocales(),
 };

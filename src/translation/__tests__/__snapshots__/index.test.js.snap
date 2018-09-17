@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`translation getLocales should return all locales 1`] = `
+Array [
+  Object {
+    "active": true,
+    "label": "Norsk",
+    "value": "nb",
+  },
+  Object {
+    "active": false,
+    "label": "English",
+    "value": "en",
+  },
+]
+`;
+
+exports[`translation getMessages should return norwegian messages 1`] = `
+Object {
+  "salary.calculations.employer.fee": "Arbeidsgiveravgift",
+  "salary.calculations.header": "Inntekstberegninger",
+  "salary.calculations.income": "Inntekt",
+  "salary.calculations.pension": "Pensjon",
+  "salary.calculations.subcontractor.cut": "Andel til overleverandør",
+  "salary.calculations.turnover": "Omsetning",
+  "salary.calculations.vacation.savings": "Feriepenger",
+  "salary.parameters.employer.fee": "Arbeidsgiveravgift",
+  "salary.parameters.header": "Parametere",
+  "salary.parameters.hour.rate": "Timepris",
+  "salary.parameters.hours.per.year": "Timer per år",
+  "salary.parameters.include.in.calculation": "Inkluder i utregningen",
+  "salary.parameters.locale": "Språk",
+  "salary.parameters.pension": "Pensjon",
+  "salary.parameters.pension.one.to.six": "(%) (1G-6G)",
+  "salary.parameters.pension.six.to.twelve": "(%) (6G-12G)",
+  "salary.parameters.percentage": "(%)",
+  "salary.parameters.subcontractor": "Overleverandør",
+  "salary.parameters.subcontractor.cut": "Andel (%)",
+  "salary.parameters.submit": "Beregn",
+  "salary.parameters.turnover": "Omsetning",
+  "salary.parameters.vacation.savings": "Feriepenger",
+  "summary.after.tax": "Brutto lønn",
+  "summary.common.income": "Alminnelig inntekt",
+  "summary.header": "Sammendrag",
+  "summary.income": "Inntekt",
+  "summary.total.tax": "Skatt sammenlagt",
+  "summary.turnover": "Omsetning",
+  "tax.calculations.common.income": "Alminnelig inntekt",
+  "tax.calculations.header": "Skatteberegninger",
+  "tax.calculations.income": "Inntekt",
+  "tax.calculations.income.tax": "Inntektsskatt",
+  "tax.calculations.minimum.deduction": "Minstefradrag",
+  "tax.calculations.social.security.deduction": "Trygdeavgift",
+  "tax.calculations.step.1": "Trinnskatt trinn 1",
+  "tax.calculations.step.2": "Trinnskatt trinn 2",
+  "tax.calculations.step.3": "Trinnskatt trinn 3",
+  "tax.calculations.step.4": "Trinnskatt trinn 4",
+  "tax.calculations.total.tax": "Samlet skatt",
+}
+`;

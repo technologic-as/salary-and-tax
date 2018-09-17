@@ -1,10 +1,12 @@
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Radio from '@material-ui/core/Radio';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
 import { connect } from 'react-redux';
 import { reduxForm } from 'redux-form';
 import { inputHasChanged } from '../actions';
-import { Button, Checkbox, FormGroup, InputWithLabel, Section } from './Ui';
+import { Button, Checkbox, FormGroup, InputWithLabel, RadioGroup, Section } from './Ui';
 
 
 const messages = defineMessages({
@@ -21,10 +23,11 @@ const messages = defineMessages({
   pension: {id: 'salary.parameters.pension', defaultMessage: 'Pension'},
   pensionOneToSix: {id: 'salary.parameters.pension.one.to.six', defaultMessage: '(%) (1G-6G)'},
   pensionSixToTwelve: {id: 'salary.parameters.pension.six.to.twelve', defaultMessage: '(%) (6G-12G)'},
+  locale: {id: 'salary.parameters.locale', defaultMessage: 'Language'},
   submit: {id: 'salary.parameters.submit', defaultMessage: 'Calculate salary'},
 });
 
-export const SalaryParametersComponent = ({handleSubmit, submitting, intl: {formatMessage}}) => (
+export const SalaryParametersComponent = ({handleSubmit, submitting, intl: {formatMessage}, locales}) => (
   <Section header={formatMessage(messages.header)} expanded>
     <form onSubmit={handleSubmit}>
       <FormGroup header={formatMessage(messages.turnover)}>
@@ -52,7 +55,20 @@ export const SalaryParametersComponent = ({handleSubmit, submitting, intl: {form
         <InputWithLabel name="pensionSixToTwelveRate" label={formatMessage(messages.pensionSixToTwelve)} />
       </FormGroup>
 
-      <Button type="submit" disabled={submitting}>{formatMessage(messages.submit)}</Button>
+      <FormGroup header={formatMessage(messages.locale)}>
+        <RadioGroup name="locale" label={formatMessage(messages.locale)}>
+          {locales.map((locale) => (
+            <FormControlLabel
+              value={locale.value}
+              control={<Radio />}
+              label={locale.label}
+              key={locale.value}
+            />
+))}
+        </RadioGroup>
+      </FormGroup>
+
+      <Button type="submit" disabled={submitting}>{ formatMessage(messages.submit) }</Button>
     </form>
   </Section>);
 
@@ -60,12 +76,15 @@ SalaryParametersComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   submitting: PropTypes.bool.isRequired,
   intl: intlShape.isRequired,
+  locales: PropTypes.arrayOf(PropTypes.shape({value: PropTypes.string, label: PropTypes.string})).isRequired,
 };
 
 export const SalaryParametersForm = reduxForm({form: 'parameters'})(SalaryParametersComponent);
 
-const mapStateToProps = ({parameters}) => ({
+const mapStateToProps = ({parameters, intl: {locales}}) => ({
   initialValues: parameters,
+  destroyOnUnmount: false,
+  locales,
 });
 
 const mapDispatchToProps = (dispatch) => ({

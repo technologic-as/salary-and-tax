@@ -1,3 +1,6 @@
+import { translationConfig } from '../translation';
+
+
 const oneG = 96883;
 
 export const defaultSalaryParameters = {
@@ -13,6 +16,7 @@ export const defaultSalaryParameters = {
   pensionOneToSixRate: 6,
   pensionSixToTwelveRate: 6,
   oneG,
+  locale: translationConfig.locale,
 };
 
 export const getTurnover = ({hoursPerYear, hourRate}) => ({turnover: parseFloat(hoursPerYear) * parseFloat(hourRate)});

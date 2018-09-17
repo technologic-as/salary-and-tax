@@ -68,6 +68,25 @@ exports[`SalaryParametersComponent should render 1`] = `
         name="pensionSixToTwelveRate"
       />
     </FormGroup>
+    <FormGroup
+      header="Language"
+    >
+      <RadioGroup
+        label="Language"
+        name="locale"
+      >
+        <FormControlLabel
+          control={<Radio />}
+          label="English"
+          value="en"
+        />
+        <FormControlLabel
+          control={<Radio />}
+          label="Norsk"
+          value="nb"
+        />
+      </RadioGroup>
+    </FormGroup>
     <Button
       disabled={false}
       type="submit"

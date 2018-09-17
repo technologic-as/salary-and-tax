@@ -32,6 +32,18 @@ Object {
   "form": Object {},
   "intl": Object {
     "locale": "nb",
+    "locales": Array [
+      Object {
+        "active": true,
+        "label": "Norsk",
+        "value": "nb",
+      },
+      Object {
+        "active": false,
+        "label": "English",
+        "value": "en",
+      },
+    ],
     "messages": Object {
       "salary.calculations.employer.fee": "Arbeidsgiveravgift",
       "salary.calculations.header": "Inntekstberegninger",
@@ -45,6 +57,7 @@ Object {
       "salary.parameters.hour.rate": "Timepris",
       "salary.parameters.hours.per.year": "Timer per år",
       "salary.parameters.include.in.calculation": "Inkluder i utregningen",
+      "salary.parameters.locale": "Språk",
       "salary.parameters.pension": "Pensjon",
       "salary.parameters.pension.one.to.six": "(%) (1G-6G)",
       "salary.parameters.pension.six.to.twelve": "(%) (6G-12G)",
@@ -71,7 +84,6 @@ Object {
       "tax.calculations.step.3": "Trinnskatt trinn 3",
       "tax.calculations.step.4": "Trinnskatt trinn 4",
       "tax.calculations.total.tax": "Samlet skatt",
-      "translation.change.language": "Switch language",
     },
   },
   "parameters": Object {
@@ -83,6 +95,7 @@ Object {
     "includeEmployerFee": true,
     "includePension": true,
     "includeVacationSavings": true,
+    "locale": "nb",
     "oneG": 96883,
     "pensionOneToSixRate": 6,
     "pensionSixToTwelveRate": 6,

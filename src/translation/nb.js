@@ -30,6 +30,7 @@ export default {
     'salary.parameters.pension.one.to.six': `${percentage} (1G-6G)`,
     'salary.parameters.pension.six.to.twelve': `${percentage} (6G-12G)`,
     'salary.parameters.submit': 'Beregn',
+    'salary.parameters.locale': 'Språk',
     'summary.header': 'Sammendrag',
     'summary.turnover': turnover,
     'summary.income': income,
@@ -47,5 +48,4 @@ export default {
     'tax.calculations.step.3': 'Trinnskatt trinn 3',
     'tax.calculations.step.4': 'Trinnskatt trinn 4',
     'tax.calculations.total.tax': 'Samlet skatt',
-    'translation.change.language': 'Switch language',
 }

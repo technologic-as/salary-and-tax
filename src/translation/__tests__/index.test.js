@@ -1,16 +1,15 @@
-import { toggleLocale } from '../index';
+import { getLocales, getMessages } from '../index';
 
 
 describe('translation', () => {
-  describe('toggleLocale', () => {
-    it('should set next locale', () => {
-      expect(toggleLocale({locale: 'nb'})).toEqual('en');
-      expect(toggleLocale({locale: 'en'})).toEqual('nb');
+  describe('getMessages', () => {
+    it('should return norwegian messages', () => {
+      expect(getMessages()).toMatchSnapshot();
     });
-    it('should default to nb', () => {
-      expect(toggleLocale()).toEqual('nb');
-      expect(toggleLocale({})).toEqual('nb');
-      expect(toggleLocale({locale: 'unknown'})).toEqual('nb');
+  });
+  describe('getLocales', () => {
+    it('should return all locales', () => {
+      expect(getLocales()).toMatchSnapshot();
     });
   });
 });

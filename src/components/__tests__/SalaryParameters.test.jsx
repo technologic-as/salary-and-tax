@@ -9,6 +9,12 @@ const handleSubmit = fn => fn();
 const submitForm = jest.fn();
 
 jest.mock('../Ui', () => mockComponent);
+jest.mock('@material-ui/core/Table', () => 'Table');
+jest.mock('@material-ui/core/TableBody', () => 'TableBody');
+jest.mock('@material-ui/core/FormGroup', () => 'FormGroup');
+jest.mock('@material-ui/core/FormControlLabel', () => 'FormControlLabel');
+jest.mock('@material-ui/core/Radio', () => 'Radio');
+
 
 describe('SalaryParametersComponent', () => {
   it('should render', () => {
@@ -17,6 +23,7 @@ describe('SalaryParametersComponent', () => {
       submitForm={submitForm}
       submitting={false}
       intl={mockIntl}
+      locales={[{value: 'en', label: 'English'}, {value: 'nb', label: 'Norsk'}]}
     />).toJSON();
     expect(tree).toMatchSnapshot();
   });

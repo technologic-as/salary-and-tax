@@ -6,6 +6,5 @@ Array [
   <TaxCalculations />,
   <Summary />,
   <SalaryParameters />,
-  <LanguageButton />,
 ]
 `;
