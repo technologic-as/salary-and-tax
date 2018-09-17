@@ -3,7 +3,7 @@ import React from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
 import connect from 'react-redux/es/connect/connect';
 import { switchLanguage } from '../../actions/index'
-import { Button } from './index';
+import { Button } from './Button';
 
 
 const messages = defineMessages({
