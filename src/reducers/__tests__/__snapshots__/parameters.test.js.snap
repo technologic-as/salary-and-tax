@@ -8,12 +8,25 @@ Object {
   "hourRate": 1100,
   "hoursPerYear": 1730,
   "includeEmployerFee": true,
-  "includePension": true,
   "includeVacationSavings": true,
   "locale": "nb",
-  "oneG": 96883,
-  "pensionOneToSixRate": 6,
-  "pensionSixToTwelveRate": 6,
+  "pension": Object {
+    "include": true,
+    "step1": Object {
+      "rate": 6,
+      "threshold": Object {
+        "high": 687869,
+        "low": 96883,
+      },
+    },
+    "step2": Object {
+      "rate": 6,
+      "threshold": Object {
+        "high": 1162596,
+        "low": 687869,
+      },
+    },
+  },
   "vacationSavingsRate": 12.5,
 }
 `;

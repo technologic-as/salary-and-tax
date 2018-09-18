@@ -4,13 +4,13 @@ exports[`salary getSalaryCalculations should match snapshot 1`] = `
 Object {
   "companyIncome": 1712700,
   "employerFee": 211648,
-  "income": 1264514,
-  "pension": 69755,
+  "income": 1270327,
+  "pension": 63942,
   "theCut": 190300,
   "turnover": 1903000,
   "vacationSavings": 166783,
   "withoutEmployerFee": 1501052,
-  "withoutPension": 1264514,
+  "withoutPension": 1270327,
   "withoutVacationSavings": 1334269,
 }
 `;

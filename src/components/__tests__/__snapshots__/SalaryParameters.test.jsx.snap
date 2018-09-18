@@ -57,15 +57,15 @@ exports[`SalaryParametersComponent should render 1`] = `
     >
       <Checkbox
         label="Include in calculation"
-        name="includePension"
+        name="pension.include"
       />
       <InputWithLabel
-        label="(%) (1G-6G)"
-        name="pensionOneToSixRate"
+        label="(%) (1G-7.1G)"
+        name="pension.step1.rate"
       />
       <InputWithLabel
-        label="(%) (6G-12G)"
-        name="pensionSixToTwelveRate"
+        label="(%) (7.1G-12G)"
+        name="pension.step2.rate"
       />
     </FormGroup>
     <FormGroup

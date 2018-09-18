@@ -21,8 +21,8 @@ const messages = defineMessages({
   includeInCalculation: {id: 'salary.parameters.include.in.calculation', defaultMessage: 'Include in calculation'},
   vacationSavings: {id: 'salary.parameters.vacation.savings', defaultMessage: 'Vacation savings'},
   pension: {id: 'salary.parameters.pension', defaultMessage: 'Pension'},
-  pensionOneToSix: {id: 'salary.parameters.pension.one.to.six', defaultMessage: '(%) (1G-6G)'},
-  pensionSixToTwelve: {id: 'salary.parameters.pension.six.to.twelve', defaultMessage: '(%) (6G-12G)'},
+  pensionStep1: {id: 'salary.parameters.pension.step1', defaultMessage: '(%) (1G-7.1G)'},
+  pensionStep2: {id: 'salary.parameters.pension.step2', defaultMessage: '(%) (7.1G-12G)'},
   locale: {id: 'salary.parameters.locale', defaultMessage: 'Language'},
   submit: {id: 'salary.parameters.submit', defaultMessage: 'Calculate salary'},
 });
@@ -50,9 +50,9 @@ export const SalaryParametersComponent = ({handleSubmit, submitting, intl: {form
       </FormGroup>
 
       <FormGroup header={formatMessage(messages.pension)}>
-        <Checkbox name="includePension" label={formatMessage(messages.includeInCalculation)} />
-        <InputWithLabel name="pensionOneToSixRate" label={formatMessage(messages.pensionOneToSix)} />
-        <InputWithLabel name="pensionSixToTwelveRate" label={formatMessage(messages.pensionSixToTwelve)} />
+        <Checkbox name="pension.include" label={formatMessage(messages.includeInCalculation)} />
+        <InputWithLabel name="pension.step1.rate" label={formatMessage(messages.pensionStep1)} />
+        <InputWithLabel name="pension.step2.rate" label={formatMessage(messages.pensionStep2)} />
       </FormGroup>
 
       <FormGroup header={formatMessage(messages.locale)}>
