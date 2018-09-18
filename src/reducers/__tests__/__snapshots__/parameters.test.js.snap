@@ -13,20 +13,20 @@ Object {
   "pension": Object {
     "include": true,
     "step1": Object {
-      "rate": 6,
+      "rate": 2,
       "threshold": Object {
         "high": 687869,
         "low": 96883,
       },
     },
     "step2": Object {
-      "rate": 6,
+      "rate": 2,
       "threshold": Object {
         "high": 1162596,
         "low": 687869,
       },
     },
   },
-  "vacationSavingsRate": 12.5,
+  "vacationSavingsRate": 12,
 }
 `;

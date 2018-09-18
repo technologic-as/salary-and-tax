@@ -8,7 +8,7 @@ export const defaultSalaryParameters = {
   hoursPerYear: 1730,
   hourRate: 1100,
   includeVacationSavings: true,
-  vacationSavingsRate: 12.5,
+  vacationSavingsRate: 12,
   includeEmployerFee: true,
   employerFeeRate: 14.1,
   ensuringFee: 15000,

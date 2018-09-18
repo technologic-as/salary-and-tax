@@ -6,8 +6,8 @@ export const calculateG = (g) => round(96883 * g);
 export const pensionConstants = {
   pension: {
     include: true,
-    step1: {rate: 6, threshold: {low: calculateG(1), high: calculateG(7.1)}},
-    step2: {rate: 6, threshold: {low: calculateG(7.1), high: calculateG(12)}},
+    step1: {rate: 2, threshold: {low: calculateG(1), high: calculateG(7.1)}},
+    step2: {rate: 2, threshold: {low: calculateG(7.1), high: calculateG(12)}},
   },
 };
 

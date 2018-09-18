@@ -38,9 +38,9 @@ Object {
 
 exports[`pension given salary of 193766 (2G) getPension should match snapshot 1`] = `
 Object {
-  "after": 187954,
-  "pension": 5812,
-  "step1": 5812,
+  "after": 191829,
+  "pension": 1937,
+  "step1": 1937,
   "step2": 0,
 }
 `;
@@ -56,9 +56,9 @@ Object {
 
 exports[`pension given salary of 290649 (3G) getPension should match snapshot 1`] = `
 Object {
-  "after": 279024,
-  "pension": 11625,
-  "step1": 11625,
+  "after": 286774,
+  "pension": 3875,
+  "step1": 3875,
   "step2": 0,
 }
 `;
@@ -74,9 +74,9 @@ Object {
 
 exports[`pension given salary of 678181 (7G) getPension should match snapshot 1`] = `
 Object {
-  "after": 643304,
-  "pension": 34877,
-  "step1": 34877,
+  "after": 666556,
+  "pension": 11625,
+  "step1": 11625,
   "step2": 0,
 }
 `;
@@ -92,9 +92,9 @@ Object {
 
 exports[`pension given salary of 687869 (7.1G) getPension should match snapshot 1`] = `
 Object {
-  "after": 652410,
-  "pension": 35459,
-  "step1": 35459,
+  "after": 676050,
+  "pension": 11819,
+  "step1": 11819,
   "step2": 0,
 }
 `;
@@ -110,10 +110,10 @@ Object {
 
 exports[`pension given salary of 775064 (8G) getPension should match snapshot 1`] = `
 Object {
-  "after": 734374,
-  "pension": 40690,
-  "step1": 35459,
-  "step2": 5231,
+  "after": 761502,
+  "pension": 13562,
+  "step1": 11819,
+  "step2": 1743,
 }
 `;
 
@@ -128,10 +128,10 @@ Object {
 
 exports[`pension given salary of 1065713 (11G) getPension should match snapshot 1`] = `
 Object {
-  "after": 1007584,
-  "pension": 58129,
-  "step1": 35459,
-  "step2": 22670,
+  "after": 1046338,
+  "pension": 19375,
+  "step1": 11819,
+  "step2": 7556,
 }
 `;
 
@@ -146,10 +146,10 @@ Object {
 
 exports[`pension given salary of 1162596 (12G) getPension should match snapshot 1`] = `
 Object {
-  "after": 1098654,
-  "pension": 63942,
-  "step1": 35459,
-  "step2": 28483,
+  "after": 1141283,
+  "pension": 21313,
+  "step1": 11819,
+  "step2": 9494,
 }
 `;
 
@@ -164,10 +164,10 @@ Object {
 
 exports[`pension given salary of 1453245 (15G) getPension should match snapshot 1`] = `
 Object {
-  "after": 1389303,
-  "pension": 63942,
-  "step1": 35459,
-  "step2": 28483,
+  "after": 1431932,
+  "pension": 21313,
+  "step1": 11819,
+  "step2": 9494,
 }
 `;
 
@@ -185,14 +185,14 @@ Object {
   "pension": Object {
     "include": true,
     "step1": Object {
-      "rate": 6,
+      "rate": 2,
       "threshold": Object {
         "high": 687869,
         "low": 96883,
       },
     },
     "step2": Object {
-      "rate": 6,
+      "rate": 2,
       "threshold": Object {
         "high": 1162596,
         "low": 687869,

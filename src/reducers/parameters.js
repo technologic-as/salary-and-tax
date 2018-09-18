@@ -3,7 +3,7 @@ import { defaultSalaryParameters } from '../calculations';
 
 
 const initialState = {
-    ...defaultSalaryParameters,
+  ...defaultSalaryParameters,
 };
 
 const parameters = (state = initialState, action = {}) => {

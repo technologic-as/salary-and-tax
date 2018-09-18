@@ -1,6 +1,6 @@
 const taxConstants = {
   incomeTaxRate: 23,
-  socialSecurityDeductionRate: 8.2,
+  socialSecurityDeductionRate: 11.4,
 
   step1: {rate: 1.4, threshold: 169000},
   step2: {rate: 3.3, threshold: 237900},
