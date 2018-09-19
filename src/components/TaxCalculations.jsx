@@ -18,11 +18,11 @@ const messages = defineMessages({
   step2: {id: 'tax.calculations.step.2', defaultMessage: 'Tax step 2'},
   step3: {id: 'tax.calculations.step.3', defaultMessage: 'Tax step 3'},
   step4: {id: 'tax.calculations.step.4', defaultMessage: 'Tax step 4'},
-  totalTax: {id: 'tax.calculations.total.tax', defaultMessage: 'Total tax'},
+  afterTax: {id: 'tax.calculations.after.tax', defaultMessage: 'After tax'},
 });
 
 export const TaxCalculationsComponent = ({
-  income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax, intl: {formatMessage, formatNumber},
+  income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax, afterTax, intl: {formatMessage, formatNumber},
 }) => {
   const formatCurrency = (amount) => formatNumber(amount, {style: 'currency', currency: 'NOK'});
   return (
@@ -30,22 +30,21 @@ export const TaxCalculationsComponent = ({
       <Section header={formatMessage(messages.header)}>
         <Table>
           <TableBody>
-            <TaxRow description={formatMessage(messages.income)} amount={formatCurrency(income)} />
+            <TaxRow description={formatMessage(messages.income)} sum={formatCurrency(income)} />
             <TaxRow description={formatMessage(messages.minimumDeduction)} amount={formatCurrency(minimumDeduction)} minus />
-            <TaxRow description={formatMessage(messages.commonIncome)} amount={formatCurrency(commonIncome)} />
+            <TaxRow description={formatMessage(messages.commonIncome)} sum={formatCurrency(commonIncome)} />
           </TableBody>
         </Table>
-
         <Table>
           <TableBody>
-            <TaxRow description={formatMessage(messages.commonIncome)} amount={formatCurrency(commonIncome)} />
+            <TaxRow description={formatMessage(messages.income)} sum={formatCurrency(income)} />
             <TaxRow description={formatMessage(messages.incomeTax)} amount={formatCurrency(incomeTax)} minus />
             <TaxRow description={formatMessage(messages.socialSecurityDeduction)} amount={formatCurrency(socialSecurityDeduction)} minus />
             <TaxRow description={formatMessage(messages.step1)} amount={formatCurrency(step1)} minus />
             <TaxRow description={formatMessage(messages.step2)} amount={formatCurrency(step2)} minus />
             <TaxRow description={formatMessage(messages.step3)} amount={formatCurrency(step3)} minus />
             <TaxRow description={formatMessage(messages.step4)} amount={formatCurrency(step4)} minus />
-            <TaxRow description={formatMessage(messages.totalTax)} amount={formatCurrency(totalTax)} />
+            <TaxRow description={formatMessage(messages.afterTax)} amount={formatCurrency(totalTax)} sum={formatCurrency(afterTax)} />
           </TableBody>
         </Table>
       </Section>
@@ -64,6 +63,7 @@ TaxCalculationsComponent.propTypes = {
   step3: PropTypes.number.isRequired,
   step4: PropTypes.number.isRequired,
   totalTax: PropTypes.number.isRequired,
+  afterTax: PropTypes.number.isRequired,
   intl: intlShape.isRequired,
 };
 

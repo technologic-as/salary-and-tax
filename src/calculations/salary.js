@@ -12,8 +12,7 @@ export const defaultSalaryParameters = {
   includeEmployerFee: true,
   employerFeeRate: 14.1,
   ensuringFee: 15000,
-  locale: translationConfig.locale,
-    ...pensionConstants,
+  locale: translationConfig.locale, ...pensionConstants,
 };
 
 export const getTurnover = ({hoursPerYear, hourRate}) => ({turnover: parseFloat(hoursPerYear) * parseFloat(hourRate)});
@@ -42,6 +41,7 @@ export const getSalaryCalculations = (data) => {
   const {employerFee, after: withoutEmployerFee} = getEmployerFee(companyIncome, data);
   const {vacationSavings, after: withoutVacationSavings} = getVacationSavings(withoutEmployerFee, data);
   const {pension, after: withoutPension} = getPension(withoutVacationSavings, data);
+  const totalCuts = theCut + employerFee + vacationSavings + pension;
 
   return ({
     turnover,
@@ -54,5 +54,6 @@ export const getSalaryCalculations = (data) => {
     pension,
     withoutPension,
     income: withoutPension,
+    totalCuts,
   });
 };

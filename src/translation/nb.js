@@ -1,17 +1,18 @@
 const turnover = 'Omsetning';
-const income = 'Inntekt';
+const income = 'Brutto inntekt';
 const totalTax = 'Skatt sammenlagt';
-const afterTax = 'Netto lønn';
+const afterTax = 'Netto inntekt';
 const employerFee = 'Arbeidsgiveravgift';
 const percentage = '(%)';
 const vacationSavings = 'Feriepenger';
 const pension = 'Pensjon';
-const commonIncome = 'Alminnelig inntekt';
+const commonIncome = 'Inntektsskatt-grunnlag';
+const cut = 'Andel til overleverandør';
 
 export default {
   'salary.calculations.header': 'Inntekstberegninger',
   'salary.calculations.turnover': turnover,
-  'salary.calculations.subcontractor.cut': 'Andel til overleverandør',
+  'salary.calculations.subcontractor.cut': cut,
   'salary.calculations.employer.fee': employerFee,
   'salary.calculations.vacation.savings': vacationSavings,
   'salary.calculations.pension': pension,
@@ -33,12 +34,9 @@ export default {
   'salary.parameters.locale': 'Språk',
   'summary.header': 'Sammendrag',
   'summary.turnover': turnover,
-  'summary.income': income,
-  'summary.pension': pension,
-  'summary.vacation.savings': vacationSavings,
-  'summary.common.income': commonIncome,
+  'summary.total.cuts': `${cut}, ${`${employerFee}, ${vacationSavings}, ${pension}`.toLocaleLowerCase()}`,
   'summary.total.tax': totalTax,
-  'summary.after.tax': afterTax,
+  'summary.second.year.income': "Beregnet inntekt andre lønnsår",
   'tax.calculations.header': 'Skatteberegninger',
   'tax.calculations.income': income,
   'tax.calculations.minimum.deduction': 'Minstefradrag',
@@ -49,5 +47,5 @@ export default {
   'tax.calculations.step.2': 'Trinnskatt trinn 2',
   'tax.calculations.step.3': 'Trinnskatt trinn 3',
   'tax.calculations.step.4': 'Trinnskatt trinn 4',
-  'tax.calculations.total.tax': 'Samlet skatt',
+  'tax.calculations.after.tax': afterTax,
 }

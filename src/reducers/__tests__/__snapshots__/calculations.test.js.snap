@@ -8,6 +8,7 @@ Object {
     "income": 1318912,
     "pension": 21313,
     "theCut": 190300,
+    "totalCuts": 584088,
     "turnover": 1903000,
     "vacationSavings": 160827,
     "withoutEmployerFee": 1501052,
