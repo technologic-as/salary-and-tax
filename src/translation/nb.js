@@ -1,3 +1,6 @@
+import { taxConstants } from '../calculations/tax';
+
+
 const turnover = 'Omsetning';
 const income = 'Brutto inntekt';
 const totalTax = 'Skatt sammenlagt';
@@ -8,6 +11,7 @@ const vacationSavings = 'Feriepenger';
 const pension = 'Pensjon';
 const commonIncome = 'Inntektsskatt-grunnlag';
 const cut = 'Andel til overleverandør';
+const taxStep = 'Trinnskatt trinn';
 
 export default {
   'salary.calculations.header': 'Inntekstberegninger',
@@ -17,6 +21,7 @@ export default {
   'salary.calculations.vacation.savings': vacationSavings,
   'salary.calculations.pension': pension,
   'salary.calculations.income': income,
+
   'salary.parameters.header': 'Parametere',
   'salary.parameters.turnover': turnover,
   'salary.parameters.hours.per.year': 'Timer per år',
@@ -32,20 +37,21 @@ export default {
   'salary.parameters.pension.step2': `${percentage} (7.1G-12G)`,
   'salary.parameters.submit': 'Beregn',
   'salary.parameters.locale': 'Språk',
+
   'summary.header': 'Sammendrag',
   'summary.turnover': turnover,
   'summary.total.cuts': `${cut}, ${`${employerFee}, ${vacationSavings}, ${pension}`.toLocaleLowerCase()}`,
   'summary.total.tax': totalTax,
-  'summary.second.year.income': "Beregnet inntekt andre lønnsår",
+
   'tax.calculations.header': 'Skatteberegninger',
   'tax.calculations.income': income,
-  'tax.calculations.minimum.deduction': 'Minstefradrag',
+  'tax.calculations.minimum.deduction': `Minstefradrag (${taxConstants.minimumDeduction.rate}%)`,
   'tax.calculations.common.income': commonIncome,
-  'tax.calculations.income.tax': 'Inntektsskatt',
-  'tax.calculations.social.security.deduction': 'Trygdeavgift',
-  'tax.calculations.step.1': 'Trinnskatt trinn 1',
-  'tax.calculations.step.2': 'Trinnskatt trinn 2',
-  'tax.calculations.step.3': 'Trinnskatt trinn 3',
-  'tax.calculations.step.4': 'Trinnskatt trinn 4',
+  'tax.calculations.income.tax': `Inntektsskatt (${taxConstants.incomeTaxRate}%)`,
+  'tax.calculations.social.security.deduction': `Trygdeavgift (${taxConstants.socialSecurityDeductionRate}%)`,
+  'tax.calculations.step.1': `${taxStep} 1 (${taxConstants.step1.rate}%)`,
+  'tax.calculations.step.2': `${taxStep} 2 (${taxConstants.step2.rate}%)`,
+  'tax.calculations.step.3': `${taxStep} 3 (${taxConstants.step3.rate}%)`,
+  'tax.calculations.step.4': `${taxStep} 4 (${taxConstants.step4.rate}%)`,
   'tax.calculations.after.tax': afterTax,
 }

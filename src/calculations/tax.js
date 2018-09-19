@@ -1,4 +1,4 @@
-const taxConstants = {
+export const taxConstants = {
   incomeTaxRate: 23,
   socialSecurityDeductionRate: 11.4,
 
