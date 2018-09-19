@@ -20,6 +20,14 @@ exports[`Summary should render 1`] = `
         description="Common income"
       />
       <TaxRow
+        amount="$666,666.00"
+        description="Pension"
+      />
+      <TaxRow
+        amount="$777,777.00"
+        description="Vacation savings"
+      />
+      <TaxRow
         amount="$444,444.00"
         description="Total tax"
         minus={true}

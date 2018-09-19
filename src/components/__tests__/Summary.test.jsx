@@ -18,6 +18,8 @@ describe('Summary', () => {
       commonIncome={333333}
       totalTax={444444}
       afterTax={555555}
+      pension={666666}
+      vacationSavings={777777}
       intl={mockIntl}
     />).toJSON();
     expect(tree).toMatchSnapshot();
