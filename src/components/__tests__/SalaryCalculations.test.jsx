@@ -22,6 +22,8 @@ describe('SalaryCalculations', () => {
         withoutEmployerFee={161616}
         withoutPension={171717}
         withoutVacationSavings={181818}
+        surplus={191919}
+        withoutSurplus={202020}
         intl={mockIntl}
       />).toJSON();
     expect(tree).toMatchSnapshot();

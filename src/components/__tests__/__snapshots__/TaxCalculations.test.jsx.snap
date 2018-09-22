@@ -2,9 +2,15 @@
 
 exports[`TaxCalculations should render 1`] = `
 <Section
+  expanded={true}
   header="Tax calculations"
 >
   <Table>
+    <TableHead>
+      <TaxRow
+        description="Common income"
+      />
+    </TableHead>
     <TableBody>
       <TaxRow
         description="Income"
@@ -22,6 +28,11 @@ exports[`TaxCalculations should render 1`] = `
     </TableBody>
   </Table>
   <Table>
+    <TableHead>
+      <TaxRow
+        description="Income"
+      />
+    </TableHead>
     <TableBody>
       <TaxRow
         description="Income"
@@ -60,6 +71,35 @@ exports[`TaxCalculations should render 1`] = `
       <TaxRow
         amount="$12,345,678.00"
         description="After tax"
+        sum="$12,345,678.00"
+      />
+    </TableBody>
+  </Table>
+  <Table>
+    <TableHead>
+      <TaxRow
+        description="Surplus"
+      />
+    </TableHead>
+    <TableBody>
+      <TaxRow
+        description="Surplus amount"
+        sum="$12,345,678.00"
+      />
+      <TaxRow
+        amount="$12,345,678.00"
+        description="Surplus tax"
+        minus={true}
+        sum="$12,345,678.00"
+      />
+      <TaxRow
+        amount="$12,345,678.00"
+        description="Dividends tax"
+        minus={true}
+        sum="$12,345,678.00"
+      />
+      <TaxRow
+        description="Dividends"
         sum="$12,345,678.00"
       />
     </TableBody>

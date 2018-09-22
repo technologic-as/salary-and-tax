@@ -11,6 +11,7 @@ const messages = defineMessages({
   header: {id: 'salary.calculations.header', defaultMessage: 'Salary calculations'},
   turnover: {id: 'salary.calculations.turnover', defaultMessage: 'Turnover'},
   theCut: {id: 'salary.calculations.subcontractor.cut', defaultMessage: 'Subcontractor cut'},
+  surplus: {id: 'salary.calculations.surplus', defaultMessage: 'Surplus'},
   employerFee: {id: 'salary.calculations.employer.fee', defaultMessage: 'Employer fee'},
   vacationSavings: {id: 'salary.calculations.vacation.savings', defaultMessage: 'Vacation savings'},
   pension: {id: 'salary.calculations.pension', defaultMessage: 'Pension'},
@@ -18,7 +19,7 @@ const messages = defineMessages({
 });
 
 export const SalaryCalculationsComponent = ({
-  turnover, companyIncome, theCut, employerFee, withoutEmployerFee, vacationSavings, withoutVacationSavings, pension, withoutPension, intl: {formatMessage, formatNumber},
+  turnover, companyIncome, theCut, employerFee, withoutEmployerFee, vacationSavings, withoutVacationSavings, pension, withoutPension, surplus, withoutSurplus, intl: {formatMessage, formatNumber},
 }) => {
   const formatCurrency = (amount) => formatNumber(amount, {style: 'currency', currency: 'NOK'});
 
@@ -28,6 +29,7 @@ export const SalaryCalculationsComponent = ({
         <TableBody>
           <TaxRow description={formatMessage(messages.turnover)} sum={formatCurrency(turnover)} />
           <TaxRow description={formatMessage(messages.theCut)} amount={formatCurrency(theCut)} sum={formatCurrency(companyIncome)} minus />
+          <TaxRow description={formatMessage(messages.surplus)} amount={formatCurrency(surplus)} sum={formatCurrency(withoutSurplus)} minus />
           <TaxRow description={formatMessage(messages.employerFee)} amount={formatCurrency(employerFee)} sum={formatCurrency(withoutEmployerFee)} minus />
           <TaxRow description={formatMessage(messages.vacationSavings)} amount={formatCurrency(vacationSavings)} sum={formatCurrency(withoutVacationSavings)} minus />
           <TaxRow description={formatMessage(messages.pension)} amount={formatCurrency(pension)} sum={formatCurrency(withoutPension)} minus />
@@ -48,6 +50,8 @@ SalaryCalculationsComponent.propTypes = {
   withoutVacationSavings: PropTypes.number.isRequired,
   pension: PropTypes.number.isRequired,
   withoutPension: PropTypes.number.isRequired,
+  surplus: PropTypes.number.isRequired,
+  withoutSurplus: PropTypes.number.isRequired,
   intl: intlShape.isRequired,
 };
 

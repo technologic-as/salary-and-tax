@@ -17,6 +17,12 @@ exports[`SalaryCalculations should render 1`] = `
         sum="$101,010.00"
       />
       <TaxRow
+        amount="$191,919.00"
+        description="Surplus"
+        minus={true}
+        sum="$202,020.00"
+      />
+      <TaxRow
         amount="$111,111.00"
         description="Employer fee"
         minus={true}

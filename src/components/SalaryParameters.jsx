@@ -23,6 +23,8 @@ const messages = defineMessages({
   pension: {id: 'salary.parameters.pension', defaultMessage: 'Pension'},
   pensionStep1: {id: 'salary.parameters.pension.step1', defaultMessage: '(%) (1G-7.1G)'},
   pensionStep2: {id: 'salary.parameters.pension.step2', defaultMessage: '(%) (7.1G-12G)'},
+  surplus: {id: 'salary.parameters.surplus', defaultMessage: 'Surplus'},
+  surplusAmount: {id: 'salary.parameters.surplus.amount', defaultMessage: 'Amount'},
   locale: {id: 'salary.parameters.locale', defaultMessage: 'Language'},
   submit: {id: 'salary.parameters.submit', defaultMessage: 'Calculate salary'},
 });
@@ -53,6 +55,11 @@ export const SalaryParametersComponent = ({handleSubmit, submitting, intl: {form
         <Checkbox name="pension.include" label={formatMessage(messages.includeInCalculation)} />
         <InputWithLabel name="pension.step1.rate" label={formatMessage(messages.pensionStep1)} />
         <InputWithLabel name="pension.step2.rate" label={formatMessage(messages.pensionStep2)} />
+      </FormGroup>
+
+      <FormGroup header={formatMessage(messages.surplus)}>
+        <Checkbox name="surplus.include" label={formatMessage(messages.includeInCalculation)} />
+        <InputWithLabel name="surplus.amount" label={formatMessage(messages.surplusAmount)} />
       </FormGroup>
 
       <FormGroup header={formatMessage(messages.locale)}>

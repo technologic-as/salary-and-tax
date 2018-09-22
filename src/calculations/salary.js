@@ -12,6 +12,7 @@ export const defaultSalaryParameters = {
   includeEmployerFee: true,
   employerFeeRate: 14.1,
   ensuringFee: 15000,
+  surplus: {amount: 100000, include: false},
   locale: translationConfig.locale, ...pensionConstants,
 };
 
@@ -22,23 +23,24 @@ export const getCompanyIncome = (turnover, {cut}) => {
     theCut: theCut, after: turnover - theCut,
   });
 };
+export const calculateSurplus = (companyIncome, {surplus: {amount, include}}) => {
+  const includedAmount = include ? parseFloat(amount) : 0;
+  return ({surplus: includedAmount, after: companyIncome - includedAmount});
+};
 export const getEmployerFee = (salary, {includeEmployerFee, employerFeeRate}) => {
   const employerFee = round(salary - (salary / (100 + (includeEmployerFee ? parseFloat(employerFeeRate) : 0)) * 100));
-  return {
-    employerFee, after: salary - employerFee,
-  };
+  return {employerFee, after: salary - employerFee};
 };
 export const getVacationSavings = (salary, {includeVacationSavings, vacationSavingsRate}) => {
   const vacationSavings = round(salary - (salary / (100 + (includeVacationSavings ? parseFloat(vacationSavingsRate) : 0)) * 100));
-  return {
-    vacationSavings, after: salary - vacationSavings,
-  };
+  return {vacationSavings, after: salary - vacationSavings};
 };
 
 export const getSalaryCalculations = (data) => {
   const {turnover} = getTurnover(data);
   const {theCut, after: companyIncome} = getCompanyIncome(turnover, data);
-  const {employerFee, after: withoutEmployerFee} = getEmployerFee(companyIncome, data);
+  const {surplus, after: withoutSurplus} = calculateSurplus(companyIncome, data);
+  const {employerFee, after: withoutEmployerFee} = getEmployerFee(withoutSurplus, data);
   const {vacationSavings, after: withoutVacationSavings} = getVacationSavings(withoutEmployerFee, data);
   const {pension, after: withoutPension} = getPension(withoutVacationSavings, data);
   const totalCuts = theCut + employerFee + vacationSavings + pension;
@@ -55,5 +57,7 @@ export const getSalaryCalculations = (data) => {
     withoutPension,
     income: withoutPension,
     totalCuts,
+    surplus,
+    withoutSurplus,
   });
 };

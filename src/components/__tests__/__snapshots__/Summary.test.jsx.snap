@@ -23,6 +23,18 @@ exports[`Summary should render 1`] = `
         minus={true}
         sum="$555,555.00"
       />
+      <TaxRow
+        amount="$555,555.00"
+        description="Income"
+      />
+      <TaxRow
+        amount="$777,777.00"
+        description="Dividends"
+      />
+      <TaxRow
+        description="Total income"
+        sum="$888,888.00"
+      />
     </TableBody>
   </Table>
 </Section>

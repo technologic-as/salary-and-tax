@@ -69,6 +69,18 @@ exports[`SalaryParametersComponent should render 1`] = `
       />
     </FormGroup>
     <FormGroup
+      header="Surplus"
+    >
+      <Checkbox
+        label="Include in calculation"
+        name="surplus.include"
+      />
+      <InputWithLabel
+        label="Amount"
+        name="surplus.amount"
+      />
+    </FormGroup>
+    <FormGroup
       header="Language"
     >
       <RadioGroup

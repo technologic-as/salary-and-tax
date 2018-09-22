@@ -2,17 +2,26 @@
 
 exports[`calculations should have default values 1`] = `
 Object {
+  "dividends": Object {
+    "afterDividendsTax": 0,
+    "dividends": 0,
+    "dividendsTax": 0,
+    "surplus": 0,
+    "surplusTax": 0,
+  },
   "salary": Object {
     "companyIncome": 1712700,
     "employerFee": 211648,
     "income": 1318912,
     "pension": 21313,
+    "surplus": 0,
     "theCut": 190300,
     "totalCuts": 584088,
     "turnover": 1903000,
     "vacationSavings": 160827,
     "withoutEmployerFee": 1501052,
     "withoutPension": 1318912,
+    "withoutSurplus": 1712700,
     "withoutVacationSavings": 1340225,
   },
   "tax": Object {

@@ -6,12 +6,14 @@ Object {
   "employerFee": 211648,
   "income": 1318912,
   "pension": 21313,
+  "surplus": 0,
   "theCut": 190300,
   "totalCuts": 584088,
   "turnover": 1903000,
   "vacationSavings": 160827,
   "withoutEmployerFee": 1501052,
   "withoutPension": 1318912,
+  "withoutSurplus": 1712700,
   "withoutVacationSavings": 1340225,
 }
 `;

@@ -1,5 +1,11 @@
 import {
-  defaultSalaryParameters, getCompanyIncome, getEmployerFee, getSalaryCalculations, getTurnover, getVacationSavings,
+  calculateSurplus,
+  defaultSalaryParameters,
+  getCompanyIncome,
+  getEmployerFee,
+  getSalaryCalculations,
+  getTurnover,
+  getVacationSavings,
 } from '../salary';
 
 
@@ -26,6 +32,18 @@ describe('salary', () => {
     it('should calculate based on salary and return object', () => {
       expect(getCompanyIncome(expectedTurnover, {cut: 10}))
         .toEqual({after: expectedAfterCut, theCut: expectedTurnover * 0.1});
+    });
+  });
+  describe('calculateSurplus', () => {
+    const income = 100000;
+    const amount = 1000;
+    it('should calculate surplus when true', () => {
+      expect(calculateSurplus(income, {surplus: {amount: amount, include: true}}))
+        .toEqual({after: income - amount, surplus: amount});
+    });
+    it('should not calculate surplus when false', () => {
+      expect(calculateSurplus(income, {surplus: {amount: amount, include: false}}))
+        .toEqual({after: income, surplus: 0});
     });
   });
   describe('getEmployerFee', () => {

@@ -27,6 +27,10 @@ Object {
       },
     },
   },
+  "surplus": Object {
+    "amount": 100000,
+    "include": false,
+  },
   "vacationSavingsRate": 12,
 }
 `;

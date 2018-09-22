@@ -8,6 +8,7 @@ import { mockIntl } from './__mock__/intl';
 jest.mock('../Ui', () => mockComponent);
 jest.mock('@material-ui/core/Table', () => "Table");
 jest.mock('@material-ui/core/TableBody', () => "TableBody");
+jest.mock('@material-ui/core/TableHead', () => "TableHead");
 
 
 describe('TaxCalculations', () => {
@@ -24,6 +25,11 @@ describe('TaxCalculations', () => {
       step4={12345678}
       totalTax={12345678}
       afterTax={12345678}
+      dividends={12345678}
+      afterDividendsTax={12345678}
+      dividendsTax={12345678}
+      surplus={12345678}
+      surplusTax={12345678}
       intl={mockIntl}
     />).toJSON();
     expect(tree).toMatchSnapshot();

@@ -10,6 +10,7 @@ describe('calculations', () => {
     expect(Object.keys(calculations())).toEqual([
       'salary',
       'tax',
+      'dividends',
     ]);
   });
   it('should use income from salary calculation as input into tax calculations', () => {
