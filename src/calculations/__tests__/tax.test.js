@@ -6,6 +6,7 @@ import {
   calculateStep2,
   calculateStep3,
   calculateStep4,
+  getDividendsTaxCalculations,
   getTaxCalculations,
 } from '../tax';
 
@@ -248,6 +249,11 @@ describe('tax', () => {
           expect(tax).toEqual(0);
         }
       });
+    });
+  });
+  describe('getDividendsTaxCalculations', () => {
+    it('should match snapshot', () => {
+      expect(getDividendsTaxCalculations(100000)).toMatchSnapshot();
     });
   });
 });

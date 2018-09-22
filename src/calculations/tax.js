@@ -7,7 +7,7 @@ export const taxConstants = {
   step3: {rate: 12.4, threshold: 598050},
   step4: {rate: 15.4, threshold: 962050},
 
-  dividends: {rate: 23},
+  dividends: {rate: 23, upwardAdjustmentFactor: 1.33},
   surplus: {rate: 23},
 
   minimumDeduction: {rate: 45, min: 4000, max: 97610},
@@ -100,10 +100,12 @@ export const getDividendsTaxCalculations = (surplus) => {
   const surplusTax = (surplus * taxConstants.surplus.rate / 100);
   const dividends = surplus - surplusTax;
 
-  const dividendsTax = (dividends * taxConstants.dividends.rate / 100);
+  const upwardsAdjustment = (dividends * (taxConstants.dividends.upwardAdjustmentFactor));
+
+  const dividendsTax = (upwardsAdjustment * taxConstants.dividends.rate / 100);
   const afterDividendsTax = dividends - dividendsTax;
 
-  return {surplus, surplusTax, dividendsTax, afterDividendsTax, dividends};
+  return {surplus, surplusTax, dividendsTax, afterDividendsTax, dividends, upwardsAdjustment};
 };
 
 export default getTaxCalculations;

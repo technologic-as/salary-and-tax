@@ -361,6 +361,17 @@ exports[`tax calculateStep4 should calculate step four tax on a income of 962050
 
 exports[`tax calculateStep4 should calculate step four tax on a income of 999999 which is above step four tax 1`] = `5844`;
 
+exports[`tax getDividendsTaxCalculations should match snapshot 1`] = `
+Object {
+  "afterDividendsTax": 53445.7,
+  "dividends": 77000,
+  "dividendsTax": 23554.3,
+  "surplus": 100000,
+  "surplusTax": 23000,
+  "upwardsAdjustment": 102410,
+}
+`;
+
 exports[`tax getTaxCalculations should calculate tax on a income of -1000 which is below min threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
   "afterTax": 232,
