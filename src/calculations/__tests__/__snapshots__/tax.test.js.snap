@@ -171,43 +171,43 @@ Object {
 }
 `;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of -1000 1`] = `-114`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of -1000 1`] = `-82`;
 
 exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 0 1`] = `0`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 1000 1`] = `114`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 1000 1`] = `82`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 3999 1`] = `456`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 3999 1`] = `328`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 4000 1`] = `456`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 4000 1`] = `328`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 5000 1`] = `570`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 5000 1`] = `410`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 9000 1`] = `1026`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 9000 1`] = `738`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 40000 1`] = `4560`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 40000 1`] = `3280`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 80000 1`] = `9120`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 80000 1`] = `6560`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 97610 1`] = `11128`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 97610 1`] = `8004`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 100000 1`] = `11400`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 100000 1`] = `8200`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 169000 1`] = `19266`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 169000 1`] = `13858`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 170000 1`] = `19380`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 170000 1`] = `13940`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 237900 1`] = `27121`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 237900 1`] = `19508`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 240000 1`] = `27360`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 240000 1`] = `19680`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 598050 1`] = `68178`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 598050 1`] = `49040`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 600000 1`] = `68400`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 600000 1`] = `49200`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 962050 1`] = `109674`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 962050 1`] = `78888`;
 
-exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 999999 1`] = `114000`;
+exports[`tax calculateSocialSecurityDeduction should calculate social security deduction on a income of 999999 1`] = `82000`;
 
 exports[`tax calculateStep1 should calculate step one tax on a income of -1000 which is below step one tax 1`] = `0`;
 
@@ -363,17 +363,17 @@ exports[`tax calculateStep4 should calculate step four tax on a income of 999999
 
 exports[`tax getTaxCalculations should calculate tax on a income of -1000 which is below min threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 264,
+  "afterTax": 232,
   "commonIncome": -5000,
   "income": -1000,
   "incomeTax": -1150,
   "minimumDeduction": 4000,
-  "socialSecurityDeduction": -114,
+  "socialSecurityDeduction": -82,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": -1264,
+  "totalTax": -1232,
 }
 `;
 
@@ -395,272 +395,272 @@ Object {
 
 exports[`tax getTaxCalculations should calculate tax on a income of 1000 which is below min threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 1576,
+  "afterTax": 1608,
   "commonIncome": -3000,
   "income": 1000,
   "incomeTax": -690,
   "minimumDeduction": 4000,
-  "socialSecurityDeduction": 114,
+  "socialSecurityDeduction": 82,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": -576,
+  "totalTax": -608,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 3999 which is below min threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 3543,
+  "afterTax": 3671,
   "commonIncome": -1,
   "income": 3999,
   "incomeTax": -0,
   "minimumDeduction": 4000,
-  "socialSecurityDeduction": 456,
+  "socialSecurityDeduction": 328,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 456,
+  "totalTax": 328,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 4000 which is between min and max threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 3544,
+  "afterTax": 3672,
   "commonIncome": 0,
   "income": 4000,
   "incomeTax": 0,
   "minimumDeduction": 4000,
-  "socialSecurityDeduction": 456,
+  "socialSecurityDeduction": 328,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 456,
+  "totalTax": 328,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 5000 which is between min and max threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 4200,
+  "afterTax": 4360,
   "commonIncome": 1000,
   "income": 5000,
   "incomeTax": 230,
   "minimumDeduction": 4000,
-  "socialSecurityDeduction": 570,
+  "socialSecurityDeduction": 410,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 800,
+  "totalTax": 640,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 9000 which is between min and max threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 6835,
+  "afterTax": 7123,
   "commonIncome": 4950,
   "income": 9000,
   "incomeTax": 1139,
   "minimumDeduction": 4050,
-  "socialSecurityDeduction": 1026,
+  "socialSecurityDeduction": 738,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 2165,
+  "totalTax": 1877,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 40000 which is between min and max threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 30380,
+  "afterTax": 31660,
   "commonIncome": 22000,
   "income": 40000,
   "incomeTax": 5060,
   "minimumDeduction": 18000,
-  "socialSecurityDeduction": 4560,
+  "socialSecurityDeduction": 3280,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 9620,
+  "totalTax": 8340,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 80000 which is between min and max threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 60760,
+  "afterTax": 63320,
   "commonIncome": 44000,
   "income": 80000,
   "incomeTax": 10120,
   "minimumDeduction": 36000,
-  "socialSecurityDeduction": 9120,
+  "socialSecurityDeduction": 6560,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 19240,
+  "totalTax": 16680,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 97610 which is between min and max threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 74134,
+  "afterTax": 77258,
   "commonIncome": 53685,
   "income": 97610,
   "incomeTax": 12348,
   "minimumDeduction": 43925,
-  "socialSecurityDeduction": 11128,
+  "socialSecurityDeduction": 8004,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 23476,
+  "totalTax": 20352,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 100000 which is above max threshold for minimum deduction, below step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 75950,
+  "afterTax": 79150,
   "commonIncome": 55000,
   "income": 100000,
   "incomeTax": 12650,
   "minimumDeduction": 45000,
-  "socialSecurityDeduction": 11400,
+  "socialSecurityDeduction": 8200,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 24050,
+  "totalTax": 20850,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 169000 which is above max threshold for minimum deduction, above step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 128355,
+  "afterTax": 133763,
   "commonIncome": 92950,
   "income": 169000,
   "incomeTax": 21379,
   "minimumDeduction": 76050,
-  "socialSecurityDeduction": 19266,
+  "socialSecurityDeduction": 13858,
   "step1": 0,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 40645,
+  "totalTax": 35237,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 170000 which is above max threshold for minimum deduction, above step one tax, below step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 129101,
+  "afterTax": 134541,
   "commonIncome": 93500,
   "income": 170000,
   "incomeTax": 21505,
   "minimumDeduction": 76500,
-  "socialSecurityDeduction": 19380,
+  "socialSecurityDeduction": 13940,
   "step1": 14,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 40899,
+  "totalTax": 35459,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 237900 which is above max threshold for minimum deduction, above step one tax, above step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 177547,
+  "afterTax": 185160,
   "commonIncome": 140290,
   "income": 237900,
   "incomeTax": 32267,
   "minimumDeduction": 97610,
-  "socialSecurityDeduction": 27121,
+  "socialSecurityDeduction": 19508,
   "step1": 965,
   "step2": 0,
   "step3": 0,
   "step4": 0,
-  "totalTax": 60353,
+  "totalTax": 52740,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 240000 which is above max threshold for minimum deduction, above step one tax, above step two tax, below step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 178856,
+  "afterTax": 186536,
   "commonIncome": 142390,
   "income": 240000,
   "incomeTax": 32750,
   "minimumDeduction": 97610,
-  "socialSecurityDeduction": 27360,
+  "socialSecurityDeduction": 19680,
   "step1": 965,
   "step2": 69,
   "step3": 0,
   "step4": 0,
-  "totalTax": 61144,
+  "totalTax": 53464,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 598050 which is above max threshold for minimum deduction, above step one tax, above step two tax, above step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 401921,
+  "afterTax": 421059,
   "commonIncome": 500440,
   "income": 598050,
   "incomeTax": 115101,
   "minimumDeduction": 97610,
-  "socialSecurityDeduction": 68178,
+  "socialSecurityDeduction": 49040,
   "step1": 965,
   "step2": 11885,
   "step3": 0,
   "step4": 0,
-  "totalTax": 196129,
+  "totalTax": 176991,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 600000 which is above max threshold for minimum deduction, above step one tax, above step two tax, above step three tax, below step four tax 1`] = `
 Object {
-  "afterTax": 402958,
+  "afterTax": 422158,
   "commonIncome": 502390,
   "income": 600000,
   "incomeTax": 115550,
   "minimumDeduction": 97610,
-  "socialSecurityDeduction": 68400,
+  "socialSecurityDeduction": 49200,
   "step1": 965,
   "step2": 11885,
   "step3": 242,
   "step4": 0,
-  "totalTax": 197042,
+  "totalTax": 177842,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 962050 which is above max threshold for minimum deduction, above step one tax, above step two tax, above step three tax, above step four tax 1`] = `
 Object {
-  "afterTax": 595569,
+  "afterTax": 626355,
   "commonIncome": 864440,
   "income": 962050,
   "incomeTax": 198821,
   "minimumDeduction": 97610,
-  "socialSecurityDeduction": 109674,
+  "socialSecurityDeduction": 78888,
   "step1": 965,
   "step2": 11885,
   "step3": 45136,
   "step4": 0,
-  "totalTax": 366481,
+  "totalTax": 335695,
 }
 `;
 
 exports[`tax getTaxCalculations should calculate tax on a income of 999999 which is above max threshold for minimum deduction, above step one tax, above step two tax, above step three tax, above step four tax 1`] = `
 Object {
-  "afterTax": 614620,
+  "afterTax": 646620,
   "commonIncome": 902389,
   "income": 999999,
   "incomeTax": 207549,
   "minimumDeduction": 97610,
-  "socialSecurityDeduction": 114000,
+  "socialSecurityDeduction": 82000,
   "step1": 965,
   "step2": 11885,
   "step3": 45136,
   "step4": 5844,
-  "totalTax": 385379,
+  "totalTax": 353379,
 }
 `;

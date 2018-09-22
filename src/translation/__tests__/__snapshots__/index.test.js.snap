@@ -59,7 +59,7 @@ Object {
   "tax.calculations.income.header": "Inntekt",
   "tax.calculations.income.tax": "Inntektsskatt (23%)",
   "tax.calculations.minimum.deduction": "Minstefradrag (45%)",
-  "tax.calculations.social.security.deduction": "Trygdeavgift (11.4%)",
+  "tax.calculations.social.security.deduction": "Trygdeavgift (8.2%)",
   "tax.calculations.step.1": "Trinnskatt trinn 1 (1.4%)",
   "tax.calculations.step.2": "Trinnskatt trinn 2 (3.3%)",
   "tax.calculations.step.3": "Trinnskatt trinn 3 (12.4%)",
