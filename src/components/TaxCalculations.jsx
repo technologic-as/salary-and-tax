@@ -35,7 +35,7 @@ export const TaxCalculationsComponent = ({
   const formatCurrency = (amount) => formatNumber(amount, {style: 'currency', currency: 'NOK'});
   return (
     <Fragment>
-      <Section header={formatMessage(messages.header)} expanded>
+      <Section header={formatMessage(messages.header)}>
         <Table>
           <TableHead>
             <TaxRow description={formatMessage(messages.commonIncomeHeader)} />

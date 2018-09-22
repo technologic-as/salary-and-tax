@@ -2,7 +2,6 @@
 
 exports[`TaxCalculations should render 1`] = `
 <Section
-  expanded={true}
   header="Tax calculations"
 >
   <Table>
