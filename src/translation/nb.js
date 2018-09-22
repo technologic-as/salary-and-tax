@@ -65,8 +65,8 @@ export default {
   'tax.calculations.step.4': `${taxStep} 4 (${taxConstants.step4.rate}%)`,
   'tax.calculations.after.tax': afterTax,
   'tax.calculations.surplus.header': 'Overskudd',
-  'tax.calculations.surplus.amount': 'Overskuddsbeløp',
-  'tax.calculations.surplus.tax': 'Skatt på overskudd',
+  'tax.calculations.surplus.amount': 'Selskapets overskudd',
+  'tax.calculations.surplus.tax': `Skatt på overskudd (${taxConstants.surplus.rate}%)`,
   'tax.calculations.dividends.tax': 'Skatt på utbytte',
   'tax.calculations.dividends.amount': dividends,
 }

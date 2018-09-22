@@ -9,6 +9,7 @@ Object {
       "dividendsTax": 0,
       "surplus": 0,
       "surplusTax": 0,
+      "upwardsAdjustment": 0,
     },
     "salary": Object {
       "companyIncome": 1712700,
@@ -102,9 +103,9 @@ Object {
       "tax.calculations.step.2": "Trinnskatt trinn 2 (3.3%)",
       "tax.calculations.step.3": "Trinnskatt trinn 3 (12.4%)",
       "tax.calculations.step.4": "Trinnskatt trinn 4 (15.4%)",
-      "tax.calculations.surplus.amount": "Overskuddsbeløp",
+      "tax.calculations.surplus.amount": "Selskapets overskudd",
       "tax.calculations.surplus.header": "Overskudd",
-      "tax.calculations.surplus.tax": "Skatt på overskudd",
+      "tax.calculations.surplus.tax": "Skatt på overskudd (23%)",
     },
   },
   "parameters": Object {
