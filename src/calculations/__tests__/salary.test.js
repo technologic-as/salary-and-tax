@@ -48,21 +48,21 @@ describe('salary', () => {
   });
   describe('getEmployerFee', () => {
     it('should calculate the employer fee when included', () => {
-      expect(getEmployerFee(expectedAfterCut, {includeEmployerFee: true, employerFeeRate: 14.1}))
+      expect(getEmployerFee(expectedAfterCut, {employerFee: {include: true, rate: 14.1}}))
         .toEqual({after: expectedAfterEmployerFee, employerFee: 211648});
     });
     it('should not calculate the employer fee when not included', () => {
-      expect(getEmployerFee(expectedAfterCut, {includeEmployerFee: false, employerFeeRate: 14.1}))
+      expect(getEmployerFee(expectedAfterCut, {employerFee: {include: false, rate: 14.1}}))
         .toEqual({after: expectedAfterCut, employerFee: 0});
     });
   });
   describe('getVacationSavings', () => {
     it('should calculate the vacation savings when included', () => {
-      expect(getVacationSavings(expectedAfterEmployerFee, {includeVacationSavings: true, vacationSavingsRate: 12.5}))
+      expect(getVacationSavings(expectedAfterEmployerFee, {vacationSavings: {include: true, rate: 12.5}}))
         .toEqual({after: expectedAfterVacationSavings, vacationSavings: 166783});
     });
     it('should not calculate the vacation savings when not included', () => {
-      expect(getVacationSavings(expectedAfterEmployerFee, {includeVacationSavings: false, vacationSavingsRate: 12.5}))
+      expect(getVacationSavings(expectedAfterEmployerFee, {vacationSavings: {include: false, rate: 12.5}}))
         .toEqual({after: expectedAfterEmployerFee, vacationSavings: 0});
     });
   });

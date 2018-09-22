@@ -33,11 +33,11 @@ exports[`SalaryParametersComponent should render 1`] = `
     >
       <Checkbox
         label="Include in calculation"
-        name="includeEmployerFee"
+        name="employerFee.include"
       />
       <InputWithLabel
         label="(%)"
-        name="employerFeeRate"
+        name="employerFee.rate"
       />
     </FormGroup>
     <FormGroup
@@ -45,11 +45,11 @@ exports[`SalaryParametersComponent should render 1`] = `
     >
       <Checkbox
         label="Include in calculation"
-        name="includeVacationSavings"
+        name="vacationSavings.include"
       />
       <InputWithLabel
         label="(%)"
-        name="vacationSavingsRate"
+        name="vacationSavings.rate"
       />
     </FormGroup>
     <FormGroup

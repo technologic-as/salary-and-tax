@@ -3,12 +3,13 @@
 exports[`parameters should have initial state 1`] = `
 Object {
   "cut": 10,
-  "employerFeeRate": 14.1,
+  "employerFee": Object {
+    "include": true,
+    "rate": 14.1,
+  },
   "ensuringFee": 15000,
   "hourRate": 1100,
   "hoursPerYear": 1730,
-  "includeEmployerFee": true,
-  "includeVacationSavings": true,
   "locale": "nb",
   "pension": Object {
     "include": true,
@@ -31,6 +32,9 @@ Object {
     "amount": 100000,
     "include": false,
   },
-  "vacationSavingsRate": 12,
+  "vacationSavings": Object {
+    "include": true,
+    "rate": 12,
+  },
 }
 `;

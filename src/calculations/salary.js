@@ -7,32 +7,29 @@ export const defaultSalaryParameters = {
   cut: 10,
   hoursPerYear: 1730,
   hourRate: 1100,
-  includeVacationSavings: true,
-  vacationSavingsRate: 12,
-  includeEmployerFee: true,
-  employerFeeRate: 14.1,
   ensuringFee: 15000,
+  vacationSavings: {rate: 12, include: true},
+  employerFee: {rate: 14.1, include: true},
   surplus: {amount: 100000, include: false},
-  locale: translationConfig.locale, ...pensionConstants,
+  locale: translationConfig.locale,
+  ...pensionConstants,
 };
 
 export const getTurnover = ({hoursPerYear, hourRate}) => ({turnover: parseFloat(hoursPerYear) * parseFloat(hourRate)});
 export const getCompanyIncome = (turnover, {cut}) => {
   const theCut = turnover * parseFloat(cut) / 100;
-  return ({
-    theCut: theCut, after: turnover - theCut,
-  });
+  return ({theCut: theCut, after: turnover - theCut});
 };
 export const calculateSurplus = (companyIncome, {surplus: {amount, include}}) => {
   const includedAmount = include ? parseFloat(amount) : 0;
   return ({surplus: includedAmount, after: companyIncome - includedAmount});
 };
-export const getEmployerFee = (salary, {includeEmployerFee, employerFeeRate}) => {
-  const employerFee = round(salary - (salary / (100 + (includeEmployerFee ? parseFloat(employerFeeRate) : 0)) * 100));
+export const getEmployerFee = (salary, {employerFee: {include, rate}}) => {
+  const employerFee = round(salary - (salary / (100 + (include ? parseFloat(rate) : 0)) * 100));
   return {employerFee, after: salary - employerFee};
 };
-export const getVacationSavings = (salary, {includeVacationSavings, vacationSavingsRate}) => {
-  const vacationSavings = round(salary - (salary / (100 + (includeVacationSavings ? parseFloat(vacationSavingsRate) : 0)) * 100));
+export const getVacationSavings = (salary, {vacationSavings: {include, rate}}) => {
+  const vacationSavings = round(salary - (salary / (100 + (include ? parseFloat(rate) : 0)) * 100));
   return {vacationSavings, after: salary - vacationSavings};
 };
 

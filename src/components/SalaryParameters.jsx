@@ -42,13 +42,13 @@ export const SalaryParametersComponent = ({handleSubmit, submitting, intl: {form
       </FormGroup>
 
       <FormGroup header={formatMessage(messages.employerFee)}>
-        <Checkbox name="includeEmployerFee" label={formatMessage(messages.includeInCalculation)} />
-        <InputWithLabel name="employerFeeRate" label={formatMessage(messages.percentage)} />
+        <Checkbox name="employerFee.include" label={formatMessage(messages.includeInCalculation)} />
+        <InputWithLabel name="employerFee.rate" label={formatMessage(messages.percentage)} />
       </FormGroup>
 
       <FormGroup header={formatMessage(messages.vacationSavings)}>
-        <Checkbox name="includeVacationSavings" label={formatMessage(messages.includeInCalculation)} />
-        <InputWithLabel name="vacationSavingsRate" label={formatMessage(messages.percentage)} />
+        <Checkbox name="vacationSavings.include" label={formatMessage(messages.includeInCalculation)} />
+        <InputWithLabel name="vacationSavings.rate" label={formatMessage(messages.percentage)} />
       </FormGroup>
 
       <FormGroup header={formatMessage(messages.pension)}>

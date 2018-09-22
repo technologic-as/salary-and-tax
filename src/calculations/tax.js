@@ -1,13 +1,14 @@
 export const taxConstants = {
-  incomeTaxRate: 23,
-  socialSecurityDeductionRate: 8.2,
+  incomeTax: {rate: 23},
+  socialSecurityDeduction: {rate: 8.2},
 
   step1: {rate: 1.4, threshold: 169000},
   step2: {rate: 3.3, threshold: 237900},
   step3: {rate: 12.4, threshold: 598050},
   step4: {rate: 15.4, threshold: 962050},
 
-  dividends: { surplusRate: 23, tax: 23 },
+  dividends: {rate: 23},
+  surplus: {rate: 23},
 
   minimumDeduction: {rate: 45, min: 4000, max: 97610},
 };
@@ -26,11 +27,11 @@ export const calculateMinimumDeduction = (income) => {
 };
 
 export const calculateIncomeTax = (commonIncome) => {
-  return round(commonIncome * taxConstants.incomeTaxRate / 100);
+  return round(commonIncome * taxConstants.incomeTax.rate / 100);
 };
 
 export const calculateSocialSecurityDeduction = (income) => {
-  return round(income * taxConstants.socialSecurityDeductionRate / 100);
+  return round(income * taxConstants.socialSecurityDeduction.rate / 100);
 };
 
 const calculateStep = (income, lowLimit, highLimit) => {
@@ -81,15 +82,25 @@ export const getTaxCalculations = (income) => {
   const afterTax = income - totalTax;
 
   return ({
-    income, minimumDeduction, commonIncome, incomeTax, socialSecurityDeduction, step1, step2, step3, step4, totalTax, afterTax,
+    income,
+    minimumDeduction,
+    commonIncome,
+    incomeTax,
+    socialSecurityDeduction,
+    step1,
+    step2,
+    step3,
+    step4,
+    totalTax,
+    afterTax,
   });
 };
 
 export const getDividendsTaxCalculations = (surplus) => {
-  const surplusTax = (surplus * taxConstants.dividends.surplusRate / 100);
+  const surplusTax = (surplus * taxConstants.surplus.rate / 100);
   const dividends = surplus - surplusTax;
 
-  const dividendsTax = (dividends * taxConstants.dividends.tax / 100);
+  const dividendsTax = (dividends * taxConstants.dividends.rate / 100);
   const afterDividendsTax = dividends - dividendsTax;
 
   return {surplus, surplusTax, dividendsTax, afterDividendsTax, dividends};
