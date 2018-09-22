@@ -10,7 +10,7 @@ export const defaultSalaryParameters = {
   ensuringFee: 15000,
   vacationSavings: {rate: 12, include: true},
   employerFee: {rate: 14.1, include: true},
-  surplus: {amount: 100000, include: false},
+  surplus: {amount: 0, include: true},
   locale: translationConfig.locale,
   ...pensionConstants,
 };

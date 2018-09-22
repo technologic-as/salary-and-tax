@@ -29,8 +29,8 @@ Object {
     },
   },
   "surplus": Object {
-    "amount": 100000,
-    "include": false,
+    "amount": 0,
+    "include": true,
   },
   "vacationSavings": Object {
     "include": true,
