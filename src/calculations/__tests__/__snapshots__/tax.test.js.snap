@@ -363,9 +363,9 @@ exports[`tax calculateStep4 should calculate step four tax on a income of 999999
 
 exports[`tax getDividendsTaxCalculations should match snapshot 1`] = `
 Object {
-  "afterDividendsTax": 53445.7,
+  "afterDividendsTax": 53446,
   "dividends": 77000,
-  "dividendsTax": 23554.3,
+  "dividendsTax": 23554,
   "surplus": 100000,
   "surplusTax": 23000,
   "upwardsAdjustment": 102410,

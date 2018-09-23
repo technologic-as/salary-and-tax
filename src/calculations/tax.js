@@ -98,12 +98,12 @@ export const getTaxCalculations = (income) => {
 };
 
 export const getDividendsTaxCalculations = (surplus) => {
-  const surplusTax = (surplus * taxConstants.surplus.rate / 100);
+  const surplusTax = round(surplus * taxConstants.surplus.rate / 100);
   const dividends = surplus - surplusTax;
 
-  const upwardsAdjustment = (dividends * (taxConstants.dividends.upwardAdjustmentFactor));
+  const upwardsAdjustment = round(dividends * (taxConstants.dividends.upwardAdjustmentFactor));
 
-  const dividendsTax = (upwardsAdjustment * taxConstants.dividends.rate / 100);
+  const dividendsTax = round(upwardsAdjustment * taxConstants.dividends.rate / 100);
   const afterDividendsTax = dividends - dividendsTax;
 
   return {surplus, surplusTax, dividendsTax, afterDividendsTax, dividends, upwardsAdjustment};
