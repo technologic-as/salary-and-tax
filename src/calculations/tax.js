@@ -1,3 +1,6 @@
+import round from './round';
+
+
 export const taxConstants = {
   incomeTax: {rate: 23},
   socialSecurityDeduction: {rate: 8.2},
@@ -12,8 +15,6 @@ export const taxConstants = {
 
   minimumDeduction: {rate: 45, min: 4000, max: 97610},
 };
-
-const round = (value) => Math.round(value);
 
 export const calculateMinimumDeduction = (income) => {
   const calculated = income * taxConstants.minimumDeduction.rate / 100;
