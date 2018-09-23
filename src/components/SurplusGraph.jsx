@@ -7,12 +7,12 @@ import { Section } from './Ui';
 
 
 const messages = defineMessages({
-  header: {id: 'surplus.graph.header', defaultMessage: 'Surplus'},
+  header: {id: 'surplus.graph.header', defaultMessage: 'Income vs. surplus'},
 });
 
 export const SurplusGraphComponent = ({graph, intl: {formatMessage}}) => {
   return (
-    <Section header={formatMessage(messages.header)} expanded>
+    <Section header={formatMessage(messages.header)}>
       <ReactHighcharts config={graph} />
     </Section>
 );

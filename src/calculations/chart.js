@@ -4,7 +4,7 @@ import { defaultSalaryParameters } from './salary';
 
 const config = {
   chart: {type: 'areaspline'},
-  title: {text: 'Dividends vs. Salary'},
+  title: {text: ''},
   xAxis: {title: {text: 'Surplus'}},
   yAxis: {title: {text: 'NOK'}},
   tooltip: {

@@ -49,6 +49,7 @@ Object {
   "summary.total.income": "Total inntjening første år (uten feriepenger)",
   "summary.total.tax": "Skatt sammenlagt",
   "summary.turnover": "Omsetning",
+  "surplus.graph.header": "Inntekt vs. overskudd",
   "tax.calculations.after.tax": "Netto inntekt",
   "tax.calculations.common.income": "Inntektsskatt-grunnlag",
   "tax.calculations.common.income.header": "Inntektsskatt-grunnlag",

@@ -43,6 +43,8 @@ export default {
   'salary.parameters.submit': 'Beregn',
   'salary.parameters.locale': 'Språk',
 
+  'surplus.graph.header': 'Inntekt vs. overskudd',
+
   'summary.header': 'Sammendrag',
   'summary.turnover': turnover,
   'summary.total.cuts': `${cut}, ${`${surplus}, ${employerFee}, ${vacationSavings}, ${pension}`.toLocaleLowerCase()}`,
