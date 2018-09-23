@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import ReactHighcharts from 'react-highcharts';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
-import connect from 'react-redux/es/connect/connect';
+import { connect } from 'react-redux';
 import { Section } from './Ui';
 
 
