@@ -2,6 +2,7 @@
 
 exports[`calculations should have initial state 1`] = `
 Object {
+  "afterTotal": 816919,
   "dividends": Object {
     "afterDividendsTax": 0,
     "dividends": 0,

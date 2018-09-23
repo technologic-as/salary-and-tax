@@ -11,6 +11,7 @@ describe('calculations', () => {
       'salary',
       'tax',
       'dividends',
+      'afterTotal',
     ]);
   });
   it('should use income from salary calculation as input into tax calculations', () => {

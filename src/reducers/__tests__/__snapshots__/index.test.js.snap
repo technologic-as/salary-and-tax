@@ -3,6 +3,7 @@
 exports[`reducers should have default values that match snapshot 1`] = `
 Object {
   "calculations": Object {
+    "afterTotal": 816919,
     "dividends": Object {
       "afterDividendsTax": 0,
       "dividends": 0,

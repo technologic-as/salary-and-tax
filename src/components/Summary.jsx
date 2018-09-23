@@ -46,8 +46,8 @@ SummaryComponent.propTypes = {
   intl: intlShape.isRequired,
 };
 
-const mapStateToProps = ({calculations: {tax: {totalTax, afterTax}, salary: {turnover, income, totalCuts}, dividends: {afterDividendsTax}}}) => ({
-  turnover, income, totalTax, afterTax, totalCuts, afterDividendsTax, afterTotal: afterTax + afterDividendsTax,
+const mapStateToProps = ({calculations: {tax: {totalTax, afterTax}, salary: {turnover, income, totalCuts}, dividends: {afterDividendsTax}, afterTotal}}) => ({
+  turnover, income, totalTax, afterTax, totalCuts, afterDividendsTax, afterTotal,
 });
 
 const mapDispatchToProps = () => ({});
