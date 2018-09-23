@@ -4,6 +4,7 @@ exports[`App should render 1`] = `
 Array [
   <SalaryCalculations />,
   <TaxCalculations />,
+  <SurplusGraph />,
   <Summary />,
   <SalaryParameters />,
 ]

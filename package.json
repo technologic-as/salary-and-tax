@@ -33,6 +33,7 @@
     "react": "16.5.x",
     "react-dom": "16.5.x",
     "react-gravatar": "2.6.x",
+    "react-highcharts": "16.0.x",
     "react-hot-loader": "4.3.x",
     "react-intl": "2.5.x",
     "react-intl-redux": "2.0.x",

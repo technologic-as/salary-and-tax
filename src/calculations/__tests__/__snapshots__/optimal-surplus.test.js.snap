@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`optimal-surplus should find max 1`] = `
+exports[`optimal-surplus should return calculations for a range of different surplus 1`] = `
 Array [
   Object {
     "dividends": 0,
