@@ -24,6 +24,15 @@ ShallowWrapper {
                 },
                 "text": "7.1G",
               },
+              Object {
+                "point": Object {
+                  "x": 1400000,
+                  "xAxis": 0,
+                  "y": 935918,
+                  "yAxis": 0,
+                },
+                "text": "Max",
+              },
             ],
           },
         ],
@@ -167,6 +176,14 @@ ShallowWrapper {
             88192,
           ],
         ],
+        "max": Object {
+          "dividends": 748240,
+          "salary": 241739,
+          "salaryAboveSevenG": false,
+          "salaryBasis": 312700,
+          "surplus": 1400000,
+          "total": 935918,
+        },
         "total": Array [
           Array [
             0,

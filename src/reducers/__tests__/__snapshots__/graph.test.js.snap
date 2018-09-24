@@ -19,6 +19,15 @@ Object {
           },
           "text": "7.1G",
         },
+        Object {
+          "point": Object {
+            "x": 1430000,
+            "xAxis": 0,
+            "y": 936518,
+            "yAxis": 0,
+          },
+          "text": "Max",
+        },
       ],
     },
   ],
@@ -1394,6 +1403,14 @@ Object {
       9939,
     ],
   ],
+  "max": Object {
+    "dividends": 764274,
+    "salary": 218734,
+    "salaryAboveSevenG": false,
+    "salaryBasis": 282700,
+    "surplus": 1430000,
+    "total": 936518,
+  },
   "total": Array [
     Array [
       0,

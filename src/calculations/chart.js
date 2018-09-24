@@ -10,6 +10,7 @@ export const getChart = (parameters = defaultSalaryParameters) => {
   const closeToSeven = data
     .filter(i => i.salaryAboveSevenG)
     .reduce((a, b) => a.salaryBasis < b.salaryBasis ? a : b, {});
+  const max = data.reduce((a, b) => a.total > b.total ? a : b, {});
   const annotations = [
     {
       labelOptions: {
@@ -17,23 +18,36 @@ export const getChart = (parameters = defaultSalaryParameters) => {
         verticalAlign: 'top',
         y: 15,
       },
-      labels: [{
-        point: {
-          xAxis: 0,
-          yAxis: 0,
-          x: closeToSeven.surplus,
-          y: closeToSeven.salary,
+      labels: [
+        {
+          point: {
+            xAxis: 0,
+            yAxis: 0,
+            x: closeToSeven.surplus,
+            y: closeToSeven.salary,
+          },
+          text: '7.1G',
         },
-        text: '7.1G',
-      }],
+        {
+          point: {
+            xAxis: 0,
+            yAxis: 0,
+            x: max.surplus,
+            y: max.total,
+          },
+          text: 'Max',
+        },
+      ],
     },
   ];
+
 
   return {
     income,
     dividends,
     total,
     annotations,
+    max,
   };
 };
 
