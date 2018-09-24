@@ -15,6 +15,7 @@ const taxStep = 'Trinnskatt trinn';
 const surplus = 'Overskudd';
 const dividends = 'Utbytte';
 
+const unit = 'NOK';
 export default {
   'salary.calculations.header': 'Inntekstberegninger',
   'salary.calculations.turnover': turnover,
@@ -44,6 +45,14 @@ export default {
   'salary.parameters.locale': 'Språk',
 
   'surplus.graph.header': 'Inntekt vs. overskudd',
+  'surplus.graph.chart.header': 'Inntekt vs. overskudd',
+  'surplus.graph.x.axis.title': surplus,
+  'surplus.graph.y.axis.title': unit,
+
+  'surplus.series.income': afterTax,
+  'surplus.series.dividends': dividends,
+  'surplus.series.total': 'Sammenlagt',
+  'surplus.suffix': unit,
 
   'summary.header': 'Sammendrag',
   'summary.turnover': turnover,

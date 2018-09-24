@@ -5,11 +5,11 @@ import { defaultSalaryParameters } from './salary';
 export const optimalSurplus = (parameters = defaultSalaryParameters) => {
   const initialCalculation = calculate(parameters);
   const companyIncome = initialCalculation.salary.companyIncome;
-  const step = 10000;
-  const steps = Math.round(companyIncome / step);
+  const increments = parameters.graph.increments;
+  const steps = Math.round(companyIncome / increments);
 
   return Array.from(Array(steps).keys())
-    .map(i => i * step)
+    .map(i => i * increments)
     .map(amount => calculate({
       ...parameters,
       surplus: {

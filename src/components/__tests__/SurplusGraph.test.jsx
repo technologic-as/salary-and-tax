@@ -1,21 +1,26 @@
 import mockComponent from 'identity-obj-proxy'
 import React from 'react';
-import renderer from 'react-test-renderer';
-import getChart from '../../calculations/chart';
+import Enzyme, { shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
+import { defaultSalaryParameters } from '../../calculations';
+import { getChart } from '../../calculations/chart';
 import { SurplusGraphComponent } from '../SurplusGraph';
 import { mockIntl } from './__mock__/intl';
 
 
 jest.mock('../Ui', () => mockComponent);
-jest.mock('react-highcharts', () => "ReactHighcharts");
+
+beforeAll(() => {
+  Enzyme.configure({ adapter: new Adapter() });
+});
 
 
 describe('SurplusGraph', () => {
   it('should render', () => {
-    const tree = renderer.create(<SurplusGraphComponent
-      graph={getChart()}
+    const tree = shallow(<SurplusGraphComponent
+      graph={getChart({...defaultSalaryParameters, graph: {increments: 100000}})}
       intl={mockIntl}
-    />).toJSON();
+    />);
     expect(tree).toMatchSnapshot();
   });
 });

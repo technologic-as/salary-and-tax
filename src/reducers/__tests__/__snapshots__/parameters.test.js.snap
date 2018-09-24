@@ -8,6 +8,9 @@ Object {
     "rate": 14.1,
   },
   "ensuringFee": 15000,
+  "graph": Object {
+    "increments": 10000,
+  },
   "hourRate": 1100,
   "hoursPerYear": 1730,
   "locale": "nb",
