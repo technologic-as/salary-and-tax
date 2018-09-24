@@ -43,6 +43,26 @@ Object {
   },
   "form": Object {},
   "graph": Object {
+    "annotations": Array [
+      Object {
+        "labelOptions": Object {
+          "backgroundColor": "rgba(255,255,255,0.5)",
+          "verticalAlign": "top",
+          "y": 15,
+        },
+        "labels": Array [
+          Object {
+            "point": Object {
+              "x": 1020000,
+              "xAxis": 0,
+              "y": 533151,
+              "yAxis": 0,
+            },
+            "text": "7.1G",
+          },
+        ],
+      },
+    ],
     "dividends": Array [
       Array [
         0,

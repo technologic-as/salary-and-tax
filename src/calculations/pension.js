@@ -1,7 +1,6 @@
+import { calculateG } from './calculate-g';
 import round from './round';
 
-
-export const calculateG = (g) => round(96883 * g);
 
 export const pensionConstants = {
   pension: {

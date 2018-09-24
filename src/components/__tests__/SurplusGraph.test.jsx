@@ -19,6 +19,8 @@ describe('SurplusGraph', () => {
   it('should render', () => {
     const tree = shallow(<SurplusGraphComponent
       graph={getChart({...defaultSalaryParameters, graph: {increments: 100000}})}
+      setChart={() => mockComponent}
+      addAnnotations={() => mockComponent}
       intl={mockIntl}
     />);
     expect(tree).toMatchSnapshot();

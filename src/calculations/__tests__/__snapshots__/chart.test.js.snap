@@ -2,6 +2,26 @@
 
 exports[`chart should return calculations for a range of different surplus 1`] = `
 Object {
+  "annotations": Array [
+    Object {
+      "labelOptions": Object {
+        "backgroundColor": "rgba(255,255,255,0.5)",
+        "verticalAlign": "top",
+        "y": 15,
+      },
+      "labels": Array [
+        Object {
+          "point": Object {
+            "x": 1000000,
+            "xAxis": 0,
+            "y": 548488,
+            "yAxis": 0,
+          },
+          "text": "7.1G",
+        },
+      ],
+    },
+  ],
   "dividends": Array [
     Array [
       0,

@@ -4,8 +4,29 @@ exports[`SurplusGraph should render 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <SurplusGraphComponent
+    addAnnotations={[Function]}
     graph={
       Object {
+        "annotations": Array [
+          Object {
+            "labelOptions": Object {
+              "backgroundColor": "rgba(255,255,255,0.5)",
+              "verticalAlign": "top",
+              "y": 15,
+            },
+            "labels": Array [
+              Object {
+                "point": Object {
+                  "x": 1000000,
+                  "xAxis": 0,
+                  "y": 548488,
+                  "yAxis": 0,
+                },
+                "text": "7.1G",
+              },
+            ],
+          },
+        ],
         "dividends": Array [
           Array [
             0,
@@ -230,6 +251,7 @@ ShallowWrapper {
         "now": [Function],
       }
     }
+    setChart={[Function]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -244,8 +266,12 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Highcharts.Provider(n)>
-        <Highcharts.Provider(Chart.Provider(n)) />
+      "children": <Highcharts.Provider(n)
+        callback={[Function]}
+      >
+        <Highcharts.Provider(Chart.Provider(n))
+          onAddSeries={[Function]}
+        />
         <Highcharts.Provider(Chart.Provider(n))>
           Income vs. surplus
         </Highcharts.Provider(Chart.Provider(n))>
@@ -502,8 +528,11 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
+        "callback": [Function],
         "children": Array [
-          <Highcharts.Provider(Chart.Provider(n)) />,
+          <Highcharts.Provider(Chart.Provider(n))
+            onAddSeries={[Function]}
+          />,
           <Highcharts.Provider(Chart.Provider(n))>
             Income vs. surplus
           </Highcharts.Provider(Chart.Provider(n))>,
@@ -759,7 +788,9 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
-          "props": Object {},
+          "props": Object {
+            "onAddSeries": [Function],
+          },
           "ref": null,
           "rendered": null,
           "type": [Function],
@@ -1328,8 +1359,12 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Highcharts.Provider(n)>
-          <Highcharts.Provider(Chart.Provider(n)) />
+        "children": <Highcharts.Provider(n)
+          callback={[Function]}
+        >
+          <Highcharts.Provider(Chart.Provider(n))
+            onAddSeries={[Function]}
+          />
           <Highcharts.Provider(Chart.Provider(n))>
             Income vs. surplus
           </Highcharts.Provider(Chart.Provider(n))>
@@ -1586,8 +1621,11 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "function",
         "props": Object {
+          "callback": [Function],
           "children": Array [
-            <Highcharts.Provider(Chart.Provider(n)) />,
+            <Highcharts.Provider(Chart.Provider(n))
+              onAddSeries={[Function]}
+            />,
             <Highcharts.Provider(Chart.Provider(n))>
               Income vs. surplus
             </Highcharts.Provider(Chart.Provider(n))>,
@@ -1843,7 +1881,9 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
-            "props": Object {},
+            "props": Object {
+              "onAddSeries": [Function],
+            },
             "ref": null,
             "rendered": null,
             "type": [Function],

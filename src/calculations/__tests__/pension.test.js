@@ -1,4 +1,5 @@
-import { calculateG, calculateStep1, calculateStep2, getPension, pensionConstants } from '../pension';
+import { calculateG } from '../calculate-g';
+import { calculateStep1, calculateStep2, getPension, pensionConstants } from '../pension';
 
 
 const tests = [
