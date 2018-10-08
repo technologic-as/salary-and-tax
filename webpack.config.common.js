@@ -12,7 +12,7 @@ export default {
     },
     output: {
         path: outputPath,
-        filename: '[name].js',
+        filename: '[name]-[hash].js',
     },
     module: {
         rules: [
