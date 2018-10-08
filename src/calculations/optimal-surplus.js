@@ -20,13 +20,14 @@ export const optimalSurplus = (parameters = defaultSalaryParameters) => {
         include: true,
       },
     }))
-    .map(({afterTotal, dividends: {afterDividendsTax, surplus}, salary: {withoutPension, withoutSurplus}}) => ({
+    .map(({afterTotal, dividends: {afterDividendsTax, surplus}, salary: {withoutPension, withoutSurplus}, tax: {afterTax}}) => ({
       total: afterTotal,
       surplus,
       dividends: afterDividendsTax,
-      salary: withoutPension,
+      grossIncome: withoutPension,
+      netIncome: afterTax,
       salaryBasis: withoutSurplus,
-      salaryAboveSevenG: withoutSurplus > sevenG,
+      salaryAboveSevenG: withoutPension > sevenG,
     }));
 };
 

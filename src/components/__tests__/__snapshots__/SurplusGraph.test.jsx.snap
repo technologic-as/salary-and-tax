@@ -17,9 +17,9 @@ ShallowWrapper {
             "labels": Array [
               Object {
                 "point": Object {
-                  "x": 1000000,
+                  "x": 800000,
                   "xAxis": 0,
-                  "y": 548488,
+                  "y": 701864,
                   "yAxis": 0,
                 },
                 "text": "7.1G",
@@ -106,7 +106,7 @@ ShallowWrapper {
             855132,
           ],
         ],
-        "income": Array [
+        "grossIncome": Array [
           Array [
             0,
             1318912,
@@ -178,12 +178,153 @@ ShallowWrapper {
         ],
         "max": Object {
           "dividends": 748240,
-          "salary": 241739,
+          "grossIncome": 241739,
+          "netIncome": 187678,
           "salaryAboveSevenG": false,
           "salaryBasis": 312700,
           "surplus": 1400000,
           "total": 935918,
         },
+        "netIncome": Array [
+          Array [
+            0,
+            816923,
+          ],
+          Array [
+            100000,
+            775136,
+          ],
+          Array [
+            200000,
+            733349,
+          ],
+          Array [
+            300000,
+            692172,
+          ],
+          Array [
+            400000,
+            651222,
+          ],
+          Array [
+            500000,
+            609368,
+          ],
+          Array [
+            600000,
+            566116,
+          ],
+          Array [
+            700000,
+            522863,
+          ],
+          Array [
+            800000,
+            479614,
+          ],
+          Array [
+            900000,
+            436361,
+          ],
+          Array [
+            1000000,
+            388598,
+          ],
+          Array [
+            1100000,
+            338369,
+          ],
+          Array [
+            1200000,
+            288138,
+          ],
+          Array [
+            1300000,
+            237908,
+          ],
+          Array [
+            1400000,
+            187678,
+          ],
+          Array [
+            1500000,
+            130639,
+          ],
+          Array [
+            1600000,
+            69805,
+          ],
+        ],
+        "surplus": Array [
+          Array [
+            0,
+            0,
+          ],
+          Array [
+            100000,
+            100000,
+          ],
+          Array [
+            200000,
+            200000,
+          ],
+          Array [
+            300000,
+            300000,
+          ],
+          Array [
+            400000,
+            400000,
+          ],
+          Array [
+            500000,
+            500000,
+          ],
+          Array [
+            600000,
+            600000,
+          ],
+          Array [
+            700000,
+            700000,
+          ],
+          Array [
+            800000,
+            800000,
+          ],
+          Array [
+            900000,
+            900000,
+          ],
+          Array [
+            1000000,
+            1000000,
+          ],
+          Array [
+            1100000,
+            1100000,
+          ],
+          Array [
+            1200000,
+            1200000,
+          ],
+          Array [
+            1300000,
+            1300000,
+          ],
+          Array [
+            1400000,
+            1400000,
+          ],
+          Array [
+            1500000,
+            1500000,
+          ],
+          Array [
+            1600000,
+            1600000,
+          ],
+        ],
         "total": Array [
           Array [
             0,
@@ -292,6 +433,7 @@ ShallowWrapper {
         <Highcharts.Provider(Chart.Provider(n))>
           Income vs. surplus
         </Highcharts.Provider(Chart.Provider(n))>
+        <Highcharts.Provider(Chart.Provider(n)) />
         <Highcharts.Provider(Chart.Provider(n))>
           <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
             Surplus
@@ -376,7 +518,158 @@ ShallowWrapper {
                 ],
               ]
             }
-            name="Income"
+            name="Gross income"
+          />
+          <n
+            data={
+              Array [
+                Array [
+                  0,
+                  816923,
+                ],
+                Array [
+                  100000,
+                  775136,
+                ],
+                Array [
+                  200000,
+                  733349,
+                ],
+                Array [
+                  300000,
+                  692172,
+                ],
+                Array [
+                  400000,
+                  651222,
+                ],
+                Array [
+                  500000,
+                  609368,
+                ],
+                Array [
+                  600000,
+                  566116,
+                ],
+                Array [
+                  700000,
+                  522863,
+                ],
+                Array [
+                  800000,
+                  479614,
+                ],
+                Array [
+                  900000,
+                  436361,
+                ],
+                Array [
+                  1000000,
+                  388598,
+                ],
+                Array [
+                  1100000,
+                  338369,
+                ],
+                Array [
+                  1200000,
+                  288138,
+                ],
+                Array [
+                  1300000,
+                  237908,
+                ],
+                Array [
+                  1400000,
+                  187678,
+                ],
+                Array [
+                  1500000,
+                  130639,
+                ],
+                Array [
+                  1600000,
+                  69805,
+                ],
+              ]
+            }
+            name="Net income"
+          />
+          <n
+            data={
+              Array [
+                Array [
+                  0,
+                  0,
+                ],
+                Array [
+                  100000,
+                  100000,
+                ],
+                Array [
+                  200000,
+                  200000,
+                ],
+                Array [
+                  300000,
+                  300000,
+                ],
+                Array [
+                  400000,
+                  400000,
+                ],
+                Array [
+                  500000,
+                  500000,
+                ],
+                Array [
+                  600000,
+                  600000,
+                ],
+                Array [
+                  700000,
+                  700000,
+                ],
+                Array [
+                  800000,
+                  800000,
+                ],
+                Array [
+                  900000,
+                  900000,
+                ],
+                Array [
+                  1000000,
+                  1000000,
+                ],
+                Array [
+                  1100000,
+                  1100000,
+                ],
+                Array [
+                  1200000,
+                  1200000,
+                ],
+                Array [
+                  1300000,
+                  1300000,
+                ],
+                Array [
+                  1400000,
+                  1400000,
+                ],
+                Array [
+                  1500000,
+                  1500000,
+                ],
+                Array [
+                  1600000,
+                  1600000,
+                ],
+              ]
+            }
+            name="Surplus"
+            visible={false}
           />
           <n
             data={
@@ -553,6 +846,7 @@ ShallowWrapper {
           <Highcharts.Provider(Chart.Provider(n))>
             Income vs. surplus
           </Highcharts.Provider(Chart.Provider(n))>,
+          <Highcharts.Provider(Chart.Provider(n)) />,
           <Highcharts.Provider(Chart.Provider(n))>
             <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
               Surplus
@@ -637,7 +931,158 @@ ShallowWrapper {
                   ],
                 ]
               }
-              name="Income"
+              name="Gross income"
+            />
+            <n
+              data={
+                Array [
+                  Array [
+                    0,
+                    816923,
+                  ],
+                  Array [
+                    100000,
+                    775136,
+                  ],
+                  Array [
+                    200000,
+                    733349,
+                  ],
+                  Array [
+                    300000,
+                    692172,
+                  ],
+                  Array [
+                    400000,
+                    651222,
+                  ],
+                  Array [
+                    500000,
+                    609368,
+                  ],
+                  Array [
+                    600000,
+                    566116,
+                  ],
+                  Array [
+                    700000,
+                    522863,
+                  ],
+                  Array [
+                    800000,
+                    479614,
+                  ],
+                  Array [
+                    900000,
+                    436361,
+                  ],
+                  Array [
+                    1000000,
+                    388598,
+                  ],
+                  Array [
+                    1100000,
+                    338369,
+                  ],
+                  Array [
+                    1200000,
+                    288138,
+                  ],
+                  Array [
+                    1300000,
+                    237908,
+                  ],
+                  Array [
+                    1400000,
+                    187678,
+                  ],
+                  Array [
+                    1500000,
+                    130639,
+                  ],
+                  Array [
+                    1600000,
+                    69805,
+                  ],
+                ]
+              }
+              name="Net income"
+            />
+            <n
+              data={
+                Array [
+                  Array [
+                    0,
+                    0,
+                  ],
+                  Array [
+                    100000,
+                    100000,
+                  ],
+                  Array [
+                    200000,
+                    200000,
+                  ],
+                  Array [
+                    300000,
+                    300000,
+                  ],
+                  Array [
+                    400000,
+                    400000,
+                  ],
+                  Array [
+                    500000,
+                    500000,
+                  ],
+                  Array [
+                    600000,
+                    600000,
+                  ],
+                  Array [
+                    700000,
+                    700000,
+                  ],
+                  Array [
+                    800000,
+                    800000,
+                  ],
+                  Array [
+                    900000,
+                    900000,
+                  ],
+                  Array [
+                    1000000,
+                    1000000,
+                  ],
+                  Array [
+                    1100000,
+                    1100000,
+                  ],
+                  Array [
+                    1200000,
+                    1200000,
+                  ],
+                  Array [
+                    1300000,
+                    1300000,
+                  ],
+                  Array [
+                    1400000,
+                    1400000,
+                  ],
+                  Array [
+                    1500000,
+                    1500000,
+                  ],
+                  Array [
+                    1600000,
+                    1600000,
+                  ],
+                ]
+              }
+              name="Surplus"
+              visible={false}
             />
             <n
               data={
@@ -827,6 +1272,15 @@ ShallowWrapper {
           "instance": null,
           "key": undefined,
           "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
           "props": Object {
             "children": <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
               Surplus
@@ -928,7 +1382,158 @@ ShallowWrapper {
                     ],
                   ]
                 }
-                name="Income"
+                name="Gross income"
+              />,
+              <n
+                data={
+                  Array [
+                    Array [
+                      0,
+                      816923,
+                    ],
+                    Array [
+                      100000,
+                      775136,
+                    ],
+                    Array [
+                      200000,
+                      733349,
+                    ],
+                    Array [
+                      300000,
+                      692172,
+                    ],
+                    Array [
+                      400000,
+                      651222,
+                    ],
+                    Array [
+                      500000,
+                      609368,
+                    ],
+                    Array [
+                      600000,
+                      566116,
+                    ],
+                    Array [
+                      700000,
+                      522863,
+                    ],
+                    Array [
+                      800000,
+                      479614,
+                    ],
+                    Array [
+                      900000,
+                      436361,
+                    ],
+                    Array [
+                      1000000,
+                      388598,
+                    ],
+                    Array [
+                      1100000,
+                      338369,
+                    ],
+                    Array [
+                      1200000,
+                      288138,
+                    ],
+                    Array [
+                      1300000,
+                      237908,
+                    ],
+                    Array [
+                      1400000,
+                      187678,
+                    ],
+                    Array [
+                      1500000,
+                      130639,
+                    ],
+                    Array [
+                      1600000,
+                      69805,
+                    ],
+                  ]
+                }
+                name="Net income"
+              />,
+              <n
+                data={
+                  Array [
+                    Array [
+                      0,
+                      0,
+                    ],
+                    Array [
+                      100000,
+                      100000,
+                    ],
+                    Array [
+                      200000,
+                      200000,
+                    ],
+                    Array [
+                      300000,
+                      300000,
+                    ],
+                    Array [
+                      400000,
+                      400000,
+                    ],
+                    Array [
+                      500000,
+                      500000,
+                    ],
+                    Array [
+                      600000,
+                      600000,
+                    ],
+                    Array [
+                      700000,
+                      700000,
+                    ],
+                    Array [
+                      800000,
+                      800000,
+                    ],
+                    Array [
+                      900000,
+                      900000,
+                    ],
+                    Array [
+                      1000000,
+                      1000000,
+                    ],
+                    Array [
+                      1100000,
+                      1100000,
+                    ],
+                    Array [
+                      1200000,
+                      1200000,
+                    ],
+                    Array [
+                      1300000,
+                      1300000,
+                    ],
+                    Array [
+                      1400000,
+                      1400000,
+                    ],
+                    Array [
+                      1500000,
+                      1500000,
+                    ],
+                    Array [
+                      1600000,
+                      1600000,
+                    ],
+                  ]
+                }
+                name="Surplus"
+                visible={false}
               />,
               <n
                 data={
@@ -1171,7 +1776,170 @@ ShallowWrapper {
                     88192,
                   ],
                 ],
-                "name": "Income",
+                "name": "Gross income",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "data": Array [
+                  Array [
+                    0,
+                    816923,
+                  ],
+                  Array [
+                    100000,
+                    775136,
+                  ],
+                  Array [
+                    200000,
+                    733349,
+                  ],
+                  Array [
+                    300000,
+                    692172,
+                  ],
+                  Array [
+                    400000,
+                    651222,
+                  ],
+                  Array [
+                    500000,
+                    609368,
+                  ],
+                  Array [
+                    600000,
+                    566116,
+                  ],
+                  Array [
+                    700000,
+                    522863,
+                  ],
+                  Array [
+                    800000,
+                    479614,
+                  ],
+                  Array [
+                    900000,
+                    436361,
+                  ],
+                  Array [
+                    1000000,
+                    388598,
+                  ],
+                  Array [
+                    1100000,
+                    338369,
+                  ],
+                  Array [
+                    1200000,
+                    288138,
+                  ],
+                  Array [
+                    1300000,
+                    237908,
+                  ],
+                  Array [
+                    1400000,
+                    187678,
+                  ],
+                  Array [
+                    1500000,
+                    130639,
+                  ],
+                  Array [
+                    1600000,
+                    69805,
+                  ],
+                ],
+                "name": "Net income",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "data": Array [
+                  Array [
+                    0,
+                    0,
+                  ],
+                  Array [
+                    100000,
+                    100000,
+                  ],
+                  Array [
+                    200000,
+                    200000,
+                  ],
+                  Array [
+                    300000,
+                    300000,
+                  ],
+                  Array [
+                    400000,
+                    400000,
+                  ],
+                  Array [
+                    500000,
+                    500000,
+                  ],
+                  Array [
+                    600000,
+                    600000,
+                  ],
+                  Array [
+                    700000,
+                    700000,
+                  ],
+                  Array [
+                    800000,
+                    800000,
+                  ],
+                  Array [
+                    900000,
+                    900000,
+                  ],
+                  Array [
+                    1000000,
+                    1000000,
+                  ],
+                  Array [
+                    1100000,
+                    1100000,
+                  ],
+                  Array [
+                    1200000,
+                    1200000,
+                  ],
+                  Array [
+                    1300000,
+                    1300000,
+                  ],
+                  Array [
+                    1400000,
+                    1400000,
+                  ],
+                  Array [
+                    1500000,
+                    1500000,
+                  ],
+                  Array [
+                    1600000,
+                    1600000,
+                  ],
+                ],
+                "name": "Surplus",
+                "visible": false,
               },
               "ref": null,
               "rendered": null,
@@ -1385,6 +2153,7 @@ ShallowWrapper {
           <Highcharts.Provider(Chart.Provider(n))>
             Income vs. surplus
           </Highcharts.Provider(Chart.Provider(n))>
+          <Highcharts.Provider(Chart.Provider(n)) />
           <Highcharts.Provider(Chart.Provider(n))>
             <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
               Surplus
@@ -1469,7 +2238,158 @@ ShallowWrapper {
                   ],
                 ]
               }
-              name="Income"
+              name="Gross income"
+            />
+            <n
+              data={
+                Array [
+                  Array [
+                    0,
+                    816923,
+                  ],
+                  Array [
+                    100000,
+                    775136,
+                  ],
+                  Array [
+                    200000,
+                    733349,
+                  ],
+                  Array [
+                    300000,
+                    692172,
+                  ],
+                  Array [
+                    400000,
+                    651222,
+                  ],
+                  Array [
+                    500000,
+                    609368,
+                  ],
+                  Array [
+                    600000,
+                    566116,
+                  ],
+                  Array [
+                    700000,
+                    522863,
+                  ],
+                  Array [
+                    800000,
+                    479614,
+                  ],
+                  Array [
+                    900000,
+                    436361,
+                  ],
+                  Array [
+                    1000000,
+                    388598,
+                  ],
+                  Array [
+                    1100000,
+                    338369,
+                  ],
+                  Array [
+                    1200000,
+                    288138,
+                  ],
+                  Array [
+                    1300000,
+                    237908,
+                  ],
+                  Array [
+                    1400000,
+                    187678,
+                  ],
+                  Array [
+                    1500000,
+                    130639,
+                  ],
+                  Array [
+                    1600000,
+                    69805,
+                  ],
+                ]
+              }
+              name="Net income"
+            />
+            <n
+              data={
+                Array [
+                  Array [
+                    0,
+                    0,
+                  ],
+                  Array [
+                    100000,
+                    100000,
+                  ],
+                  Array [
+                    200000,
+                    200000,
+                  ],
+                  Array [
+                    300000,
+                    300000,
+                  ],
+                  Array [
+                    400000,
+                    400000,
+                  ],
+                  Array [
+                    500000,
+                    500000,
+                  ],
+                  Array [
+                    600000,
+                    600000,
+                  ],
+                  Array [
+                    700000,
+                    700000,
+                  ],
+                  Array [
+                    800000,
+                    800000,
+                  ],
+                  Array [
+                    900000,
+                    900000,
+                  ],
+                  Array [
+                    1000000,
+                    1000000,
+                  ],
+                  Array [
+                    1100000,
+                    1100000,
+                  ],
+                  Array [
+                    1200000,
+                    1200000,
+                  ],
+                  Array [
+                    1300000,
+                    1300000,
+                  ],
+                  Array [
+                    1400000,
+                    1400000,
+                  ],
+                  Array [
+                    1500000,
+                    1500000,
+                  ],
+                  Array [
+                    1600000,
+                    1600000,
+                  ],
+                ]
+              }
+              name="Surplus"
+              visible={false}
             />
             <n
               data={
@@ -1646,6 +2566,7 @@ ShallowWrapper {
             <Highcharts.Provider(Chart.Provider(n))>
               Income vs. surplus
             </Highcharts.Provider(Chart.Provider(n))>,
+            <Highcharts.Provider(Chart.Provider(n)) />,
             <Highcharts.Provider(Chart.Provider(n))>
               <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
                 Surplus
@@ -1730,7 +2651,158 @@ ShallowWrapper {
                     ],
                   ]
                 }
-                name="Income"
+                name="Gross income"
+              />
+              <n
+                data={
+                  Array [
+                    Array [
+                      0,
+                      816923,
+                    ],
+                    Array [
+                      100000,
+                      775136,
+                    ],
+                    Array [
+                      200000,
+                      733349,
+                    ],
+                    Array [
+                      300000,
+                      692172,
+                    ],
+                    Array [
+                      400000,
+                      651222,
+                    ],
+                    Array [
+                      500000,
+                      609368,
+                    ],
+                    Array [
+                      600000,
+                      566116,
+                    ],
+                    Array [
+                      700000,
+                      522863,
+                    ],
+                    Array [
+                      800000,
+                      479614,
+                    ],
+                    Array [
+                      900000,
+                      436361,
+                    ],
+                    Array [
+                      1000000,
+                      388598,
+                    ],
+                    Array [
+                      1100000,
+                      338369,
+                    ],
+                    Array [
+                      1200000,
+                      288138,
+                    ],
+                    Array [
+                      1300000,
+                      237908,
+                    ],
+                    Array [
+                      1400000,
+                      187678,
+                    ],
+                    Array [
+                      1500000,
+                      130639,
+                    ],
+                    Array [
+                      1600000,
+                      69805,
+                    ],
+                  ]
+                }
+                name="Net income"
+              />
+              <n
+                data={
+                  Array [
+                    Array [
+                      0,
+                      0,
+                    ],
+                    Array [
+                      100000,
+                      100000,
+                    ],
+                    Array [
+                      200000,
+                      200000,
+                    ],
+                    Array [
+                      300000,
+                      300000,
+                    ],
+                    Array [
+                      400000,
+                      400000,
+                    ],
+                    Array [
+                      500000,
+                      500000,
+                    ],
+                    Array [
+                      600000,
+                      600000,
+                    ],
+                    Array [
+                      700000,
+                      700000,
+                    ],
+                    Array [
+                      800000,
+                      800000,
+                    ],
+                    Array [
+                      900000,
+                      900000,
+                    ],
+                    Array [
+                      1000000,
+                      1000000,
+                    ],
+                    Array [
+                      1100000,
+                      1100000,
+                    ],
+                    Array [
+                      1200000,
+                      1200000,
+                    ],
+                    Array [
+                      1300000,
+                      1300000,
+                    ],
+                    Array [
+                      1400000,
+                      1400000,
+                    ],
+                    Array [
+                      1500000,
+                      1500000,
+                    ],
+                    Array [
+                      1600000,
+                      1600000,
+                    ],
+                  ]
+                }
+                name="Surplus"
+                visible={false}
               />
               <n
                 data={
@@ -1920,6 +2992,15 @@ ShallowWrapper {
             "instance": null,
             "key": undefined,
             "nodeType": "function",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
             "props": Object {
               "children": <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
                 Surplus
@@ -2021,7 +3102,158 @@ ShallowWrapper {
                       ],
                     ]
                   }
-                  name="Income"
+                  name="Gross income"
+                />,
+                <n
+                  data={
+                    Array [
+                      Array [
+                        0,
+                        816923,
+                      ],
+                      Array [
+                        100000,
+                        775136,
+                      ],
+                      Array [
+                        200000,
+                        733349,
+                      ],
+                      Array [
+                        300000,
+                        692172,
+                      ],
+                      Array [
+                        400000,
+                        651222,
+                      ],
+                      Array [
+                        500000,
+                        609368,
+                      ],
+                      Array [
+                        600000,
+                        566116,
+                      ],
+                      Array [
+                        700000,
+                        522863,
+                      ],
+                      Array [
+                        800000,
+                        479614,
+                      ],
+                      Array [
+                        900000,
+                        436361,
+                      ],
+                      Array [
+                        1000000,
+                        388598,
+                      ],
+                      Array [
+                        1100000,
+                        338369,
+                      ],
+                      Array [
+                        1200000,
+                        288138,
+                      ],
+                      Array [
+                        1300000,
+                        237908,
+                      ],
+                      Array [
+                        1400000,
+                        187678,
+                      ],
+                      Array [
+                        1500000,
+                        130639,
+                      ],
+                      Array [
+                        1600000,
+                        69805,
+                      ],
+                    ]
+                  }
+                  name="Net income"
+                />,
+                <n
+                  data={
+                    Array [
+                      Array [
+                        0,
+                        0,
+                      ],
+                      Array [
+                        100000,
+                        100000,
+                      ],
+                      Array [
+                        200000,
+                        200000,
+                      ],
+                      Array [
+                        300000,
+                        300000,
+                      ],
+                      Array [
+                        400000,
+                        400000,
+                      ],
+                      Array [
+                        500000,
+                        500000,
+                      ],
+                      Array [
+                        600000,
+                        600000,
+                      ],
+                      Array [
+                        700000,
+                        700000,
+                      ],
+                      Array [
+                        800000,
+                        800000,
+                      ],
+                      Array [
+                        900000,
+                        900000,
+                      ],
+                      Array [
+                        1000000,
+                        1000000,
+                      ],
+                      Array [
+                        1100000,
+                        1100000,
+                      ],
+                      Array [
+                        1200000,
+                        1200000,
+                      ],
+                      Array [
+                        1300000,
+                        1300000,
+                      ],
+                      Array [
+                        1400000,
+                        1400000,
+                      ],
+                      Array [
+                        1500000,
+                        1500000,
+                      ],
+                      Array [
+                        1600000,
+                        1600000,
+                      ],
+                    ]
+                  }
+                  name="Surplus"
+                  visible={false}
                 />,
                 <n
                   data={
@@ -2264,7 +3496,170 @@ ShallowWrapper {
                       88192,
                     ],
                   ],
-                  "name": "Income",
+                  "name": "Gross income",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "data": Array [
+                    Array [
+                      0,
+                      816923,
+                    ],
+                    Array [
+                      100000,
+                      775136,
+                    ],
+                    Array [
+                      200000,
+                      733349,
+                    ],
+                    Array [
+                      300000,
+                      692172,
+                    ],
+                    Array [
+                      400000,
+                      651222,
+                    ],
+                    Array [
+                      500000,
+                      609368,
+                    ],
+                    Array [
+                      600000,
+                      566116,
+                    ],
+                    Array [
+                      700000,
+                      522863,
+                    ],
+                    Array [
+                      800000,
+                      479614,
+                    ],
+                    Array [
+                      900000,
+                      436361,
+                    ],
+                    Array [
+                      1000000,
+                      388598,
+                    ],
+                    Array [
+                      1100000,
+                      338369,
+                    ],
+                    Array [
+                      1200000,
+                      288138,
+                    ],
+                    Array [
+                      1300000,
+                      237908,
+                    ],
+                    Array [
+                      1400000,
+                      187678,
+                    ],
+                    Array [
+                      1500000,
+                      130639,
+                    ],
+                    Array [
+                      1600000,
+                      69805,
+                    ],
+                  ],
+                  "name": "Net income",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "data": Array [
+                    Array [
+                      0,
+                      0,
+                    ],
+                    Array [
+                      100000,
+                      100000,
+                    ],
+                    Array [
+                      200000,
+                      200000,
+                    ],
+                    Array [
+                      300000,
+                      300000,
+                    ],
+                    Array [
+                      400000,
+                      400000,
+                    ],
+                    Array [
+                      500000,
+                      500000,
+                    ],
+                    Array [
+                      600000,
+                      600000,
+                    ],
+                    Array [
+                      700000,
+                      700000,
+                    ],
+                    Array [
+                      800000,
+                      800000,
+                    ],
+                    Array [
+                      900000,
+                      900000,
+                    ],
+                    Array [
+                      1000000,
+                      1000000,
+                    ],
+                    Array [
+                      1100000,
+                      1100000,
+                    ],
+                    Array [
+                      1200000,
+                      1200000,
+                    ],
+                    Array [
+                      1300000,
+                      1300000,
+                    ],
+                    Array [
+                      1400000,
+                      1400000,
+                    ],
+                    Array [
+                      1500000,
+                      1500000,
+                    ],
+                    Array [
+                      1600000,
+                      1600000,
+                    ],
+                  ],
+                  "name": "Surplus",
+                  "visible": false,
                 },
                 "ref": null,
                 "rendered": null,

@@ -49,8 +49,10 @@ export default {
   'surplus.graph.x.axis.title': surplus,
   'surplus.graph.y.axis.title': unit,
 
-  'surplus.series.income': afterTax,
+  'surplus.series.income.net': afterTax,
+  'surplus.series.income.gross': income,
   'surplus.series.dividends': dividends,
+  'surplus.series.surplus': surplus,
   'surplus.series.total': 'Sammenlagt',
   'surplus.suffix': unit,
 

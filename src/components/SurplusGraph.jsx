@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
 import {
-  Chart, Credits, HighchartsChart, LineSeries, Title, Tooltip, withHighcharts, XAxis, YAxis,
+  Chart, Credits, HighchartsChart, Legend, LineSeries, Title, Tooltip, withHighcharts, XAxis, YAxis,
 } from 'react-jsx-highcharts';
 import { connect } from 'react-redux';
 import { Section } from './Ui';
@@ -29,9 +29,17 @@ const messages = defineMessages({
     id: 'surplus.graph.y.axis.title',
     defaultMessage: 'NOK',
   },
-  seriesIncome: {
-    id: 'surplus.series.income',
-    defaultMessage: 'Income',
+  seriesIncomeGross: {
+    id: 'surplus.series.income.gross',
+    defaultMessage: 'Gross income',
+  },
+  seriesIncomeNet: {
+    id: 'surplus.series.income.net',
+    defaultMessage: 'Net income',
+  },
+  seriesSurplus: {
+    id: 'surplus.series.surplus',
+    defaultMessage: 'Surplus',
   },
   seriesDividends: {
     id: 'surplus.series.dividends',
@@ -47,19 +55,22 @@ const messages = defineMessages({
   },
 });
 
-export const SurplusGraphComponent = ({graph: {income, dividends, total, annotations}, addAnnotations, setChart, intl: {formatMessage}}) => {
+export const SurplusGraphComponent = ({graph: {grossIncome, netIncome, surplus, dividends, total, annotations}, addAnnotations, setChart, intl: {formatMessage}}) => {
 
   return (
     <Section header={formatMessage(messages.header)}>
       <HighchartsChart callback={setChart}>
         <Chart onAddSeries={() => addAnnotations(annotations)} />
         <Title>{ formatMessage(messages.chartHeader) }</Title>
+        <Legend />
         <XAxis>
           <XAxis.Title>{ formatMessage(messages.xAxisTitle) }</XAxis.Title>
         </XAxis>
         <YAxis>
           <YAxis.Title>{ formatMessage(messages.yAxisTitle) }</YAxis.Title>
-          <LineSeries name={formatMessage(messages.seriesIncome)} data={income} />
+          <LineSeries name={formatMessage(messages.seriesIncomeGross)} data={grossIncome} />
+          <LineSeries name={formatMessage(messages.seriesIncomeNet)} data={netIncome} />
+          <LineSeries name={formatMessage(messages.seriesSurplus)} data={surplus} visible={false} />
           <LineSeries name={formatMessage(messages.seriesDividends)} data={dividends} />
           <LineSeries name={formatMessage(messages.seriesTotal)} data={total} />
         </YAxis>
