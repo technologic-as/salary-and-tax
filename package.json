@@ -21,7 +21,7 @@
   },
   "homepage": "https://salary.technologic.as/",
   "dependencies": {
-    "@material-ui/core": "3.1.x",
+    "@material-ui/core": "3.2.x",
     "@material-ui/icons": "3.0.x",
     "@storybook/addon-actions": "3.4.x",
     "@storybook/addons": "3.4.x",
@@ -35,7 +35,7 @@
     "react-dom": "16.5.x",
     "react-gravatar": "2.6.x",
     "react-hot-loader": "4.3.x",
-    "react-intl": "2.6.x",
+    "react-intl": "2.7.x",
     "react-intl-redux": "2.0.x",
     "react-jsx-highcharts": "3.2.x",
     "react-number-format": "3.6.x",
@@ -47,7 +47,8 @@
     "redux-logger": "3.0.x",
     "redux-thunk": "2.3.x",
     "request": "2.88.x",
-    "request-promise": "4.2.x"
+    "request-promise": "4.2.x",
+    "typeface-roboto": "0.0.x"
   },
   "devDependencies": {
     "@babel/cli": "7.1.x",
@@ -62,13 +63,13 @@
     "clean-webpack-plugin": "0.1.x",
     "coveralls": "3.0.x",
     "css-loader": "1.0.x",
-    "enzyme": "3.6.x",
-    "enzyme-adapter-react-16": "1.5.x",
+    "enzyme": "3.7.x",
+    "enzyme-adapter-react-16": "1.6.x",
     "enzyme-to-json": "3.3.x",
     "eslint": "5.6.x",
     "eslint-config-airbnb": "17.1.x",
     "eslint-plugin-import": "2.14.x",
-    "eslint-plugin-jest": "21.22.x",
+    "eslint-plugin-jest": "21.24.x",
     "eslint-plugin-jsx-a11y": "6.1.x",
     "eslint-plugin-react": "7.11.x",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
@@ -83,7 +84,7 @@
     "sass-loader": "7.1.x",
     "storybook-addon-intl": "2.3.x",
     "style-loader": "0.23.x",
-    "webpack": "4.19.x",
+    "webpack": "4.20.x",
     "webpack-cli": "3.1.x",
     "webpack-dev-server": "3.1.x",
     "webpack-merge": "4.1.x"
