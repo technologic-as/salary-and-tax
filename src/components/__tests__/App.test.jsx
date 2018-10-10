@@ -9,6 +9,7 @@ jest.mock('../SalaryCalculations', () => mockComponent);
 jest.mock('../TaxCalculations', () => mockComponent);
 jest.mock('../Summary', () => mockComponent);
 jest.mock('../SurplusGraph', () => mockComponent);
+jest.mock('../GitHub', () => mockComponent);
 jest.mock('../Ui', () => mockComponent);
 
 describe('App', () => {
