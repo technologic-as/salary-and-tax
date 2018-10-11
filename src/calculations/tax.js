@@ -14,16 +14,21 @@ export const taxConstants = {
   surplus: {rate: 23},
 
   minimumDeduction: {rate: 45, min: 4000, max: 97610},
+  personalAllowance: {max: 54750},
 };
 
-export const calculateMinimumDeduction = (income) => {
+export const calculateDeduction = (income) => {
   const calculated = income * taxConstants.minimumDeduction.rate / 100;
   const min = taxConstants.minimumDeduction.min;
   const isBelowMin = calculated < min;
 
   const minimumDeduction = round(isBelowMin ? min : Math.min(calculated, taxConstants.minimumDeduction.max));
+  const personalAllowance = taxConstants.personalAllowance.max;
+
+  const commonIncome = income - minimumDeduction - personalAllowance;
+
   return {
-    minimumDeduction, commonIncome: income - minimumDeduction,
+    minimumDeduction, personalAllowance, commonIncome,
   };
 };
 
@@ -70,7 +75,7 @@ export const calculateStep4 = (income) => {
 };
 
 export const getTaxCalculations = (income) => {
-  const {minimumDeduction, commonIncome} = calculateMinimumDeduction(income);
+  const {minimumDeduction, personalAllowance, commonIncome} = calculateDeduction(income);
   const incomeTax = calculateIncomeTax(commonIncome);
   const socialSecurityDeduction = calculateSocialSecurityDeduction(income);
 
@@ -85,6 +90,7 @@ export const getTaxCalculations = (income) => {
   return ({
     income,
     minimumDeduction,
+    personalAllowance,
     commonIncome,
     incomeTax,
     socialSecurityDeduction,

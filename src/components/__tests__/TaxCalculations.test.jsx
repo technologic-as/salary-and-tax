@@ -16,6 +16,7 @@ describe('TaxCalculations', () => {
     const tree = renderer.create(<TaxCalculationsComponent
       income={12345678}
       minimumDeduction={12345678}
+      personalAllowance={12345678}
       commonIncome={12345678}
       incomeTax={12345678}
       socialSecurityDeduction={12345678}

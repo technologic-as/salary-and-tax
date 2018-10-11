@@ -1,6 +1,6 @@
 import {
   calculateIncomeTax,
-  calculateMinimumDeduction,
+  calculateDeduction,
   calculateSocialSecurityDeduction,
   calculateStep1,
   calculateStep2,
@@ -179,11 +179,11 @@ describe('tax', () => {
       });
     });
   });
-  describe('calculateMinimumDeduction should calculate minimum deduction', () => {
+  describe('calculateDeduction should calculate minimum deduction', () => {
     tests.map((testData) => {
       const {income, minimumDeduction} = getTestDescription(testData);
       it(`on ${income} which is ${minimumDeduction}`, () => {
-        expect(calculateMinimumDeduction(testData.income)).toMatchSnapshot();
+        expect(calculateDeduction(testData.income)).toMatchSnapshot();
       });
     });
   });
