@@ -1,9 +1,7 @@
 {
-  "plugins": [
-    "react",
-    "jest"
-  ],
+  "plugins": ["react", "jest"],
   "extends": [
+    "prettier",
     "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",

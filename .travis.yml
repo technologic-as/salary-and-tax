@@ -1,12 +1,12 @@
 language: node_js
 node_js:
-- '10'
+  - "10"
 sudo: false
 
 cache:
   yarn: true
   directories:
-  - node_modules
+    - node_modules
 
 notifications:
   email:
@@ -14,10 +14,10 @@ notifications:
     on_failure: always
 
 install:
-- yarn
+  - yarn
 script:
-- yarn lint
-- yarn test
-- yarn coveralls
+  - yarn lint
+  - yarn test
+  - yarn coveralls
 after_success:
-- yarn build:www
+  - yarn build:www

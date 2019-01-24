@@ -77,7 +77,8 @@ export const SalaryParametersComponent = ({handleSubmit, submitting, intl: {form
 
       <Button type="submit" disabled={submitting}>{ formatMessage(messages.submit) }</Button>
     </form>
-  </Section>);
+  </Section>
+);
 
 SalaryParametersComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,

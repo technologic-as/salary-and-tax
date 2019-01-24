@@ -4,24 +4,29 @@
 [![Coverage Status][coverage-badge]][coverage-url]
 [![Dependency][dm-badge]][dm-url]
 
-This is a tool for consultants and other freelance positions where you have an hourly rate. It calculates turnover, 
-tax, vacation savings, pension and other things according to Norwegian rules. 
+This is a tool for consultants and other freelance positions where you have an hourly rate. It calculates turnover,
+tax, vacation savings, pension and other things according to Norwegian rules.
 
-Visit [this page][live-url] to see it in action. 
+Visit [this page][live-url] to see it in action.
 
 ## Build for production
+
     yarn build:www
 
 ## Start dev server
+
     yarn start:www
 
 ## Run tests
+
     yarn test
 
 ## Display storybook
+
     yarn storybook
 
 ## Run lint
+
     yarn lint
 
 [travis-badge]: https://travis-ci.org/technologic-as/salary-and-tax.svg?branch=master
