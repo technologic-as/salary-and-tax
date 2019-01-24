@@ -2,7 +2,7 @@
 
 exports[`calculations should have initial state 1`] = `
 Object {
-  "afterTotal": 816923,
+  "afterTotal": 829516,
   "dividends": Object {
     "afterDividendsTax": 0,
     "dividends": 0,
@@ -27,17 +27,18 @@ Object {
     "withoutVacationSavings": 1340225,
   },
   "tax": Object {
-    "afterTax": 816923,
-    "commonIncome": 1221302,
+    "afterTax": 829516,
+    "commonIncome": 1166552,
     "income": 1318912,
-    "incomeTax": 280899,
+    "incomeTax": 268306,
     "minimumDeduction": 97610,
+    "personalAllowance": 54750,
     "socialSecurityDeduction": 108150,
     "step1": 964,
     "step2": 11884,
     "step3": 45136,
     "step4": 54956,
-    "totalTax": 501989,
+    "totalTax": 489396,
   },
 }
 `;

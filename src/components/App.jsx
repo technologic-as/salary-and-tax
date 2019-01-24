@@ -4,6 +4,7 @@ import { SalaryParameters } from './SalaryParameters';
 import { Summary } from './Summary';
 import { SurplusGraph } from './SurplusGraph';
 import { TaxCalculations } from './TaxCalculations';
+import { GitHub } from './GitHub';
 
 
 export const AppComponent = () => (
@@ -13,6 +14,7 @@ export const AppComponent = () => (
     <SurplusGraph />
     <Summary />
     <SalaryParameters />
+    <GitHub />
   </Fragment>
 );
 

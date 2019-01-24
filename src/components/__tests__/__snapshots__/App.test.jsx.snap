@@ -7,5 +7,6 @@ Array [
   <SurplusGraph />,
   <Summary />,
   <SalaryParameters />,
+  <GitHub />,
 ]
 `;

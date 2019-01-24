@@ -68,6 +68,7 @@ export default {
   'tax.calculations.income': income,
   'tax.calculations.income.header': 'Inntekt',
   'tax.calculations.minimum.deduction': `Minstefradrag (${taxConstants.minimumDeduction.rate}%)`,
+  'tax.calculations.personal.allowance': 'Personfradrag',
   'tax.calculations.common.income': commonIncome,
   'tax.calculations.common.income.header': commonIncome,
   'tax.calculations.income.tax': `Inntektsskatt (${taxConstants.incomeTax.rate}%)`,
