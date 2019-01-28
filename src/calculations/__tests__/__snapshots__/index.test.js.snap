@@ -2,7 +2,7 @@
 
 exports[`calculations should have default values 1`] = `
 Object {
-  "afterTotal": 829516,
+  "afterTotal": 835042,
   "dividends": Object {
     "afterDividendsTax": 0,
     "dividends": 0,
@@ -27,18 +27,18 @@ Object {
     "withoutVacationSavings": 1340225,
   },
   "tax": Object {
-    "afterTax": 829516,
-    "commonIncome": 1166552,
+    "afterTax": 835042,
+    "commonIncome": 1161562,
     "income": 1318912,
-    "incomeTax": 268306,
-    "minimumDeduction": 97610,
-    "personalAllowance": 54750,
+    "incomeTax": 255543,
+    "minimumDeduction": 100800,
+    "personalAllowance": 56550,
     "socialSecurityDeduction": 108150,
-    "step1": 964,
-    "step2": 11884,
-    "step3": 45136,
-    "step4": 54956,
-    "totalTax": 489396,
+    "step1": 1351,
+    "step2": 15617,
+    "step3": 45843,
+    "step4": 57366,
+    "totalTax": 483870,
   },
 }
 `;

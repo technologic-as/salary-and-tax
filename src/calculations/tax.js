@@ -2,19 +2,19 @@ import round from './round';
 
 
 export const taxConstants = {
-  incomeTax: {rate: 23},
+  incomeTax: {rate: 22},
   socialSecurityDeduction: {rate: 8.2},
 
-  step1: {rate: 1.4, threshold: 169000},
-  step2: {rate: 3.3, threshold: 237900},
-  step3: {rate: 12.4, threshold: 598050},
-  step4: {rate: 15.4, threshold: 962050},
+  step1: {rate: 1.9, threshold: 174500},
+  step2: {rate: 4.2, threshold: 245650},
+  step3: {rate: 13.2, threshold: 617500},
+  step4: {rate: 16.2, threshold: 964800},
 
-  dividends: {rate: 23, upwardAdjustmentFactor: 1.33},
-  surplus: {rate: 23},
+  dividends: {rate: 22, upwardAdjustmentFactor: 1.44},
+  surplus: {rate: 22},
 
-  minimumDeduction: {rate: 45, min: 4000, max: 97610},
-  personalAllowance: {max: 54750},
+  minimumDeduction: {rate: 45, min: 4000, max: 100800},
+  personalAllowance: {max: 56550},
 };
 
 export const calculateDeduction = (income) => {
