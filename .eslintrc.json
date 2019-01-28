@@ -1,11 +1,10 @@
 {
   "plugins": ["react", "jest"],
   "extends": [
-    "prettier",
-    "airbnb",
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:jest/recommended"
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
   ],
   "parserOptions": {
     "ecmaVersion": 2018,
@@ -16,11 +15,21 @@
   },
   "env": {
     "es6": true,
+    "node": true,
     "jest/globals": true
   },
   "settings": {
     "react": {
       "version": "16.4"
     }
+  },
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "singleQuote": true,
+        "trailingComma": "es5"
+      }
+    ]
   }
 }
