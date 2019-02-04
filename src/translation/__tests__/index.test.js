@@ -1,6 +1,5 @@
 import { getLocales, getMessages } from '../index';
 
-
 describe('translation', () => {
   describe('getMessages', () => {
     it('should return norwegian messages', () => {

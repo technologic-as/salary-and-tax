@@ -1,7 +1,6 @@
 import calculations from '../index';
 import * as tax from '../tax';
 
-
 describe('calculations', () => {
   it('should have default values', () => {
     expect(calculations()).toMatchSnapshot();

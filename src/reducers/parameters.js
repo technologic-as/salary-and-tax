@@ -1,7 +1,6 @@
 import { FORM_CHANGE } from '../actions';
 import { defaultSalaryParameters } from '../calculations';
 
-
 const initialState = {
   ...defaultSalaryParameters,
 };
