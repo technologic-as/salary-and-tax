@@ -21,7 +21,8 @@
   "settings": {
     "react": {
       "version": "16.4"
-    }
+    },
+    "propWrapperFunctions": ["forbidExtraProps"]
   },
   "rules": {
     "prettier/prettier": [

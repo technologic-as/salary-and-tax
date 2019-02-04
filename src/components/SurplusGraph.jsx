@@ -1,14 +1,22 @@
 import Highcharts from 'highcharts';
-import addAnnotationsModule from 'highcharts/modules/annotations'
+import addAnnotationsModule from 'highcharts/modules/annotations';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
 import {
-  Chart, Credits, HighchartsChart, Legend, LineSeries, Title, Tooltip, withHighcharts, XAxis, YAxis,
+  Chart,
+  Credits,
+  HighchartsChart,
+  Legend,
+  LineSeries,
+  Title,
+  Tooltip,
+  withHighcharts,
+  XAxis,
+  YAxis,
 } from 'react-jsx-highcharts';
 import { connect } from 'react-redux';
 import { Section } from './Ui';
-
 
 addAnnotationsModule(Highcharts);
 
@@ -55,30 +63,47 @@ const messages = defineMessages({
   },
 });
 
-export const SurplusGraphComponent = ({graph: {grossIncome, netIncome, surplus, dividends, total, annotations}, addAnnotations, setChart, intl: {formatMessage}}) => {
-
+export const SurplusGraphComponent = ({
+  graph: { grossIncome, netIncome, surplus, dividends, total, annotations },
+  addAnnotations,
+  setChart,
+  intl: { formatMessage },
+}) => {
   return (
     <Section header={formatMessage(messages.header)}>
       <HighchartsChart callback={setChart}>
         <Chart onAddSeries={() => addAnnotations(annotations)} />
-        <Title>{ formatMessage(messages.chartHeader) }</Title>
+        <Title>{formatMessage(messages.chartHeader)}</Title>
         <Legend />
         <XAxis>
-          <XAxis.Title>{ formatMessage(messages.xAxisTitle) }</XAxis.Title>
+          <XAxis.Title>{formatMessage(messages.xAxisTitle)}</XAxis.Title>
         </XAxis>
         <YAxis>
-          <YAxis.Title>{ formatMessage(messages.yAxisTitle) }</YAxis.Title>
-          <LineSeries name={formatMessage(messages.seriesIncomeGross)} data={grossIncome} />
-          <LineSeries name={formatMessage(messages.seriesIncomeNet)} data={netIncome} />
-          <LineSeries name={formatMessage(messages.seriesSurplus)} data={surplus} visible={false} />
-          <LineSeries name={formatMessage(messages.seriesDividends)} data={dividends} />
+          <YAxis.Title>{formatMessage(messages.yAxisTitle)}</YAxis.Title>
+          <LineSeries
+            name={formatMessage(messages.seriesIncomeGross)}
+            data={grossIncome}
+          />
+          <LineSeries
+            name={formatMessage(messages.seriesIncomeNet)}
+            data={netIncome}
+          />
+          <LineSeries
+            name={formatMessage(messages.seriesSurplus)}
+            data={surplus}
+            visible={false}
+          />
+          <LineSeries
+            name={formatMessage(messages.seriesDividends)}
+            data={dividends}
+          />
           <LineSeries name={formatMessage(messages.seriesTotal)} data={total} />
         </YAxis>
         <Tooltip shared valueSuffix={formatMessage(messages.suffix)} />
         <Credits enabled={false} />
       </HighchartsChart>
     </Section>
-);
+  );
 };
 
 SurplusGraphComponent.propTypes = {
@@ -88,18 +113,22 @@ SurplusGraphComponent.propTypes = {
   setChart: PropTypes.func.isRequired,
 };
 
-const mapStateToProps = ({graph}) => ({graph});
+const mapStateToProps = ({ graph }) => ({ graph });
 
 const mapDispatchToProps = () => ({
-  addAnnotations: (annotations) => {
+  addAnnotations: annotations => {
     // eslint-disable-next-line no-undef
-    window.setTimeout(() => annotations.forEach(annotation => window.chart.addAnnotation(annotation)))
+    window.setTimeout(() =>
+      // eslint-disable-next-line no-undef
+      annotations.forEach(annotation => window.chart.addAnnotation(annotation))
+    );
   }, // eslint-disable-next-line no-undef
-  setChart: (chart) => window.chart = chart,
+  setChart: chart => (window.chart = chart),
 });
 
-export const SurplusGraph = connect(mapStateToProps,
-  mapDispatchToProps)(
-  injectIntl(withHighcharts(SurplusGraphComponent, Highcharts)));
+export const SurplusGraph = connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(injectIntl(withHighcharts(SurplusGraphComponent, Highcharts)));
 
 export default SurplusGraph;
