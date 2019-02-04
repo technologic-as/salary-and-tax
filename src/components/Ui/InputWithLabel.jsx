@@ -3,8 +3,7 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Field } from 'redux-form';
 
-
-const renderTextField = ({label, input}) => (
+const renderTextField = ({ label, input }) => (
   <TextField
     name={input.name}
     label={label}
@@ -22,12 +21,8 @@ renderTextField.propTypes = {
   label: PropTypes.string.isRequired,
 };
 
-export const InputWithLabel = ({name, label}) => (
-  <Field
-    name={name}
-    component={renderTextField}
-    label={label}
-  />
+export const InputWithLabel = ({ name, label }) => (
+  <Field name={name} component={renderTextField} label={label} />
 );
 
 InputWithLabel.propTypes = {

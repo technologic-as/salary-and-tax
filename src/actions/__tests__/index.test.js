@@ -1,9 +1,8 @@
 import configureMockStore from 'redux-mock-store';
 import { formChange, inputHasChanged } from '../index';
 
-
 const mockStore = configureMockStore();
-const values = {newValue: 'this is new', otherValue: 'also new'};
+const values = { newValue: 'this is new', otherValue: 'also new' };
 
 describe('actions', () => {
   describe('formChange', () => {
@@ -15,7 +14,7 @@ describe('actions', () => {
     it('should dispatch formChange', async () => {
       const store = mockStore();
       await inputHasChanged(values)(store.dispatch);
-      expect(store.getActions()).toEqual([{type: 'FORM_CHANGE', ...values}]);
+      expect(store.getActions()).toEqual([{ type: 'FORM_CHANGE', ...values }]);
     });
   });
 });

@@ -1,6 +1,5 @@
 import { taxConstants } from '../calculations/tax';
 
-
 const turnover = 'Omsetning';
 const income = 'Brutto inntekt';
 const totalTax = 'Skatt sammenlagt';
@@ -67,12 +66,18 @@ export default {
   'tax.calculations.header': 'Skatteberegninger',
   'tax.calculations.income': income,
   'tax.calculations.income.header': 'Inntekt',
-  'tax.calculations.minimum.deduction': `Minstefradrag (${taxConstants.minimumDeduction.rate}%)`,
+  'tax.calculations.minimum.deduction': `Minstefradrag (${
+    taxConstants.minimumDeduction.rate
+  }%)`,
   'tax.calculations.personal.allowance': 'Personfradrag',
   'tax.calculations.common.income': commonIncome,
   'tax.calculations.common.income.header': commonIncome,
-  'tax.calculations.income.tax': `Inntektsskatt (${taxConstants.incomeTax.rate}%)`,
-  'tax.calculations.social.security.deduction': `Trygdeavgift (${taxConstants.socialSecurityDeduction.rate}%)`,
+  'tax.calculations.income.tax': `Inntektsskatt (${
+    taxConstants.incomeTax.rate
+  }%)`,
+  'tax.calculations.social.security.deduction': `Trygdeavgift (${
+    taxConstants.socialSecurityDeduction.rate
+  }%)`,
   'tax.calculations.step.1': `${taxStep} 1 (${taxConstants.step1.rate}%)`,
   'tax.calculations.step.2': `${taxStep} 2 (${taxConstants.step2.rate}%)`,
   'tax.calculations.step.3': `${taxStep} 3 (${taxConstants.step3.rate}%)`,
@@ -80,7 +85,9 @@ export default {
   'tax.calculations.after.tax': afterTax,
   'tax.calculations.surplus.header': 'Overskudd',
   'tax.calculations.surplus.amount': 'Selskapets overskudd',
-  'tax.calculations.surplus.tax': `Skatt på overskudd (${taxConstants.surplus.rate}%)`,
+  'tax.calculations.surplus.tax': `Skatt på overskudd (${
+    taxConstants.surplus.rate
+  }%)`,
   'tax.calculations.dividends.tax': 'Skatt på utbytte',
   'tax.calculations.dividends.amount': dividends,
-}
+};

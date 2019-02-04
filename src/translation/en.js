@@ -1,3 +1,3 @@
 export default {
-    'translation.change.language': 'Bytt språk',
-}
+  'translation.change.language': 'Bytt språk',
+};

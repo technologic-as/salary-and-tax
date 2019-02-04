@@ -1,1 +1,1 @@
-export default (value) => Math.floor(value);
+export default value => Math.floor(value);

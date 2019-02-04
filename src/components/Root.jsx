@@ -3,11 +3,9 @@ import React from 'react';
 import { Provider } from 'react-intl-redux';
 import configureStore from '../configureStore';
 import App from './App';
-import theme from './Ui/Theme'
-
+import theme from './Ui/Theme';
 
 const store = configureStore();
-
 
 const Root = () => (
   <Provider store={store}>

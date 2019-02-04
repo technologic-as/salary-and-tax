@@ -6,15 +6,12 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-
-export const Section = ({header, children, expanded}) => (
+export const Section = ({ header, children, expanded }) => (
   <ExpansionPanel defaultExpanded={expanded}>
     <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
-      <Typography component="h2">{ header }</Typography>
+      <Typography component="h2">{header}</Typography>
     </ExpansionPanelSummary>
-    <ExpansionPanelDetails>
-      { children }
-    </ExpansionPanelDetails>
+    <ExpansionPanelDetails>{children}</ExpansionPanelDetails>
   </ExpansionPanel>
 );
 

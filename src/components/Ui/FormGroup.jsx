@@ -4,13 +4,10 @@ import FormLabel from '@material-ui/core/FormLabel';
 import PropTypes from 'prop-types';
 import React from 'react';
 
-
-export const FormGroup = ({header, children}) => (
+export const FormGroup = ({ header, children }) => (
   <FormControl component="fieldset" margin="normal">
-    <FormLabel component="legend">{ header }</FormLabel>
-    <FG>
-      { children }
-    </FG>
+    <FormLabel component="legend">{header}</FormLabel>
+    <FG>{children}</FG>
   </FormControl>
 );
 

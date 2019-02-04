@@ -1,6 +1,6 @@
 import {
-  calculateIncomeTax,
   calculateDeduction,
+  calculateIncomeTax,
   calculateSocialSecurityDeduction,
   calculateStep1,
   calculateStep2,
@@ -9,7 +9,6 @@ import {
   getDividendsTaxCalculations,
   getTaxCalculations,
 } from '../tax';
-
 
 const tests = [
   {
@@ -20,7 +19,14 @@ const tests = [
     step3: 'below',
     step4: 'below',
   },
-  {income: 0, minimumDeduction: 'below min', step1: 'below', step2: 'below', step3: 'below', step4: 'below'},
+  {
+    income: 0,
+    minimumDeduction: 'below min',
+    step1: 'below',
+    step2: 'below',
+    step3: 'below',
+    step4: 'below',
+  },
   {
     income: 1000,
     minimumDeduction: 'below min',
@@ -159,7 +165,14 @@ const tests = [
   },
 ];
 
-const getTestDescription = ({income, minimumDeduction, step1, step2, step3, step4}) => {
+const getTestDescription = ({
+  income,
+  minimumDeduction,
+  step1,
+  step2,
+  step3,
+  step4,
+}) => {
   return {
     income: `a income of ${income}`,
     minimumDeduction: `${minimumDeduction} threshold for minimum deduction`,
@@ -167,45 +180,54 @@ const getTestDescription = ({income, minimumDeduction, step1, step2, step3, step
     step2: `${step2} step two tax`,
     step3: `${step3} step three tax`,
     step4: `${step4} step four tax`,
-  }
+  };
 };
 
 describe('tax', () => {
   describe('getTaxCalculations should calculate tax', () => {
-    tests.map((testData) => {
-      const {income, minimumDeduction, step1, step2, step3, step4} = getTestDescription(testData);
+    tests.map(testData => {
+      const {
+        income,
+        minimumDeduction,
+        step1,
+        step2,
+        step3,
+        step4,
+      } = getTestDescription(testData);
       it(`on ${income} which is ${minimumDeduction}, ${step1}, ${step2}, ${step3}, ${step4}`, () => {
         expect(getTaxCalculations(testData.income)).toMatchSnapshot();
       });
     });
   });
   describe('calculateDeduction should calculate minimum deduction', () => {
-    tests.map((testData) => {
-      const {income, minimumDeduction} = getTestDescription(testData);
+    tests.map(testData => {
+      const { income, minimumDeduction } = getTestDescription(testData);
       it(`on ${income} which is ${minimumDeduction}`, () => {
         expect(calculateDeduction(testData.income)).toMatchSnapshot();
       });
     });
   });
   describe('calculateIncomeTax should calculate income tax', () => {
-    tests.map((testData) => {
-      const {income} = getTestDescription(testData);
+    tests.map(testData => {
+      const { income } = getTestDescription(testData);
       it(`on ${income}`, () => {
         expect(calculateIncomeTax(testData.income)).toMatchSnapshot();
       });
     });
   });
   describe('calculateSocialSecurityDeduction should calculate social security deduction', () => {
-    tests.map((testData) => {
-      const {income} = getTestDescription(testData);
+    tests.map(testData => {
+      const { income } = getTestDescription(testData);
       it(`on ${income}`, () => {
-        expect(calculateSocialSecurityDeduction(testData.income)).toMatchSnapshot();
+        expect(
+          calculateSocialSecurityDeduction(testData.income)
+        ).toMatchSnapshot();
       });
     });
   });
   describe('calculateStep1 should calculate step one tax', () => {
-    tests.map((testData) => {
-      const {income, step1} = getTestDescription(testData);
+    tests.map(testData => {
+      const { income, step1 } = getTestDescription(testData);
       it(`on ${income} which is ${step1}`, () => {
         const tax = calculateStep1(testData.income);
         expect(tax).toMatchSnapshot();
@@ -216,8 +238,8 @@ describe('tax', () => {
     });
   });
   describe('calculateStep2 should calculate step two tax', () => {
-    tests.map((testData) => {
-      const {income, step2} = getTestDescription(testData);
+    tests.map(testData => {
+      const { income, step2 } = getTestDescription(testData);
       it(`on ${income} which is ${step2}`, () => {
         const tax = calculateStep2(testData.income);
         expect(tax).toMatchSnapshot();
@@ -228,8 +250,8 @@ describe('tax', () => {
     });
   });
   describe('calculateStep3 should calculate step three tax', () => {
-    tests.map((testData) => {
-      const {income, step3} = getTestDescription(testData);
+    tests.map(testData => {
+      const { income, step3 } = getTestDescription(testData);
       it(`on ${income} which is ${step3}`, () => {
         const tax = calculateStep3(testData.income);
         expect(tax).toMatchSnapshot();
@@ -240,8 +262,8 @@ describe('tax', () => {
     });
   });
   describe('calculateStep4 should calculate step four tax', () => {
-    tests.map((testData) => {
-      const {income, step4} = getTestDescription(testData);
+    tests.map(testData => {
+      const { income, step4 } = getTestDescription(testData);
       it(`on ${income} which is ${step4}`, () => {
         const tax = calculateStep4(testData.income);
         expect(tax).toMatchSnapshot();

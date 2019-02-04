@@ -3,9 +3,13 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Field } from 'redux-form';
 
-
-const renderRadioGroup = ({label, input, children}) => (
-  <RG name={input.name} label={label} value={input.value} onChange={input.onChange}>
+const renderRadioGroup = ({ label, input, children }) => (
+  <RG
+    name={input.name}
+    label={label}
+    value={input.value}
+    onChange={input.onChange}
+  >
     {children}
   </RG>
 );
@@ -23,7 +27,7 @@ renderRadioGroup.propTypes = {
   ]).isRequired,
 };
 
-export const RadioGroup = ({name, label, children}) => (
+export const RadioGroup = ({ name, label, children }) => (
   <Field name={name} component={renderRadioGroup} label={label}>
     {children}
   </Field>
@@ -35,7 +39,7 @@ RadioGroup.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
-  ]).isRequired
+  ]).isRequired,
 };
 
 export default RadioGroup;

@@ -1,5 +1,8 @@
-const mockFormatMessage = (k) => k.defaultMessage;
-const mockFormatNumber = (amount) => new Intl.NumberFormat('en-US', {style: 'currency',currency: 'USD',}).format(amount);
+const mockFormatMessage = k => k.defaultMessage;
+const mockFormatNumber = amount =>
+  new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(
+    amount
+  );
 
 it('', () => {});
 

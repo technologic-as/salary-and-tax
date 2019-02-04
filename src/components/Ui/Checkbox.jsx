@@ -4,15 +4,9 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import { Field } from 'redux-form';
 
-
-const renderCheckbox = ({input, label}) => (
+const renderCheckbox = ({ input, label }) => (
   <FormControlLabel
-    control={(
-      <CB
-        checked={!!input.value}
-        onChange={input.onChange}
-      />
-)}
+    control={<CB checked={!!input.value} onChange={input.onChange} />}
     label={label}
   />
 );
@@ -24,7 +18,9 @@ renderCheckbox.propTypes = {
   label: PropTypes.string.isRequired,
 };
 
-export const Checkbox = ({name, label}) => (<Field name={name} component={renderCheckbox} label={label} type="input" />);
+export const Checkbox = ({ name, label }) => (
+  <Field name={name} component={renderCheckbox} label={label} type="input" />
+);
 
 Checkbox.propTypes = {
   name: PropTypes.string.isRequired,
