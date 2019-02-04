@@ -2,35 +2,6 @@
 
 exports[`chart should return calculations for a range of different surplus 1`] = `
 Object {
-  "annotations": Array [
-    Object {
-      "labelOptions": Object {
-        "backgroundColor": "rgba(255,255,255,0.5)",
-        "verticalAlign": "top",
-        "y": 15,
-      },
-      "labels": Array [
-        Object {
-          "point": Object {
-            "x": 800000,
-            "xAxis": 0,
-            "y": 701864,
-            "yAxis": 0,
-          },
-          "text": "7.1G",
-        },
-        Object {
-          "point": Object {
-            "x": 1400000,
-            "xAxis": 0,
-            "y": 948130,
-            "yAxis": 0,
-          },
-          "text": "Max",
-        },
-      ],
-    },
-  ],
   "dividends": Array [
     Array [
       0,
@@ -171,15 +142,12 @@ Object {
       88192,
     ],
   ],
-  "max": Object {
-    "dividends": 746055,
-    "grossIncome": 241739,
-    "netIncome": 202075,
-    "salaryAboveSevenG": false,
-    "salaryBasis": 312700,
-    "surplus": 1400000,
-    "total": 948130,
-  },
+  "maxTotal": Array [
+    Array [
+      1400000,
+      948130,
+    ],
+  ],
   "netIncome": Array [
     Array [
       0,
@@ -248,6 +216,12 @@ Object {
     Array [
       1600000,
       82731,
+    ],
+  ],
+  "sevenG": Array [
+    Array [
+      800000,
+      701864,
     ],
   ],
   "surplus": Array [

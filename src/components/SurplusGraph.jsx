@@ -1,5 +1,4 @@
 import Highcharts from 'highcharts';
-import addAnnotationsModule from 'highcharts/modules/annotations';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
@@ -9,6 +8,7 @@ import {
   HighchartsChart,
   Legend,
   LineSeries,
+  ScatterSeries,
   Title,
   Tooltip,
   withHighcharts,
@@ -17,8 +17,6 @@ import {
 } from 'react-jsx-highcharts';
 import { connect } from 'react-redux';
 import { Section } from './Ui';
-
-addAnnotationsModule(Highcharts);
 
 const messages = defineMessages({
   header: {
@@ -49,6 +47,14 @@ const messages = defineMessages({
     id: 'surplus.series.surplus',
     defaultMessage: 'Surplus',
   },
+  seriesGrossSevenG: {
+    id: 'surplus.series.gross.seven.g',
+    defaultMessage: '7.1 Gross income',
+  },
+  seriesMaxTotal: {
+    id: 'surplus.series.max.total',
+    defaultMessage: 'Max total',
+  },
   seriesDividends: {
     id: 'surplus.series.dividends',
     defaultMessage: 'Dividends',
@@ -64,21 +70,35 @@ const messages = defineMessages({
 });
 
 export const SurplusGraphComponent = ({
-  graph: { grossIncome, netIncome, surplus, dividends, total, annotations },
-  addAnnotations,
-  setChart,
+  graph: {
+    grossIncome,
+    netIncome,
+    surplus,
+    dividends,
+    total,
+    sevenG,
+    maxTotal,
+  },
   intl: { formatMessage },
 }) => {
   return (
     <Section header={formatMessage(messages.header)}>
-      <HighchartsChart callback={setChart}>
-        <Chart onAddSeries={() => addAnnotations(annotations)} />
+      <HighchartsChart>
+        <Chart />
         <Title>{formatMessage(messages.chartHeader)}</Title>
         <Legend />
         <XAxis>
           <XAxis.Title>{formatMessage(messages.xAxisTitle)}</XAxis.Title>
         </XAxis>
         <YAxis>
+          <ScatterSeries
+            name={formatMessage(messages.seriesGrossSevenG)}
+            data={sevenG}
+          />
+          <ScatterSeries
+            name={formatMessage(messages.seriesMaxTotal)}
+            data={maxTotal}
+          />
           <YAxis.Title>{formatMessage(messages.yAxisTitle)}</YAxis.Title>
           <LineSeries
             name={formatMessage(messages.seriesIncomeGross)}
@@ -87,6 +107,7 @@ export const SurplusGraphComponent = ({
           <LineSeries
             name={formatMessage(messages.seriesIncomeNet)}
             data={netIncome}
+            visible={false}
           />
           <LineSeries
             name={formatMessage(messages.seriesSurplus)}
@@ -109,26 +130,12 @@ export const SurplusGraphComponent = ({
 SurplusGraphComponent.propTypes = {
   intl: intlShape.isRequired,
   graph: PropTypes.shape({}).isRequired,
-  addAnnotations: PropTypes.func.isRequired,
-  setChart: PropTypes.func.isRequired,
 };
 
 const mapStateToProps = ({ graph }) => ({ graph });
 
-const mapDispatchToProps = () => ({
-  addAnnotations: annotations => {
-    // eslint-disable-next-line no-undef
-    window.setTimeout(() =>
-      // eslint-disable-next-line no-undef
-      annotations.forEach(annotation => window.chart.addAnnotation(annotation))
-    );
-  }, // eslint-disable-next-line no-undef
-  setChart: chart => (window.chart = chart),
-});
-
-export const SurplusGraph = connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(injectIntl(withHighcharts(SurplusGraphComponent, Highcharts)));
+export const SurplusGraph = connect(mapStateToProps)(
+  injectIntl(withHighcharts(SurplusGraphComponent, Highcharts))
+);
 
 export default SurplusGraph;

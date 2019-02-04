@@ -44,35 +44,6 @@ Object {
   },
   "form": Object {},
   "graph": Object {
-    "annotations": Array [
-      Object {
-        "labelOptions": Object {
-          "backgroundColor": "rgba(255,255,255,0.5)",
-          "verticalAlign": "top",
-          "y": 15,
-        },
-        "labels": Array [
-          Object {
-            "point": Object {
-              "x": 810000,
-              "xAxis": 0,
-              "y": 694195,
-              "yAxis": 0,
-            },
-            "text": "7.1G",
-          },
-          Object {
-            "point": Object {
-              "x": 1420000,
-              "xAxis": 0,
-              "y": 948374,
-              "yAxis": 0,
-            },
-            "text": "Max",
-          },
-        ],
-      },
-    ],
     "dividends": Array [
       Array [
         0,
@@ -1445,15 +1416,12 @@ Object {
         9939,
       ],
     ],
-    "max": Object {
-      "dividends": 756713,
-      "grossIncome": 226402,
-      "netIncome": 191661,
-      "salaryAboveSevenG": false,
-      "salaryBasis": 292700,
-      "surplus": 1420000,
-      "total": 948374,
-    },
+    "maxTotal": Array [
+      Array [
+        1420000,
+        948374,
+      ],
+    ],
     "netIncome": Array [
       Array [
         0,
@@ -2138,6 +2106,12 @@ Object {
       Array [
         1700000,
         20364,
+      ],
+    ],
+    "sevenG": Array [
+      Array [
+        810000,
+        694195,
       ],
     ],
     "surplus": Array [
@@ -3565,8 +3539,10 @@ Object {
       "surplus.graph.x.axis.title": "Overskudd",
       "surplus.graph.y.axis.title": "NOK",
       "surplus.series.dividends": "Utbytte",
+      "surplus.series.gross.seven.g": "7.1G brutto inntekt",
       "surplus.series.income.gross": "Brutto inntekt",
       "surplus.series.income.net": "Netto inntekt",
+      "surplus.series.max.total": "Maksimal inntjening",
       "surplus.series.surplus": "Overskudd",
       "surplus.series.total": "Sammenlagt",
       "surplus.suffix": "NOK",
@@ -3624,6 +3600,7 @@ Object {
     "surplus": Object {
       "amount": 0,
       "include": true,
+      "sevenG": true,
     },
     "vacationSavings": Object {
       "include": true,

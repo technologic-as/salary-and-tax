@@ -53,6 +53,8 @@ export default {
   'surplus.series.dividends': dividends,
   'surplus.series.surplus': surplus,
   'surplus.series.total': 'Sammenlagt',
+  'surplus.series.gross.seven.g': '7.1G brutto inntekt',
+  'surplus.series.max.total': 'Maksimal inntjening',
   'surplus.suffix': unit,
 
   'summary.header': 'Sammendrag',

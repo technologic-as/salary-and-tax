@@ -34,6 +34,7 @@ Object {
   "surplus": Object {
     "amount": 0,
     "include": true,
+    "sevenG": true,
   },
   "vacationSavings": Object {
     "include": true,
