@@ -45,7 +45,6 @@
     "redux": "4.0.x",
     "redux-form": "7.4.x",
     "redux-form-storybook": "1.0.x",
-    "redux-logger": "3.0.x",
     "redux-thunk": "2.3.x",
     "request": "2.88.x",
     "request-promise": "4.2.x",
@@ -84,6 +83,7 @@
     "node-sass": "4.9.x",
     "prettier": "1.16.x",
     "react-test-renderer": "16.5.x",
+    "redux-devtools-extension": "2.13.x",
     "redux-mock-store": "1.5.x",
     "sass-loader": "7.1.x",
     "storybook-addon-intl": "2.3.x",
@@ -95,7 +95,7 @@
   },
   "lint-staged": {
     "*.{js,jsx}": [
-      "yarn lint",
+      "yarn lint --fix",
       "git add"
     ],
     "*.{json,md,scss,yaml,yml}": [
