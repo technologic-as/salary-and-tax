@@ -2,111 +2,128 @@
 
 exports[`TaxCalculations should render 1`] = `
 <Section
+  expanded={true}
   header="Tax calculations"
 >
-  <Table>
-    <TableHead>
-      <TaxRow
-        description="Common income"
-      />
-    </TableHead>
-    <TableBody>
-      <TaxRow
-        description="Income"
-        sum="$12,345,678.00"
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Minimum deduction"
-        minus={true}
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Personal allowance"
-        minus={true}
-      />
-      <TaxRow
-        description="Common income"
-        sum="$12,345,678.00"
-      />
-    </TableBody>
-  </Table>
-  <Table>
-    <TableHead>
-      <TaxRow
-        description="Income"
-      />
-    </TableHead>
-    <TableBody>
-      <TaxRow
-        description="Income"
-        sum="$12,345,678.00"
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Income tax"
-        minus={true}
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Social security deduction"
-        minus={true}
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Tax step 1"
-        minus={true}
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Tax step 2"
-        minus={true}
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Tax step 3"
-        minus={true}
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Tax step 4"
-        minus={true}
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="After tax"
-        sum="$12,345,678.00"
-      />
-    </TableBody>
-  </Table>
-  <Table>
-    <TableHead>
-      <TaxRow
-        description="Surplus"
-      />
-    </TableHead>
-    <TableBody>
-      <TaxRow
-        description="Surplus amount"
-        sum="$12,345,678.00"
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Surplus tax"
-        minus={true}
-        sum="$12,345,678.00"
-      />
-      <TaxRow
-        amount="$12,345,678.00"
-        description="Dividends tax"
-        minus={true}
-        sum="$12,345,678.00"
-      />
-      <TaxRow
-        description="Dividends"
-        sum="$12,345,678.00"
-      />
-    </TableBody>
-  </Table>
+  <div
+    className="MuiGrid-container-1"
+  >
+    <div
+      className="MuiGrid-item-2"
+    >
+      <Table>
+        <TableHead>
+          <TaxRow
+            description="Common income"
+          />
+        </TableHead>
+        <TableBody>
+          <TaxRow
+            description="Income"
+            sum="$12,345,678.00"
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Minimum deduction"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Personal allowance"
+            minus={true}
+          />
+          <TaxRow
+            description="Common income"
+            sum="$12,345,678.00"
+          />
+        </TableBody>
+      </Table>
+    </div>
+    <div
+      className="MuiGrid-item-2"
+    >
+      <Table>
+        <TableHead>
+          <TaxRow
+            description="Income"
+          />
+        </TableHead>
+        <TableBody>
+          <TaxRow
+            description="Income"
+            sum="$12,345,678.00"
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Income tax"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Social security deduction"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Tax step 1"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Tax step 2"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Tax step 3"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Tax step 4"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="After tax"
+            sum="$12,345,678.00"
+          />
+        </TableBody>
+      </Table>
+    </div>
+    <div
+      className="MuiGrid-item-2"
+    >
+      <Table>
+        <TableHead>
+          <TaxRow
+            description="Surplus"
+          />
+        </TableHead>
+        <TableBody>
+          <TaxRow
+            description="Surplus amount"
+            sum="$12,345,678.00"
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Surplus tax"
+            minus={true}
+            sum="$12,345,678.00"
+          />
+          <TaxRow
+            amount="$12,345,678.00"
+            description="Dividends tax"
+            minus={true}
+            sum="$12,345,678.00"
+          />
+          <TaxRow
+            description="Dividends"
+            sum="$12,345,678.00"
+          />
+        </TableBody>
+      </Table>
+    </div>
+  </div>
 </Section>
 `;

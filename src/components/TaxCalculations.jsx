@@ -1,3 +1,4 @@
+import Grid from '@material-ui/core/Grid';
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableHead from '@material-ui/core/TableHead';
@@ -90,105 +91,115 @@ export const TaxCalculationsComponent = ({
     formatNumber(amount, { style: 'currency', currency: 'NOK' });
   return (
     <Fragment>
-      <Section header={formatMessage(messages.header)}>
-        <Table>
-          <TableHead>
-            <TaxRow description={formatMessage(messages.commonIncomeHeader)} />
-          </TableHead>
-          <TableBody>
-            <TaxRow
-              description={formatMessage(messages.income)}
-              sum={formatCurrency(income)}
-            />
-            <TaxRow
-              description={formatMessage(messages.minimumDeduction)}
-              amount={formatCurrency(minimumDeduction)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.personalAllowance)}
-              amount={formatCurrency(personalAllowance)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.commonIncome)}
-              sum={formatCurrency(commonIncome)}
-            />
-          </TableBody>
-        </Table>
-        <Table>
-          <TableHead>
-            <TaxRow description={formatMessage(messages.incomeHeader)} />
-          </TableHead>
-          <TableBody>
-            <TaxRow
-              description={formatMessage(messages.income)}
-              sum={formatCurrency(income)}
-            />
-            <TaxRow
-              description={formatMessage(messages.incomeTax)}
-              amount={formatCurrency(incomeTax)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.socialSecurityDeduction)}
-              amount={formatCurrency(socialSecurityDeduction)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.step1)}
-              amount={formatCurrency(step1)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.step2)}
-              amount={formatCurrency(step2)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.step3)}
-              amount={formatCurrency(step3)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.step4)}
-              amount={formatCurrency(step4)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.afterTax)}
-              amount={formatCurrency(totalTax)}
-              sum={formatCurrency(afterTax)}
-            />
-          </TableBody>
-        </Table>
-        <Table>
-          <TableHead>
-            <TaxRow description={formatMessage(messages.surplusHeader)} />
-          </TableHead>
-          <TableBody>
-            <TaxRow
-              description={formatMessage(messages.surplus)}
-              sum={formatCurrency(surplus)}
-            />
-            <TaxRow
-              description={formatMessage(messages.surplusTax)}
-              amount={formatCurrency(surplusTax)}
-              sum={formatCurrency(dividends)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.dividendsTax)}
-              amount={formatCurrency(dividendsTax)}
-              sum={formatCurrency(afterDividendsTax)}
-              minus
-            />
-            <TaxRow
-              description={formatMessage(messages.dividends)}
-              sum={formatCurrency(afterDividendsTax)}
-            />
-          </TableBody>
-        </Table>
+      <Section header={formatMessage(messages.header)} expanded>
+        <Grid container>
+          <Grid item>
+            <Table>
+              <TableHead>
+                <TaxRow
+                  description={formatMessage(messages.commonIncomeHeader)}
+                />
+              </TableHead>
+              <TableBody>
+                <TaxRow
+                  description={formatMessage(messages.income)}
+                  sum={formatCurrency(income)}
+                />
+                <TaxRow
+                  description={formatMessage(messages.minimumDeduction)}
+                  amount={formatCurrency(minimumDeduction)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.personalAllowance)}
+                  amount={formatCurrency(personalAllowance)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.commonIncome)}
+                  sum={formatCurrency(commonIncome)}
+                />
+              </TableBody>
+            </Table>
+          </Grid>
+          <Grid item>
+            <Table>
+              <TableHead>
+                <TaxRow description={formatMessage(messages.incomeHeader)} />
+              </TableHead>
+              <TableBody>
+                <TaxRow
+                  description={formatMessage(messages.income)}
+                  sum={formatCurrency(income)}
+                />
+                <TaxRow
+                  description={formatMessage(messages.incomeTax)}
+                  amount={formatCurrency(incomeTax)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.socialSecurityDeduction)}
+                  amount={formatCurrency(socialSecurityDeduction)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.step1)}
+                  amount={formatCurrency(step1)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.step2)}
+                  amount={formatCurrency(step2)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.step3)}
+                  amount={formatCurrency(step3)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.step4)}
+                  amount={formatCurrency(step4)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.afterTax)}
+                  amount={formatCurrency(totalTax)}
+                  sum={formatCurrency(afterTax)}
+                />
+              </TableBody>
+            </Table>
+          </Grid>
+          <Grid item>
+            <Table>
+              <TableHead>
+                <TaxRow description={formatMessage(messages.surplusHeader)} />
+              </TableHead>
+              <TableBody>
+                <TaxRow
+                  description={formatMessage(messages.surplus)}
+                  sum={formatCurrency(surplus)}
+                />
+                <TaxRow
+                  description={formatMessage(messages.surplusTax)}
+                  amount={formatCurrency(surplusTax)}
+                  sum={formatCurrency(dividends)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.dividendsTax)}
+                  amount={formatCurrency(dividendsTax)}
+                  sum={formatCurrency(afterDividendsTax)}
+                  minus
+                />
+                <TaxRow
+                  description={formatMessage(messages.dividends)}
+                  sum={formatCurrency(afterDividendsTax)}
+                />
+              </TableBody>
+            </Table>
+          </Grid>
+        </Grid>
       </Section>
     </Fragment>
   );
