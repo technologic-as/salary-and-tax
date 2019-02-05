@@ -166,7 +166,8 @@ SalaryParametersComponent.propTypes = {
   ).isRequired,
 };
 
-export const SalaryParametersForm = reduxForm({ form: 'parameters' })(
+export const form = 'parameters';
+export const SalaryParametersForm = reduxForm({ form })(
   SalaryParametersComponent
 );
 

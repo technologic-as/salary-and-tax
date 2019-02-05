@@ -23,6 +23,7 @@ describe('SalaryParametersComponent', () => {
           submitForm={submitForm}
           submitting={false}
           intl={mockIntl}
+          onSubmit={() => {}}
           locales={[
             { value: 'en', label: 'English' },
             { value: 'nb', label: 'Norsk' },

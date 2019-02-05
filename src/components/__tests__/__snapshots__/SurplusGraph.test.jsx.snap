@@ -746,6 +746,7 @@ ShallowWrapper {
               ]
             }
             name="Dividends"
+            onClick={[Function]}
           />
           <n
             data={
@@ -1179,6 +1180,7 @@ ShallowWrapper {
                 ]
               }
               name="Dividends"
+              onClick={[Function]}
             />
             <n
               data={
@@ -1651,6 +1653,7 @@ ShallowWrapper {
                   ]
                 }
                 name="Dividends"
+                onClick={[Function]}
               />,
               <n
                 data={
@@ -2098,6 +2101,7 @@ ShallowWrapper {
                   ],
                 ],
                 "name": "Dividends",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": null,
@@ -2561,6 +2565,7 @@ ShallowWrapper {
                 ]
               }
               name="Dividends"
+              onClick={[Function]}
             />
             <n
               data={
@@ -2994,6 +2999,7 @@ ShallowWrapper {
                   ]
                 }
                 name="Dividends"
+                onClick={[Function]}
               />
               <n
                 data={
@@ -3466,6 +3472,7 @@ ShallowWrapper {
                     ]
                   }
                   name="Dividends"
+                  onClick={[Function]}
                 />,
                 <n
                   data={
@@ -3913,6 +3920,7 @@ ShallowWrapper {
                     ],
                   ],
                   "name": "Dividends",
+                  "onClick": [Function],
                 },
                 "ref": null,
                 "rendered": null,

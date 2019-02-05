@@ -17,6 +17,7 @@ import {
   YAxis,
 } from 'react-jsx-highcharts';
 import { connect } from 'react-redux';
+import { dividendsClick } from '../actions';
 import { Section } from './Ui';
 
 const messages = defineMessages({
@@ -79,6 +80,7 @@ export const SurplusGraphComponent = ({
   dividends,
   total,
   intl: { formatMessage },
+  dispatch,
 }) => {
   return (
     <Section header={formatMessage(messages.header)}>
@@ -116,6 +118,7 @@ export const SurplusGraphComponent = ({
           <LineSeries
             name={formatMessage(messages.seriesDividends)}
             data={dividends}
+            onClick={e => dispatch(dividendsClick(e.point))}
           />
           <LineSeries name={formatMessage(messages.seriesTotal)} data={total} />
         </YAxis>
@@ -135,7 +138,7 @@ SurplusGraphComponent.propTypes = forbidExtraProps({
   surplus: PropTypes.arrayOf(PropTypes.array).isRequired,
   dividends: PropTypes.arrayOf(PropTypes.array).isRequired,
   total: PropTypes.arrayOf(PropTypes.array).isRequired,
-  dispatch: PropTypes.func,
+  dispatch: PropTypes.func.isRequired,
 });
 
 const mapStateToProps = ({
