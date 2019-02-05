@@ -2,7 +2,16 @@ import { translationConfig } from '../translation';
 import { getPension, pensionConstants } from './pension';
 import round from './round';
 
-export const defaultSalaryParameters = {
+const hashParams = defaults => {
+  try {
+    const hash = window.location.hash.slice(1) || JSON.stringify(defaults);
+    return JSON.parse(decodeURI(hash));
+  } catch (e) {
+    return defaults;
+  }
+};
+
+export const defaultSalaryParameters = hashParams({
   cut: 10,
   hoursPerYear: 1730,
   hourRate: 1100,
@@ -13,7 +22,7 @@ export const defaultSalaryParameters = {
   graph: { increments: 10000 },
   locale: translationConfig.locale,
   ...pensionConstants,
-};
+});
 
 export const getTurnover = ({ hoursPerYear, hourRate }) => ({
   turnover: parseFloat(hoursPerYear) * parseFloat(hourRate),

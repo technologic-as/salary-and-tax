@@ -5,12 +5,18 @@ const initialState = {
   ...defaultSalaryParameters,
 };
 
+const handleFormChange = (state, action) => {
+  const params = Object.assign({}, state, {
+    ...action,
+  });
+  window.location.hash = JSON.stringify(params);
+  return params;
+};
+
 const parameters = (state = initialState, action = {}) => {
   switch (action.type) {
     case FORM_CHANGE:
-      return Object.assign({}, state, {
-        ...action,
-      });
+      return handleFormChange(state, action);
     default:
       return state;
   }
