@@ -160,6 +160,7 @@ SalaryParametersComponent.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   submitting: PropTypes.bool.isRequired,
   intl: intlShape.isRequired,
+  onSubmit: PropTypes.func.isRequired,
   locales: PropTypes.arrayOf(
     PropTypes.shape({ value: PropTypes.string, label: PropTypes.string })
   ).isRequired,

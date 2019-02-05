@@ -1,3 +1,4 @@
+import { forbidExtraProps } from 'airbnb-prop-types';
 import Highcharts from 'highcharts';
 import PropTypes from 'prop-types';
 import React from 'react';
@@ -70,15 +71,13 @@ const messages = defineMessages({
 });
 
 export const SurplusGraphComponent = ({
-  graph: {
-    grossIncome,
-    netIncome,
-    surplus,
-    dividends,
-    total,
-    sevenG,
-    maxTotal,
-  },
+  sevenG,
+  maxTotal,
+  grossIncome,
+  netIncome,
+  surplus,
+  dividends,
+  total,
   intl: { formatMessage },
 }) => {
   return (
@@ -127,12 +126,29 @@ export const SurplusGraphComponent = ({
   );
 };
 
-SurplusGraphComponent.propTypes = {
+SurplusGraphComponent.propTypes = forbidExtraProps({
   intl: intlShape.isRequired,
-  graph: PropTypes.shape({}).isRequired,
-};
+  sevenG: PropTypes.arrayOf(PropTypes.array).isRequired,
+  maxTotal: PropTypes.arrayOf(PropTypes.array).isRequired,
+  grossIncome: PropTypes.arrayOf(PropTypes.array).isRequired,
+  netIncome: PropTypes.arrayOf(PropTypes.array).isRequired,
+  surplus: PropTypes.arrayOf(PropTypes.array).isRequired,
+  dividends: PropTypes.arrayOf(PropTypes.array).isRequired,
+  total: PropTypes.arrayOf(PropTypes.array).isRequired,
+  dispatch: PropTypes.func,
+});
 
-const mapStateToProps = ({ graph }) => ({ graph });
+const mapStateToProps = ({
+  graph: {
+    sevenG,
+    maxTotal,
+    grossIncome,
+    netIncome,
+    surplus,
+    dividends,
+    total,
+  },
+}) => ({ grossIncome, netIncome, surplus, dividends, total, sevenG, maxTotal });
 
 export const SurplusGraph = connect(mapStateToProps)(
   injectIntl(withHighcharts(SurplusGraphComponent, Highcharts))

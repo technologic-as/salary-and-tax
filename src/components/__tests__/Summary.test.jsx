@@ -16,7 +16,6 @@ describe('Summary', () => {
         <SummaryComponent
           turnover={111111}
           income={222222}
-          commonIncome={333333}
           totalTax={444444}
           afterTax={555555}
           totalCuts={666666}

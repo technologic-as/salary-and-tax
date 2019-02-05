@@ -15,14 +15,27 @@ beforeAll(() => {
 
 describe('SurplusGraph', () => {
   it('should render', () => {
+    const {
+      sevenG,
+      maxTotal,
+      grossIncome,
+      netIncome,
+      surplus,
+      dividends,
+      total,
+    } = getChart({
+      ...defaultSalaryParameters,
+      graph: { increments: 100000 },
+    });
     const tree = shallow(
       <SurplusGraphComponent
-        graph={getChart({
-          ...defaultSalaryParameters,
-          graph: { increments: 100000 },
-        })}
-        setChart={() => mockComponent}
-        addAnnotations={() => mockComponent}
+        sevenG={sevenG}
+        maxTotal={maxTotal}
+        grossIncome={grossIncome}
+        netIncome={netIncome}
+        surplus={surplus}
+        dividends={dividends}
+        total={total}
         intl={mockIntl}
       />
     );

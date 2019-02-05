@@ -1,5 +1,6 @@
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
+import { forbidExtraProps } from 'airbnb-prop-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
@@ -66,7 +67,7 @@ export const SummaryComponent = ({
   );
 };
 
-SummaryComponent.propTypes = {
+SummaryComponent.propTypes = forbidExtraProps({
   turnover: PropTypes.number.isRequired,
   income: PropTypes.number.isRequired,
   totalTax: PropTypes.number.isRequired,
@@ -75,7 +76,7 @@ SummaryComponent.propTypes = {
   afterDividendsTax: PropTypes.number.isRequired,
   afterTotal: PropTypes.number.isRequired,
   intl: intlShape.isRequired,
-};
+});
 
 const mapStateToProps = ({
   calculations: {

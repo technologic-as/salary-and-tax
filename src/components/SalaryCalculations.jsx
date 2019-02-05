@@ -1,5 +1,6 @@
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
+import { forbidExtraProps } from 'airbnb-prop-types';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
@@ -94,7 +95,7 @@ export const SalaryCalculationsComponent = ({
   );
 };
 
-SalaryCalculationsComponent.propTypes = {
+SalaryCalculationsComponent.propTypes = forbidExtraProps({
   turnover: PropTypes.number.isRequired,
   companyIncome: PropTypes.number.isRequired,
   theCut: PropTypes.number.isRequired,
@@ -107,9 +108,37 @@ SalaryCalculationsComponent.propTypes = {
   surplus: PropTypes.number.isRequired,
   withoutSurplus: PropTypes.number.isRequired,
   intl: intlShape.isRequired,
-};
+});
 
-const mapStateToProps = ({ calculations: { salary } }) => ({ ...salary });
+const mapStateToProps = ({
+  calculations: {
+    salary: {
+      turnover,
+      companyIncome,
+      theCut,
+      employerFee,
+      withoutEmployerFee,
+      vacationSavings,
+      withoutVacationSavings,
+      pension,
+      withoutPension,
+      surplus,
+      withoutSurplus,
+    },
+  },
+}) => ({
+  turnover,
+  companyIncome,
+  theCut,
+  employerFee,
+  withoutEmployerFee,
+  vacationSavings,
+  withoutVacationSavings,
+  pension,
+  withoutPension,
+  surplus,
+  withoutSurplus,
+});
 
 const mapDispatchToProps = () => ({});
 

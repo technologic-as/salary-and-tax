@@ -1,6 +1,7 @@
 import Table from '@material-ui/core/Table';
 import TableBody from '@material-ui/core/TableBody';
 import TableHead from '@material-ui/core/TableHead';
+import { forbidExtraProps } from 'airbnb-prop-types';
 import PropTypes from 'prop-types';
 import React, { Fragment } from 'react';
 import { defineMessages, injectIntl, intlShape } from 'react-intl';
@@ -193,7 +194,7 @@ export const TaxCalculationsComponent = ({
   );
 };
 
-TaxCalculationsComponent.propTypes = {
+TaxCalculationsComponent.propTypes = forbidExtraProps({
   income: PropTypes.number.isRequired,
   minimumDeduction: PropTypes.number.isRequired,
   personalAllowance: PropTypes.number.isRequired,
@@ -212,11 +213,50 @@ TaxCalculationsComponent.propTypes = {
   dividendsTax: PropTypes.number.isRequired,
   afterDividendsTax: PropTypes.number.isRequired,
   intl: intlShape.isRequired,
-};
+});
 
-const mapStateToProps = ({ calculations: { tax, dividends } }) => ({
-  ...tax,
-  ...dividends,
+const mapStateToProps = ({
+  calculations: {
+    tax: {
+      income,
+      minimumDeduction,
+      personalAllowance,
+      commonIncome,
+      incomeTax,
+      socialSecurityDeduction,
+      step1,
+      step2,
+      step3,
+      step4,
+      totalTax,
+      afterTax,
+    },
+    dividends: {
+      surplus,
+      surplusTax,
+      dividendsTax,
+      afterDividendsTax,
+      dividends,
+    },
+  },
+}) => ({
+  income,
+  minimumDeduction,
+  personalAllowance,
+  commonIncome,
+  incomeTax,
+  socialSecurityDeduction,
+  step1,
+  step2,
+  step3,
+  step4,
+  totalTax,
+  afterTax,
+  surplus,
+  surplusTax,
+  dividends,
+  dividendsTax,
+  afterDividendsTax,
 });
 
 const mapDispatchToProps = () => ({});
