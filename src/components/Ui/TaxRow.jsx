@@ -10,10 +10,10 @@ export const TaxRow = ({ description, amount, sum, minus }) => (
       {minus ? '- ' : ''}
       {description}
     </TableCell>
-    <TableCell numeric>
+    <TableCell align="right">
       <Typography color={minus ? 'secondary' : 'default'}>{amount}</Typography>
     </TableCell>
-    <TableCell numeric>{sum}</TableCell>
+    <TableCell align="right">{sum}</TableCell>
   </TableRow>
 );
 
