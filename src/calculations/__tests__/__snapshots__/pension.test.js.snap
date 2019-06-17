@@ -18,162 +18,162 @@ Object {
 }
 `;
 
-exports[`pension given salary of 96883 (1G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 99858 (1G) getPension should match snapshot 1`] = `
 Object {
-  "after": 96883,
+  "after": 99858,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 96883 (1G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 99858 (1G) should not calculate if include is false 1`] = `
 Object {
-  "after": 96883,
+  "after": 99858,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 193766 (2G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 199716 (2G) getPension should match snapshot 1`] = `
 Object {
-  "after": 191829,
-  "pension": 1937,
-  "step1": 1937,
+  "after": 197719,
+  "pension": 1997,
+  "step1": 1997,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 193766 (2G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 199716 (2G) should not calculate if include is false 1`] = `
 Object {
-  "after": 193766,
+  "after": 199716,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 290649 (3G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 299574 (3G) getPension should match snapshot 1`] = `
 Object {
-  "after": 286774,
-  "pension": 3875,
-  "step1": 3875,
+  "after": 295580,
+  "pension": 3994,
+  "step1": 3994,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 290649 (3G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 299574 (3G) should not calculate if include is false 1`] = `
 Object {
-  "after": 290649,
+  "after": 299574,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 678181 (7G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 699006 (7G) getPension should match snapshot 1`] = `
 Object {
-  "after": 666556,
-  "pension": 11625,
-  "step1": 11625,
+  "after": 687024,
+  "pension": 11982,
+  "step1": 11982,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 678181 (7G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 699006 (7G) should not calculate if include is false 1`] = `
 Object {
-  "after": 678181,
+  "after": 699006,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 687869 (7.1G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 708991 (7.1G) getPension should match snapshot 1`] = `
 Object {
-  "after": 676050,
-  "pension": 11819,
-  "step1": 11819,
+  "after": 696809,
+  "pension": 12182,
+  "step1": 12182,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 687869 (7.1G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 708991 (7.1G) should not calculate if include is false 1`] = `
 Object {
-  "after": 687869,
+  "after": 708991,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 775064 (8G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 798864 (8G) getPension should match snapshot 1`] = `
 Object {
-  "after": 761502,
-  "pension": 13562,
-  "step1": 11819,
-  "step2": 1743,
+  "after": 784885,
+  "pension": 13979,
+  "step1": 12182,
+  "step2": 1797,
 }
 `;
 
-exports[`pension given salary of 775064 (8G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 798864 (8G) should not calculate if include is false 1`] = `
 Object {
-  "after": 775064,
+  "after": 798864,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 1065713 (11G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 1098438 (11G) getPension should match snapshot 1`] = `
 Object {
-  "after": 1046338,
-  "pension": 19375,
-  "step1": 11819,
-  "step2": 7556,
+  "after": 1078468,
+  "pension": 19970,
+  "step1": 12182,
+  "step2": 7788,
 }
 `;
 
-exports[`pension given salary of 1065713 (11G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 1098438 (11G) should not calculate if include is false 1`] = `
 Object {
-  "after": 1065713,
+  "after": 1098438,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 1162596 (12G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 1198296 (12G) getPension should match snapshot 1`] = `
 Object {
-  "after": 1141283,
-  "pension": 21313,
-  "step1": 11819,
-  "step2": 9494,
+  "after": 1176328,
+  "pension": 21968,
+  "step1": 12182,
+  "step2": 9786,
 }
 `;
 
-exports[`pension given salary of 1162596 (12G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 1198296 (12G) should not calculate if include is false 1`] = `
 Object {
-  "after": 1162596,
+  "after": 1198296,
   "pension": 0,
   "step1": 0,
   "step2": 0,
 }
 `;
 
-exports[`pension given salary of 1453245 (15G) getPension should match snapshot 1`] = `
+exports[`pension given salary of 1497870 (15G) getPension should match snapshot 1`] = `
 Object {
-  "after": 1431932,
-  "pension": 21313,
-  "step1": 11819,
-  "step2": 9494,
+  "after": 1475902,
+  "pension": 21968,
+  "step1": 12182,
+  "step2": 9786,
 }
 `;
 
-exports[`pension given salary of 1453245 (15G) should not calculate if include is false 1`] = `
+exports[`pension given salary of 1497870 (15G) should not calculate if include is false 1`] = `
 Object {
-  "after": 1453245,
+  "after": 1497870,
   "pension": 0,
   "step1": 0,
   "step2": 0,
@@ -187,15 +187,15 @@ Object {
     "step1": Object {
       "rate": 2,
       "threshold": Object {
-        "high": 687869,
-        "low": 96883,
+        "high": 708991,
+        "low": 99858,
       },
     },
     "step2": Object {
       "rate": 2,
       "threshold": Object {
-        "high": 1162596,
-        "low": 687869,
+        "high": 1198296,
+        "low": 708991,
       },
     },
   },
