@@ -1,0 +1,34 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - '@storybook/react > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > babel-plugin-react-docgen > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > babel-preset-minify > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > css-loader > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > react-dev-utils > inquirer > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > @storybook/react-komposer > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > babel-preset-minify > babel-plugin-minify-dead-code-elimination > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > react-dev-utils > inquirer > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > babel-plugin-react-docgen > react-docgen > async > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > @storybook/mantra-core > @storybook/react-komposer > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > react-treebeard > velocity-react > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > react-treebeard > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-01-31T06:54:51.096Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > react-treebeard > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-01-31T06:54:51.096Z'

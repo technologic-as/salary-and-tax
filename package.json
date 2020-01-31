@@ -10,7 +10,9 @@
     "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint . --ext .js,.jsx",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
-    "storybook": "start-storybook -p 9001 -c .storybook"
+    "storybook": "start-storybook -p 9001 -c .storybook",
+    "snyk-protect": "snyk protect",
+    "prepare": "yarn run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -49,7 +51,8 @@
     "redux-thunk": "2.3.x",
     "request": "2.88.x",
     "request-promise": "4.2.x",
-    "typeface-roboto": "0.0.x"
+    "typeface-roboto": "0.0.x",
+    "snyk": "^1.288.0"
   },
   "devDependencies": {
     "@babel/cli": "7.1.x",
@@ -113,5 +116,6 @@
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     }
-  }
+  },
+  "snyk": true
 }
