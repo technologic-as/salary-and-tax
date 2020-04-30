@@ -1,5 +1,5 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.14.0
+version: v1.14.1
 ignore: {}
 # patches apply the minimum changes required to fix a vulnerability
 patch:
@@ -32,3 +32,58 @@ patch:
         patched: '2020-01-31T06:54:51.096Z'
     - '@storybook/react > @storybook/core > @storybook/ui > react-treebeard > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
         patched: '2020-01-31T06:54:51.096Z'
+  SNYK-JS-LODASH-567746:
+    - '@storybook/react > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - react-jsx-highcharts > lodash:
+        patched: '2020-04-30T22:44:26.996Z'
+    - react-redux > lodash:
+        patched: '2020-04-30T22:44:26.996Z'
+    - redux-form > lodash:
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > babel-plugin-react-docgen > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - redux-form-storybook > redux-form > lodash:
+        patched: '2020-04-30T22:44:26.996Z'
+    - request-promise > request-promise-core > lodash:
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > babel-preset-minify > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > css-loader > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > react-dev-utils > inquirer > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - redux-form-storybook > webpack > async > lodash:
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @babel/preset-env > @babel/plugin-transform-block-scoping > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > babel-preset-minify > babel-plugin-minify-dead-code-elimination > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > react-dev-utils > inquirer > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > babel-plugin-react-docgen > react-docgen > async > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @babel/preset-env > @babel/plugin-transform-modules-umd > @babel/helper-module-transforms > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > react-treebeard > velocity-react > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > react-treebeard > @emotion/styled > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @storybook/ui > react-treebeard > @emotion/core > @emotion/css > babel-plugin-emotion > @babel/helper-module-imports > @babel/types > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > html-webpack-plugin > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > inquirer > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @babel/preset-env > @babel/plugin-transform-unicode-regex > @babel/helper-create-regexp-features-plugin > @babel/helper-regex > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/generator > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-split-export-declaration > @babel/types > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
+    - '@storybook/react > @storybook/core > @babel/preset-env > @babel/plugin-transform-exponentiation-operator > @babel/helper-builder-binary-assignment-operator-visitor > @babel/helper-explode-assignable-expression > @babel/traverse > @babel/helper-function-name > @babel/template > @babel/types > lodash':
+        patched: '2020-04-30T22:44:26.996Z'
