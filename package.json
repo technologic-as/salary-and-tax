@@ -32,7 +32,7 @@
     "airbnb-prop-types": "2.11.x",
     "babel-plugin-react-intl": "3.0.x",
     "dotenv": "6.0.x",
-    "highcharts": "6.1.x",
+    "highcharts": "8.1.1",
     "js-cookie": "2.2.x",
     "prop-types": "15.6.x",
     "react": "16.5.x",
