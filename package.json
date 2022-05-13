@@ -28,7 +28,7 @@
     "@material-ui/icons": "3.0.x",
     "@storybook/addon-actions": "3.4.x",
     "@storybook/addons": "3.4.x",
-    "@storybook/react": "4.0.0",
+    "@storybook/react": "6.4.0",
     "airbnb-prop-types": "2.11.x",
     "babel-plugin-react-intl": "3.0.x",
     "dotenv": "6.0.x",
