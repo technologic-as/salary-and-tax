@@ -52,7 +52,7 @@
     "request": "2.88.x",
     "request-promise": "4.2.x",
     "typeface-roboto": "0.0.x",
-    "snyk": "^1.465.0"
+    "snyk": "^1.680.0"
   },
   "devDependencies": {
     "@babel/cli": "7.1.x",
