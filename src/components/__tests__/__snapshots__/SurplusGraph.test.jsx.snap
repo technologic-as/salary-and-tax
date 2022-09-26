@@ -406,21 +406,21 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <Highcharts.Provider(n)>
-        <Highcharts.Provider(Chart.Provider(n)) />
-        <Highcharts.Provider(Chart.Provider(n))>
+      "children": <Highcharts.Provider(e)>
+        <Highcharts.Provider(Chart.Provider(e)) />
+        <Highcharts.Provider(Chart.Provider(e))>
           Income vs. surplus
-        </Highcharts.Provider(Chart.Provider(n))>
-        <Highcharts.Provider(Chart.Provider(n)) />
-        <Highcharts.Provider(Chart.Provider(n))>
-          <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+        </Highcharts.Provider(Chart.Provider(e))>
+        <Highcharts.Provider(Chart.Provider(e)) />
+        <Highcharts.Provider(Chart.Provider(e))>
+          <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
             Surplus
-          </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-        </Highcharts.Provider(Chart.Provider(n))>
-        <n
+          </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+        </Highcharts.Provider(Chart.Provider(e))>
+        <e
           type="linear"
         >
-          <n
+          <ScatterSeries
             data={
               Array [
                 Array [
@@ -431,7 +431,7 @@ ShallowWrapper {
             }
             name="7.1 Gross income"
           />
-          <n
+          <ScatterSeries
             data={
               Array [
                 Array [
@@ -442,10 +442,10 @@ ShallowWrapper {
             }
             name="Max total"
           />
-          <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+          <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
             NOK
-          </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-          <n
+          </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+          <LineSeries
             data={
               Array [
                 Array [
@@ -520,7 +520,7 @@ ShallowWrapper {
             }
             name="Gross income"
           />
-          <n
+          <LineSeries
             data={
               Array [
                 Array [
@@ -596,7 +596,7 @@ ShallowWrapper {
             name="Net income"
             visible={false}
           />
-          <n
+          <LineSeries
             data={
               Array [
                 Array [
@@ -672,7 +672,7 @@ ShallowWrapper {
             name="Surplus"
             visible={false}
           />
-          <n
+          <LineSeries
             data={
               Array [
                 Array [
@@ -748,7 +748,7 @@ ShallowWrapper {
             name="Dividends"
             onClick={[Function]}
           />
-          <n
+          <LineSeries
             data={
               Array [
                 Array [
@@ -823,15 +823,15 @@ ShallowWrapper {
             }
             name="Total"
           />
-        </n>
-        <Highcharts.Provider(Chart.Provider(n))
+        </e>
+        <Highcharts.Provider(Chart.Provider(e))
           shared={true}
           valueSuffix="NOK"
         />
-        <Highcharts.Provider(Chart.Provider(n))
+        <Highcharts.Provider(Chart.Provider(e))
           enabled={false}
         />
-      </Highcharts.Provider(n)>,
+      </Highcharts.Provider(e)>,
       "header": "Income vs. surplus",
     },
     "ref": null,
@@ -841,20 +841,20 @@ ShallowWrapper {
       "nodeType": "function",
       "props": Object {
         "children": Array [
-          <Highcharts.Provider(Chart.Provider(n)) />,
-          <Highcharts.Provider(Chart.Provider(n))>
+          <Highcharts.Provider(Chart.Provider(e)) />,
+          <Highcharts.Provider(Chart.Provider(e))>
             Income vs. surplus
-          </Highcharts.Provider(Chart.Provider(n))>,
-          <Highcharts.Provider(Chart.Provider(n)) />,
-          <Highcharts.Provider(Chart.Provider(n))>
-            <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+          </Highcharts.Provider(Chart.Provider(e))>,
+          <Highcharts.Provider(Chart.Provider(e)) />,
+          <Highcharts.Provider(Chart.Provider(e))>
+            <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
               Surplus
-            </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-          </Highcharts.Provider(Chart.Provider(n))>,
-          <n
+            </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+          </Highcharts.Provider(Chart.Provider(e))>,
+          <e
             type="linear"
           >
-            <n
+            <ScatterSeries
               data={
                 Array [
                   Array [
@@ -865,7 +865,7 @@ ShallowWrapper {
               }
               name="7.1 Gross income"
             />
-            <n
+            <ScatterSeries
               data={
                 Array [
                   Array [
@@ -876,10 +876,10 @@ ShallowWrapper {
               }
               name="Max total"
             />
-            <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+            <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
               NOK
-            </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-            <n
+            </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -954,7 +954,7 @@ ShallowWrapper {
               }
               name="Gross income"
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -1030,7 +1030,7 @@ ShallowWrapper {
               name="Net income"
               visible={false}
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -1106,7 +1106,7 @@ ShallowWrapper {
               name="Surplus"
               visible={false}
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -1182,7 +1182,7 @@ ShallowWrapper {
               name="Dividends"
               onClick={[Function]}
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -1257,12 +1257,12 @@ ShallowWrapper {
               }
               name="Total"
             />
-          </n>,
-          <Highcharts.Provider(Chart.Provider(n))
+          </e>,
+          <Highcharts.Provider(Chart.Provider(e))
             shared={true}
             valueSuffix="NOK"
           />,
-          <Highcharts.Provider(Chart.Provider(n))
+          <Highcharts.Provider(Chart.Provider(e))
             enabled={false}
           />,
         ],
@@ -1303,9 +1303,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "function",
           "props": Object {
-            "children": <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+            "children": <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
               Surplus
-            </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>,
+            </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>,
           },
           "ref": null,
           "rendered": Object {
@@ -1327,7 +1327,7 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              <n
+              <ScatterSeries
                 data={
                   Array [
                     Array [
@@ -1338,7 +1338,7 @@ ShallowWrapper {
                 }
                 name="7.1 Gross income"
               />,
-              <n
+              <ScatterSeries
                 data={
                   Array [
                     Array [
@@ -1349,10 +1349,10 @@ ShallowWrapper {
                 }
                 name="Max total"
               />,
-              <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+              <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
                 NOK
-              </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>,
-              <n
+              </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>,
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -1427,7 +1427,7 @@ ShallowWrapper {
                 }
                 name="Gross income"
               />,
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -1503,7 +1503,7 @@ ShallowWrapper {
                 name="Net income"
                 visible={false}
               />,
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -1579,7 +1579,7 @@ ShallowWrapper {
                 name="Surplus"
                 visible={false}
               />,
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -1655,7 +1655,7 @@ ShallowWrapper {
                 name="Dividends"
                 onClick={[Function]}
               />,
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -1738,7 +1738,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "data": Array [
                   Array [
@@ -1755,7 +1755,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "data": Array [
                   Array [
@@ -1783,7 +1783,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "data": Array [
                   Array [
@@ -1864,7 +1864,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "data": Array [
                   Array [
@@ -1946,7 +1946,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "data": Array [
                   Array [
@@ -2028,7 +2028,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "data": Array [
                   Array [
@@ -2110,7 +2110,7 @@ ShallowWrapper {
             Object {
               "instance": null,
               "key": undefined,
-              "nodeType": "class",
+              "nodeType": "function",
               "props": Object {
                 "data": Array [
                   Array [
@@ -2225,21 +2225,21 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <Highcharts.Provider(n)>
-          <Highcharts.Provider(Chart.Provider(n)) />
-          <Highcharts.Provider(Chart.Provider(n))>
+        "children": <Highcharts.Provider(e)>
+          <Highcharts.Provider(Chart.Provider(e)) />
+          <Highcharts.Provider(Chart.Provider(e))>
             Income vs. surplus
-          </Highcharts.Provider(Chart.Provider(n))>
-          <Highcharts.Provider(Chart.Provider(n)) />
-          <Highcharts.Provider(Chart.Provider(n))>
-            <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+          </Highcharts.Provider(Chart.Provider(e))>
+          <Highcharts.Provider(Chart.Provider(e)) />
+          <Highcharts.Provider(Chart.Provider(e))>
+            <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
               Surplus
-            </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-          </Highcharts.Provider(Chart.Provider(n))>
-          <n
+            </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+          </Highcharts.Provider(Chart.Provider(e))>
+          <e
             type="linear"
           >
-            <n
+            <ScatterSeries
               data={
                 Array [
                   Array [
@@ -2250,7 +2250,7 @@ ShallowWrapper {
               }
               name="7.1 Gross income"
             />
-            <n
+            <ScatterSeries
               data={
                 Array [
                   Array [
@@ -2261,10 +2261,10 @@ ShallowWrapper {
               }
               name="Max total"
             />
-            <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+            <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
               NOK
-            </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-            <n
+            </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -2339,7 +2339,7 @@ ShallowWrapper {
               }
               name="Gross income"
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -2415,7 +2415,7 @@ ShallowWrapper {
               name="Net income"
               visible={false}
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -2491,7 +2491,7 @@ ShallowWrapper {
               name="Surplus"
               visible={false}
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -2567,7 +2567,7 @@ ShallowWrapper {
               name="Dividends"
               onClick={[Function]}
             />
-            <n
+            <LineSeries
               data={
                 Array [
                   Array [
@@ -2642,15 +2642,15 @@ ShallowWrapper {
               }
               name="Total"
             />
-          </n>
-          <Highcharts.Provider(Chart.Provider(n))
+          </e>
+          <Highcharts.Provider(Chart.Provider(e))
             shared={true}
             valueSuffix="NOK"
           />
-          <Highcharts.Provider(Chart.Provider(n))
+          <Highcharts.Provider(Chart.Provider(e))
             enabled={false}
           />
-        </Highcharts.Provider(n)>,
+        </Highcharts.Provider(e)>,
         "header": "Income vs. surplus",
       },
       "ref": null,
@@ -2660,20 +2660,20 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": Array [
-            <Highcharts.Provider(Chart.Provider(n)) />,
-            <Highcharts.Provider(Chart.Provider(n))>
+            <Highcharts.Provider(Chart.Provider(e)) />,
+            <Highcharts.Provider(Chart.Provider(e))>
               Income vs. surplus
-            </Highcharts.Provider(Chart.Provider(n))>,
-            <Highcharts.Provider(Chart.Provider(n)) />,
-            <Highcharts.Provider(Chart.Provider(n))>
-              <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+            </Highcharts.Provider(Chart.Provider(e))>,
+            <Highcharts.Provider(Chart.Provider(e)) />,
+            <Highcharts.Provider(Chart.Provider(e))>
+              <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
                 Surplus
-              </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-            </Highcharts.Provider(Chart.Provider(n))>,
-            <n
+              </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+            </Highcharts.Provider(Chart.Provider(e))>,
+            <e
               type="linear"
             >
-              <n
+              <ScatterSeries
                 data={
                   Array [
                     Array [
@@ -2684,7 +2684,7 @@ ShallowWrapper {
                 }
                 name="7.1 Gross income"
               />
-              <n
+              <ScatterSeries
                 data={
                   Array [
                     Array [
@@ -2695,10 +2695,10 @@ ShallowWrapper {
                 }
                 name="Max total"
               />
-              <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+              <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
                 NOK
-              </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
-              <n
+              </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -2773,7 +2773,7 @@ ShallowWrapper {
                 }
                 name="Gross income"
               />
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -2849,7 +2849,7 @@ ShallowWrapper {
                 name="Net income"
                 visible={false}
               />
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -2925,7 +2925,7 @@ ShallowWrapper {
                 name="Surplus"
                 visible={false}
               />
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -3001,7 +3001,7 @@ ShallowWrapper {
                 name="Dividends"
                 onClick={[Function]}
               />
-              <n
+              <LineSeries
                 data={
                   Array [
                     Array [
@@ -3076,12 +3076,12 @@ ShallowWrapper {
                 }
                 name="Total"
               />
-            </n>,
-            <Highcharts.Provider(Chart.Provider(n))
+            </e>,
+            <Highcharts.Provider(Chart.Provider(e))
               shared={true}
               valueSuffix="NOK"
             />,
-            <Highcharts.Provider(Chart.Provider(n))
+            <Highcharts.Provider(Chart.Provider(e))
               enabled={false}
             />,
           ],
@@ -3122,9 +3122,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "function",
             "props": Object {
-              "children": <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+              "children": <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
                 Surplus
-              </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>,
+              </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>,
             },
             "ref": null,
             "rendered": Object {
@@ -3146,7 +3146,7 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                <n
+                <ScatterSeries
                   data={
                     Array [
                       Array [
@@ -3157,7 +3157,7 @@ ShallowWrapper {
                   }
                   name="7.1 Gross income"
                 />,
-                <n
+                <ScatterSeries
                   data={
                     Array [
                       Array [
@@ -3168,10 +3168,10 @@ ShallowWrapper {
                   }
                   name="Max total"
                 />,
-                <Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>
+                <Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>
                   NOK
-                </Highcharts.Provider(Chart.Provider(Axis.Provider(n)))>,
-                <n
+                </Highcharts.Provider(Chart.Provider(Axis.Provider(e)))>,
+                <LineSeries
                   data={
                     Array [
                       Array [
@@ -3246,7 +3246,7 @@ ShallowWrapper {
                   }
                   name="Gross income"
                 />,
-                <n
+                <LineSeries
                   data={
                     Array [
                       Array [
@@ -3322,7 +3322,7 @@ ShallowWrapper {
                   name="Net income"
                   visible={false}
                 />,
-                <n
+                <LineSeries
                   data={
                     Array [
                       Array [
@@ -3398,7 +3398,7 @@ ShallowWrapper {
                   name="Surplus"
                   visible={false}
                 />,
-                <n
+                <LineSeries
                   data={
                     Array [
                       Array [
@@ -3474,7 +3474,7 @@ ShallowWrapper {
                   name="Dividends"
                   onClick={[Function]}
                 />,
-                <n
+                <LineSeries
                   data={
                     Array [
                       Array [
@@ -3557,7 +3557,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "data": Array [
                     Array [
@@ -3574,7 +3574,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "data": Array [
                     Array [
@@ -3602,7 +3602,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "data": Array [
                     Array [
@@ -3683,7 +3683,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "data": Array [
                     Array [
@@ -3765,7 +3765,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "data": Array [
                     Array [
@@ -3847,7 +3847,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "data": Array [
                     Array [
@@ -3929,7 +3929,7 @@ ShallowWrapper {
               Object {
                 "instance": null,
                 "key": undefined,
-                "nodeType": "class",
+                "nodeType": "function",
                 "props": Object {
                   "data": Array [
                     Array [
