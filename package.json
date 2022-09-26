@@ -64,7 +64,7 @@
     "css-loader": "1.0.x",
     "enzyme": "3.7.x",
     "enzyme-adapter-react-16": "1.6.x",
-    "enzyme-to-json": "3.3.x",
+    "enzyme-to-json": "3.6.x",
     "eslint": "5.12.x",
     "eslint-config-prettier": "3.6.x",
     "eslint-plugin-import": "2.15.x",
