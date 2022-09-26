@@ -7,12 +7,9 @@
     "build:www": "webpack --config webpack.config.production.babel.js",
     "start:www": "webpack-dev-server --config webpack.config.dev.babel.js",
     "test": "jest",
-    "coveralls": "jest --coverage && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint . --ext .js,.jsx",
     "prettier": "prettier \"**/*.{json,md,scss,yaml,yml}\"",
-    "storybook": "start-storybook -p 9001 -c .storybook",
-    "snyk-protect": "snyk protect",
-    "prepare": "yarn run snyk-protect"
+    "storybook": "start-storybook -p 9001 -c .storybook"
   },
   "repository": {
     "type": "git",
@@ -51,8 +48,7 @@
     "redux-thunk": "2.3.x",
     "request": "2.88.x",
     "request-promise": "4.2.x",
-    "typeface-roboto": "0.0.x",
-    "snyk": "^1.465.0"
+    "typeface-roboto": "0.0.x"
   },
   "devDependencies": {
     "@babel/cli": "7.1.x",
@@ -65,7 +61,6 @@
     "babel-jest": "23.6.x",
     "babel-loader": "8.0.x",
     "clean-webpack-plugin": "0.1.x",
-    "coveralls": "3.0.x",
     "css-loader": "1.0.x",
     "enzyme": "3.7.x",
     "enzyme-adapter-react-16": "1.6.x",
@@ -116,6 +111,5 @@
     "moduleNameMapper": {
       "\\.(css|less|sass|scss)$": "identity-obj-proxy"
     }
-  },
-  "snyk": true
+  }
 }

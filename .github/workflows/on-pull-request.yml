@@ -1,3 +1,5 @@
+name: Pull request
+
 on:
   pull_request:
 
@@ -12,8 +14,8 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-            node-version: '10.x'
-            cache: 'yarn'
+          node-version: '10.x'
+          cache: 'yarn'
 
       - name: Install
         run: yarn
@@ -22,9 +24,7 @@ jobs:
         run: yarn lint
 
       - name: Test
-        run: |
-          yarn test
-          yarn coveralls
+        run: yarn test
 
       - name: Build
         run: |
