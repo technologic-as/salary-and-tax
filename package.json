@@ -54,7 +54,7 @@
     "@babel/cli": "7.1.x",
     "@babel/core": "7.1.x",
     "@babel/node": "7.0.x",
-    "@babel/preset-env": "7.1.x",
+    "@babel/preset-env": "7.19.x",
     "@babel/preset-react": "7.0.x",
     "@babel/register": "7.0.x",
     "babel-core": "^7.0.0-bridge.0",
