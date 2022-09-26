@@ -60,7 +60,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "23.6.x",
     "babel-loader": "8.0.x",
-    "clean-webpack-plugin": "0.1.x",
+    "clean-webpack-plugin": "4.0.x",
     "css-loader": "1.0.x",
     "enzyme": "3.7.x",
     "enzyme-adapter-react-16": "1.6.x",
