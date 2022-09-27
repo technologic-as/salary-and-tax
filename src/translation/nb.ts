@@ -79,6 +79,7 @@ const nb = {
   'tax.calculations.step.2': `${taxStep} 2 (${taxConstants.step2.rate}%)`,
   'tax.calculations.step.3': `${taxStep} 3 (${taxConstants.step3.rate}%)`,
   'tax.calculations.step.4': `${taxStep} 4 (${taxConstants.step4.rate}%)`,
+  'tax.calculations.step.5': `${taxStep} 5 (${taxConstants.step5.rate}%)`,
   'tax.calculations.after.tax': afterTax,
   'tax.calculations.surplus.header': 'Overskudd',
   'tax.calculations.surplus.amount': 'Selskapets overskudd',

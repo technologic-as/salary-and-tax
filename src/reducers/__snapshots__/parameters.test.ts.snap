@@ -26,15 +26,15 @@ Object {
     "step1": Object {
       "rate": 2,
       "threshold": Object {
-        "high": 708991,
-        "low": 99858,
+        "high": 791486,
+        "low": 111477,
       },
     },
     "step2": Object {
       "rate": 2,
       "threshold": Object {
-        "high": 1198296,
-        "low": 708991,
+        "high": 1337724,
+        "low": 791486,
       },
     },
   },

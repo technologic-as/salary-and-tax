@@ -53,6 +53,12 @@ export const calculateStep3 = (income: number): number => {
 
 export const calculateStep4 = (income: number): number => {
   const lowLimit = taxConstants.step4;
+  const highLimit = taxConstants.step5;
+  return calculateStep(income, lowLimit, highLimit);
+};
+
+export const calculateStep5 = (income: number): number => {
+  const lowLimit = taxConstants.step5;
   const aboveThreshold = income - lowLimit.threshold;
   const tax = (aboveThreshold * lowLimit.rate) / 100;
 
@@ -71,6 +77,7 @@ export type TaxCalculations = {
   step2: number;
   step3: number;
   step4: number;
+  step5: number;
 
   totalTax: number;
   afterTax: number;
@@ -85,8 +92,9 @@ export const getTaxCalculations = (income: number): TaxCalculations => {
   const step2 = calculateStep2(income);
   const step3 = calculateStep3(income);
   const step4 = calculateStep4(income);
+  const step5 = calculateStep5(income);
 
-  const totalTax = incomeTax + socialSecurityDeduction + step1 + step2 + step3 + step4;
+  const totalTax = incomeTax + socialSecurityDeduction + step1 + step2 + step3 + step4 + step5;
   const afterTax = income - totalTax;
 
   return {
@@ -100,6 +108,7 @@ export const getTaxCalculations = (income: number): TaxCalculations => {
     step2,
     step3,
     step4,
+    step5,
     totalTax,
     afterTax,
   };
