@@ -14,7 +14,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '10.x'
+          node-version: '16.x'
           cache: 'yarn'
 
       - name: Install
@@ -28,4 +28,4 @@ jobs:
 
       - name: Build
         run: |
-          yarn build:www
+          yarn build
