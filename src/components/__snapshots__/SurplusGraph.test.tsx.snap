@@ -1,0 +1,432 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SurplusGraph should render 1`] = `
+<Section
+  header="Income vs. surplus"
+>
+  <HighchartsProvider
+    Highcharts={Object {}}
+  >
+    <HighchartsChart>
+      <Chart />
+      <Title>
+        Income vs. surplus
+      </Title>
+      <Legend />
+      <Title>
+        Surplus
+      </Title>
+      <ScatterSeries
+        data={
+          Array [
+            Array [
+              700000,
+              778609,
+            ],
+          ]
+        }
+        name="7.1 Gross income"
+      />
+      <ScatterSeries
+        data={
+          Array [
+            Array [
+              1400000,
+              948171,
+            ],
+          ]
+        }
+        name="Max total"
+      />
+      <Title>
+        NOK
+      </Title>
+      <LineSeries
+        data={
+          Array [
+            Array [
+              0,
+              1318257,
+            ],
+            Array [
+              100000,
+              1240006,
+            ],
+            Array [
+              200000,
+              1162045,
+            ],
+            Array [
+              300000,
+              1085358,
+            ],
+            Array [
+              400000,
+              1008671,
+            ],
+            Array [
+              500000,
+              931984,
+            ],
+            Array [
+              600000,
+              855297,
+            ],
+            Array [
+              700000,
+              778609,
+            ],
+            Array [
+              800000,
+              701923,
+            ],
+            Array [
+              900000,
+              625235,
+            ],
+            Array [
+              1000000,
+              548548,
+            ],
+            Array [
+              1100000,
+              471861,
+            ],
+            Array [
+              1200000,
+              395174,
+            ],
+            Array [
+              1300000,
+              318487,
+            ],
+            Array [
+              1400000,
+              241799,
+            ],
+            Array [
+              1500000,
+              165112,
+            ],
+            Array [
+              1600000,
+              88192,
+            ],
+          ]
+        }
+        name="Gross income"
+      />
+      <LineSeries
+        data={
+          Array [
+            Array [
+              0,
+              834690,
+            ],
+            Array [
+              100000,
+              792748,
+            ],
+            Array [
+              200000,
+              750962,
+            ],
+            Array [
+              300000,
+              709857,
+            ],
+            Array [
+              400000,
+              668752,
+            ],
+            Array [
+              500000,
+              626664,
+            ],
+            Array [
+              600000,
+              583258,
+            ],
+            Array [
+              700000,
+              539854,
+            ],
+            Array [
+              800000,
+              496449,
+            ],
+            Array [
+              900000,
+              453043,
+            ],
+            Array [
+              1000000,
+              403433,
+            ],
+            Array [
+              1100000,
+              353126,
+            ],
+            Array [
+              1200000,
+              302818,
+            ],
+            Array [
+              1300000,
+              252512,
+            ],
+            Array [
+              1400000,
+              202116,
+            ],
+            Array [
+              1500000,
+              144036,
+            ],
+            Array [
+              1600000,
+              82731,
+            ],
+          ]
+        }
+        name="Net income"
+        visible={false}
+      />
+      <LineSeries
+        data={
+          Array [
+            Array [
+              0,
+              0,
+            ],
+            Array [
+              100000,
+              100000,
+            ],
+            Array [
+              200000,
+              200000,
+            ],
+            Array [
+              300000,
+              300000,
+            ],
+            Array [
+              400000,
+              400000,
+            ],
+            Array [
+              500000,
+              500000,
+            ],
+            Array [
+              600000,
+              600000,
+            ],
+            Array [
+              700000,
+              700000,
+            ],
+            Array [
+              800000,
+              800000,
+            ],
+            Array [
+              900000,
+              900000,
+            ],
+            Array [
+              1000000,
+              1000000,
+            ],
+            Array [
+              1100000,
+              1100000,
+            ],
+            Array [
+              1200000,
+              1200000,
+            ],
+            Array [
+              1300000,
+              1300000,
+            ],
+            Array [
+              1400000,
+              1400000,
+            ],
+            Array [
+              1500000,
+              1500000,
+            ],
+            Array [
+              1600000,
+              1600000,
+            ],
+          ]
+        }
+        name="Surplus"
+        visible={false}
+      />
+      <LineSeries
+        data={
+          Array [
+            Array [
+              0,
+              0,
+            ],
+            Array [
+              100000,
+              53290,
+            ],
+            Array [
+              200000,
+              106580,
+            ],
+            Array [
+              300000,
+              159869,
+            ],
+            Array [
+              400000,
+              213159,
+            ],
+            Array [
+              500000,
+              266448,
+            ],
+            Array [
+              600000,
+              319738,
+            ],
+            Array [
+              700000,
+              373028,
+            ],
+            Array [
+              800000,
+              426317,
+            ],
+            Array [
+              900000,
+              479607,
+            ],
+            Array [
+              1000000,
+              532896,
+            ],
+            Array [
+              1100000,
+              586186,
+            ],
+            Array [
+              1200000,
+              639476,
+            ],
+            Array [
+              1300000,
+              692765,
+            ],
+            Array [
+              1400000,
+              746055,
+            ],
+            Array [
+              1500000,
+              799344,
+            ],
+            Array [
+              1600000,
+              852634,
+            ],
+          ]
+        }
+        name="Dividends"
+        onClick={[Function]}
+      />
+      <LineSeries
+        data={
+          Array [
+            Array [
+              0,
+              834690,
+            ],
+            Array [
+              100000,
+              846038,
+            ],
+            Array [
+              200000,
+              857542,
+            ],
+            Array [
+              300000,
+              869726,
+            ],
+            Array [
+              400000,
+              881911,
+            ],
+            Array [
+              500000,
+              893112,
+            ],
+            Array [
+              600000,
+              902996,
+            ],
+            Array [
+              700000,
+              912882,
+            ],
+            Array [
+              800000,
+              922766,
+            ],
+            Array [
+              900000,
+              932650,
+            ],
+            Array [
+              1000000,
+              936329,
+            ],
+            Array [
+              1100000,
+              939312,
+            ],
+            Array [
+              1200000,
+              942294,
+            ],
+            Array [
+              1300000,
+              945277,
+            ],
+            Array [
+              1400000,
+              948171,
+            ],
+            Array [
+              1500000,
+              943380,
+            ],
+            Array [
+              1600000,
+              935365,
+            ],
+          ]
+        }
+        name="Total"
+      />
+      <Tooltip
+        shared={true}
+        valueSuffix="NOK"
+      />
+      <Credits
+        enabled={false}
+      />
+    </HighchartsChart>
+  </HighchartsProvider>
+</Section>
+`;
