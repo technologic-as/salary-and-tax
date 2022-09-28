@@ -24,6 +24,7 @@ describe('TaxCalculations', () => {
           step2={12345678}
           step3={12345678}
           step4={12345678}
+          step5={12345678}
           totalTax={12345678}
           afterTax={12345678}
           dividends={12345678}

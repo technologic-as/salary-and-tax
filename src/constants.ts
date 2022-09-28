@@ -37,6 +37,7 @@ export type TaxConstants = {
   step2: TaxStep;
   step3: TaxStep;
   step4: TaxStep;
+  step5: TaxStep;
 
   dividends: { rate: number; upwardAdjustmentFactor: number };
   surplus: { rate: number };
@@ -47,19 +48,40 @@ export type TaxConstants = {
 };
 
 export const taxConstants: TaxConstants = {
-  incomeTax: { rate: 22 },
-  socialSecurityDeduction: { rate: 8.2 },
+  incomeTax: {
+    // "Skatt på alminnelig inntekt (Person)"
+    rate: 22,
+  },
 
-  step1: { rate: 1.9, threshold: 174500 },
-  step2: { rate: 4.2, threshold: 245650 },
-  step3: { rate: 13.2, threshold: 617500 },
-  step4: { rate: 16.2, threshold: 964800 },
+  // "Trygdeavgift (Lønnsinntekt)"
+  socialSecurityDeduction: { rate: 8 },
 
-  dividends: { rate: 22, upwardAdjustmentFactor: 1.44 },
-  surplus: { rate: 22 },
+  step1: { rate: 1.7, threshold: 190350 },
+  step2: { rate: 4.0, threshold: 267900 },
+  step3: { rate: 13.4, threshold: 643800 },
+  step4: { rate: 16.4, threshold: 969200 },
+  step5: { rate: 17.4, threshold: 2000000 },
 
-  minimumDeduction: { rate: 45, min: 4000, max: 100800 },
-  personalAllowance: { max: 56550 },
+  // Utbytte
+  dividends: {
+    rate: 22,
+    upwardAdjustmentFactor: 1.6,
+  },
 
-  oneG: 99858,
+  // Selskapsskatt
+  surplus: {
+    rate: 22,
+  },
+
+  // "Minstefradrag i lønnsinntekt"
+  minimumDeduction: {
+    rate: 46,
+    min: 31800,
+    max: 109950,
+  },
+
+  // "Nedre grense for å betale trygdeavgift"
+  personalAllowance: { max: 64650 },
+
+  oneG: 111477,
 };

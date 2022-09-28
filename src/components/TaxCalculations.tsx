@@ -63,6 +63,7 @@ const messages = defineMessages({
   step2: { id: 'tax.calculations.step.2', defaultMessage: 'Tax step 2' },
   step3: { id: 'tax.calculations.step.3', defaultMessage: 'Tax step 3' },
   step4: { id: 'tax.calculations.step.4', defaultMessage: 'Tax step 4' },
+  step5: { id: 'tax.calculations.step.5', defaultMessage: 'Tax step 5' },
   afterTax: { id: 'tax.calculations.after.tax', defaultMessage: 'After tax' },
 });
 
@@ -77,6 +78,7 @@ type Props = {
   step2: number;
   step3: number;
   step4: number;
+  step5: number;
   totalTax: number;
   afterTax: number;
   surplus: number;
@@ -97,6 +99,7 @@ export const TaxCalculationsComponent = ({
   step2,
   step3,
   step4,
+  step5,
   totalTax,
   afterTax,
   surplus,
@@ -149,6 +152,7 @@ export const TaxCalculationsComponent = ({
                 <TaxRow description={formatMessage(messages.step2)} amount={formatCurrency(step2)} minus />
                 <TaxRow description={formatMessage(messages.step3)} amount={formatCurrency(step3)} minus />
                 <TaxRow description={formatMessage(messages.step4)} amount={formatCurrency(step4)} minus />
+                <TaxRow description={formatMessage(messages.step5)} amount={formatCurrency(step5)} minus />
                 <TaxRow
                   description={formatMessage(messages.afterTax)}
                   amount={formatCurrency(totalTax)}
@@ -199,6 +203,7 @@ const mapStateToProps = ({
       step2,
       step3,
       step4,
+      step5,
       totalTax,
       afterTax,
     },
@@ -215,6 +220,7 @@ const mapStateToProps = ({
   step2,
   step3,
   step4,
+  step5,
   totalTax,
   afterTax,
   surplus,

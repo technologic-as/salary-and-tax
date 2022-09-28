@@ -85,6 +85,11 @@ exports[`TaxCalculations should render 1`] = `
           />
           <TaxRow
             amount="$12,345,678.00"
+            description="Tax step 5"
+            minus={true}
+          />
+          <TaxRow
+            amount="$12,345,678.00"
             description="After tax"
             sum="$12,345,678.00"
           />
