@@ -1,7 +1,10 @@
-name: Pull request
+name: Validate and build
 
 on:
   pull_request:
+  push:
+    branches:
+      - master
 
 jobs:
   build-and-validate:
