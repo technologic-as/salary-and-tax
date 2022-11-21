@@ -36,7 +36,7 @@
     "redux-form": "8.3.x",
     "redux-thunk": "2.4.x",
     "typeface-roboto": "1.1.x",
-    "typescript": "4.8.x"
+    "typescript": "4.9.x"
   },
   "eslintConfig": {
     "extends": [
