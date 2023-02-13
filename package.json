@@ -18,7 +18,7 @@
     "@testing-library/react": "13.4.x",
     "@testing-library/user-event": "14.4.x",
     "@types/jest": "29.4.x",
-    "@types/node": "18.11.x",
+    "@types/node": "18.13.x",
     "@types/react": "18.0.x",
     "@types/react-dom": "18.0.x",
     "highcharts": "10.3.x",
