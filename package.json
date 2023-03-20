@@ -25,7 +25,7 @@
     "js-cookie": "3.0.x",
     "react": "18.2.x",
     "react-dom": "18.2.x",
-    "react-intl": "6.2.x",
+    "react-intl": "6.3.x",
     "react-intl-redux": "2.3.x",
     "react-jsx-highcharts": "5.0.x",
     "react-redux": "8.0.x",
