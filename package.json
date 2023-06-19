@@ -28,7 +28,7 @@
     "react-intl": "6.4.x",
     "react-intl-redux": "2.3.x",
     "react-jsx-highcharts": "5.0.x",
-    "react-redux": "8.0.x",
+    "react-redux": "8.1.x",
     "react-scripts": "5.0.1",
     "reduce-reducers": "1.0.x",
     "redux": "4.2.x",
