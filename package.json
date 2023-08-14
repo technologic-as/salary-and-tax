@@ -79,7 +79,7 @@
     "eslint-config-prettier": "9.0.x",
     "eslint-plugin-prettier": "4.2.x",
     "identity-obj-proxy": "3.0.x",
-    "prettier": "2.8.x",
+    "prettier": "3.0.x",
     "react-test-renderer": "18.2.x",
     "redux-mock-store": "1.5.x"
   }
