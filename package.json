@@ -77,7 +77,7 @@
     "enzyme": "3.11.x",
     "enzyme-adapter-react-16": "1.15.x",
     "eslint-config-prettier": "9.0.x",
-    "eslint-plugin-prettier": "4.2.x",
+    "eslint-plugin-prettier": "5.0.x",
     "identity-obj-proxy": "3.0.x",
     "prettier": "3.0.x",
     "react-test-renderer": "18.2.x",
