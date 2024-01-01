@@ -14,7 +14,7 @@
     "@material-ui/core": "4.12.x",
     "@material-ui/icons": "4.11.x",
     "@reduxjs/toolkit": "1.9.x",
-    "@testing-library/jest-dom": "5.17.x",
+    "@testing-library/jest-dom": "6.1.x",
     "@testing-library/react": "14.0.x",
     "@testing-library/user-event": "14.4.x",
     "@types/jest": "29.5.x",
