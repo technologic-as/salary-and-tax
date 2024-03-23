@@ -16,7 +16,7 @@
     "@reduxjs/toolkit": "1.9.x",
     "@testing-library/jest-dom": "5.17.x",
     "@testing-library/react": "14.0.x",
-    "@testing-library/user-event": "14.4.x",
+    "@testing-library/user-event": "14.5.x",
     "@types/jest": "29.5.x",
     "@types/node": "18.16.x",
     "@types/react": "18.2.x",
